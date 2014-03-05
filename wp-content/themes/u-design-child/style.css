@@ -1,0 +1,395 @@
+/*
+Theme Name: U-Design Child
+Theme URI: http://themeforest.net/item/udesign-wordpress-theme/253220?ref=internq7
+Description: Child Theme for U-Design
+Author: Andon
+Author URI: http://themeforest.net/user/internq7/portfolio?ref=internq7
+Template: u-design
+Version: 1.0.0
+*/
+@import url("../u-design/style.css");
+
+/**** BEGIN ADDING YOUR CUSTOM CSS CODE BELOW: ****/
+
+
+#navigation-menu ul.sf-menu { margin-right: 140px; margin-top:-15px; }
+
+#navigation-menu ul.sf-menu > li { margin: 0 0 0 -5px !important; }
+
+#subscribebutton {
+font-size:14px;
+position:absolute;
+right:0px;
+margin-top:80px;
+margin-right: 220px; 
+text-align:right;
+color:#ffffff;
+}
+
+#subscribebutton a{
+color:#ffffff;
+}
+
+#subscribebutton a:hover{
+color:#f1632a;
+}
+
+#footer-bg {
+
+  height:15px;
+
+}
+
+#footer_text.grid_20 {
+
+  height:20px;
+
+}
+
+a.a1{color:#FFFFFF;}
+a.a1:hover{color: #FE5E08 !important}
+
+#home-page-content {
+
+background: none;
+
+}
+
+
+.st_tab_1 {
+  background:blue;
+}
+
+#circle {
+    background: #e5e5e5;
+    border-radius: 26px; /* one half of ( (border * 2) + height + padding ) */
+    color: black;
+    font: bold 15px/13px Helvetica, Verdana, Tahoma;
+    height: 26px; 
+    padding: 4px 3px 0 3px;
+    text-align: center;
+    line-height: 22px;
+    min-width: 26px;
+    max-width: 26px;
+    display: inline-block;
+}
+
+#overview {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+
+.overviewwrapper{
+    display:inline-block;
+    vertical-align:top;
+    width:335px;
+    margin-right:20px;
+}
+
+.overviewwrapper h2 {
+	 display: inline-block;
+        }
+
+.overviewwrapper span{
+    vertical-align:top; 
+    display:inline-block;      
+}
+
+.box
+{
+   width: 215px;
+   height: 40px;
+   background-color:#e5e5e5;
+   line-height: 45px;
+}
+
+.box a{
+      vertical-align:middle !important;
+    
+}
+
+div#overview h3 {
+    margin-top: -5px;
+	margin-left:2px;
+	font-size:25px !important;
+	
+}
+
+ul.prepbefore 
+{
+    list-style-type:square;
+    color: #00c1f1;
+    margin:0;
+    padding:0;
+    margin-top:0px;
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+
+ul.prepbefore span {
+
+    font-size: 15px;
+    color: #636363;
+    vertical-align: middle;
+}
+
+
+ul.prepduring
+{
+    list-style-type:square;
+    color: #a2cd6e;
+    margin:0;
+    padding:0;
+    margin-top:0px;
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+ul.prepduring span {
+
+    font-size: 15px;
+    color: #636363;
+    vertical-align: middle;
+}
+
+ul.prepafter
+{
+    list-style-type:square;
+    color: #f1632a;
+    margin:0;
+    padding:0;
+    margin-top:0px;
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+ul.prepafter span {
+
+    font-size: 15px;
+    color: #636363;
+    vertical-align: middle;
+}
+
+ul.host
+{
+    list-style-type:square;
+    color: #8462a7;
+    margin:0;
+    padding:0;
+    margin-top:0px;
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+ul.host span {
+
+    font-size: 15px;
+    color: #636363;
+    vertical-align: middle;
+}
+
+#logo {
+    top: 0px !important;
+}
+
+.back-to-top { display: none ; }
+
+hr.register {
+    height: 5px;
+    border: 0;
+    background-color: #e5e5e5;
+    background: #e5e5e5;
+    margin-top:0px;
+}
+
+ul.about {
+   list-style-type: none;
+   margin-bottom:20px;
+}
+
+
+
+.styled select {
+   background: transparent;
+   width: 290px;
+   padding: 5px;
+   font-size: 16px;
+   border: 0px solid #ccc;
+   height: 34px;
+    -webkit-appearance: none;
+} 
+
+.styled{
+   width: 260px;
+   height: 34px;
+   overflow: hidden;
+   background: url(http://supportraisingsolutions.org/wp-content/uploads/2014/01/dropdown.png) no-repeat 96% #e5e5e5;
+}
+
+.registerpacket { 
+   width:200px; 
+   height:30px; 
+   margin-top:15px; 
+   color:#ffffff; 
+   line-height:30px;
+   background: url(http://supportraisingsolutions.org/wp-content/uploads/2014/01/download.png) no-repeat 96% #585858;
+}
+
+.registerpacket a{ 
+   color:#ffffff; 
+}
+
+.registerarrow { 
+   width:200px; 
+   height:30px; 
+   margin-top:10px; 
+   color:#ffffff; 
+   line-height:30px;
+   background: url(http://supportraisingsolutions.org/wp-content/uploads/2014/01/register.png) no-repeat 96% #f1632a;
+}
+
+.registerarrow a{ 
+   color:#ffffff; 
+}
+
+img.author
+{
+opacity:0.9;
+filter:alpha(opacity=90); /* For IE8 and earlier */
+}
+
+img.author:hover
+{
+opacity:1.0;
+filter:alpha(opacity=100); /* For IE8 and earlier */
+}
+
+a.author:active {
+opacity:1.0;
+filter:alpha(opacity=100); /* For IE8 and earlier */
+}
+
+.post-top h1, .post-top h2, .post-top h3 {
+    width: 600px;
+    font-size: 30px !important;
+    margin-top:2px;
+    color:#f1632a !important;
+}
+
+.post-top h1 a, .post-top h2 a, .post-top h3 a {
+    text-decoration: none;
+    color:#f1632a !important;
+    font-weight:300 !important;
+}
+
+
+/*------------------ Styling for Modal Popup Form window ---------------------------------*/
+
+#modal-form{margin-top:20px; margin-left:auto; margin-right:auto; width:280px;} 
+#modal-form p{color:#000;padding-top:5px;padding-bottom:5px;}
+#modal-text-area{height:50px;}
+#eModal-Overlay {
+background-color:#000!important;
+}
+#eModal-Container > p {
+width:300px!important;
+}
+
+
+#people-follow{font:normal 21px/21px "myriad-pro-condensed", "Arial Narrow", Helvetica, sans-serif;}
+
+.tweet_user {text-decoration:none;}
+.tweet_user:hover{text-decoration:none;color:#07A6E5;}
+
+/*---------------- Styling for widget links ----------------------------------------------*/
+
+div.widgetcolor {
+    color:#636363;
+}
+
+div.widgetcolor a{
+    color:#636363;
+}
+
+div.widgetcolor a:hover{
+    color:#f1632a;
+}
+
+div.widgetcolororange {
+    color:#ffffff;
+}
+
+div.widgetcolororange a{
+    color:#ffffff;
+}
+
+div.widgetcolororange a:hover{
+    color:#ffffff;
+}
+
+div.widgetcolorbottom {
+    color:#a9adac;
+}
+
+div.widgetcolorbottom a{
+    color:#a9adac !important;
+}
+
+div.widgetcolorbottom a:hover{
+    color:#f1632a !important;
+}
+
+#home-page-content #content-container {
+padding: 0px 0;
+}
+
+h1.thin h2.thin h3.thin h4.thin h5.thin h6.thin {
+font-weight: 300;
+}
+
+#page-title {
+margin-bottom:0px;
+}
+
+h1.posttitle {
+color:#f1632a;
+font-family: 'Lato' sans-serif;
+font-weight: 300;
+font-size:  30px !important;
+margin-bottom:15px;
+}
+
+pullright {
+float:right;
+color:#f1632a;
+font-family: 'Lato' sans-serif;
+font-weight: 400;
+font-size:  20px !important;
+margin-left:15px;
+width:150px;
+}
+
+pullleft {
+float:left;
+color:#f1632a;
+font-family: 'Lato' sans-serif;
+font-weight: 400;
+font-size:  20px !important;
+margin-right:15px;
+width:150px;
+}
+
+blockquote {
+color:#f1632a;
+background: none;
+    font-family: 'Lato' sans-serif;
+    padding: 5px 10px 5px 35px;
+    font-size: 20px;
+    line-height: 24px;
+    font-style: normal;
+}#social-icons {	padding-left: 437px;	z-index: 2;}.social-icons > ul {	margin-right: 20px !important;}#top-elements .social_media_top {	padding: 0;}#top-elements .social-icons li.social_icon {	padding-left: 9px !important;}
+#search {
+	margin: -26px 0 0;
+}#search_field {	height: 10px !important;}#navigation-menu {	float: right;}#navigation-menu ul.sf-menu {	margin-right: -15px;}#navigation-menu ul.sf-menu > li {	margin: 0px 0px 0px 15px !important;}
