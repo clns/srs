@@ -1,0 +1,37 @@
+<?php
+/*
+	Description: Two column layout. Image left and content right.
+	Version: 1.0
+*/
+
+/*
+	The following variables are available for use in the template below:
+		
+	$author       - Post author display name
+	$author_url   - URL to post author (if available)
+	$categories   - Comma-separated category links
+	$date         - Post published date. Formatted using “Date Format” from the settings->general page in the WordPress admin
+	$excerpt      - Post content excerpt
+	$image_src    – Image URL
+	$image_title  - Image title text
+	$image_width  – Image width (in pixels)
+	$image_height – Image height (in pixels)
+	$permalink    - Post permalink
+	$tags         - Comma-separated tag links (if available)
+	$time         - Post published time. Formatted using “Time Format” from the settings->general page in the WordPress admin
+	$timesince    - Time since the entry was published
+	$title        - Post title
+*/
+?>
+<div class="dyn_image">
+    <?php if ($image_src): ?>
+    <img src="<?php echo $image_src; ?>" <?php echo isset($image_width) ? ' width="' . $image_width . '"' : ''; ?><?php echo isset($image_height) ? ' height="' . $image_height . '"' : ''; ?> />
+    <?php endif; ?>
+</div>
+
+<div class="dyn_content">
+    <h1><a href="<?php echo $permalink; ?>"><?php echo $title; ?></a></h1>
+    <p class="dyn_timesince"><?php echo $timesince; ?> ago</p>
+    <div class="dyn_excerpt"><?php echo $excerpt; ?></div>
+    <p><a href="<?php echo $permalink; ?>" class="dyn_permalink">.. read more</a></p>
+</div>

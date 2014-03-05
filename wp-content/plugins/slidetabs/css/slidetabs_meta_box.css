@@ -1,0 +1,6 @@
+#slidetabs_dynamic_meta { padding:8px 0; }
+#slidetabs_dynamic_meta p {
+	margin:0 0 12px !important;
+	padding:0 !important;
+}
+#slidetabs_dynamic_meta p.last { margin-bottom:0px !important; }
