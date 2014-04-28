@@ -121,6 +121,14 @@ h1,h2,h3,h4,h5,h6 {
 	color: #333333;
 }
 
+#bottom h1,h2,h3,h4,h5,h6 {
+	color: #acacac;
+	font-size: 14px !important;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+
 #top-wrapper {
 	background:
 		url("http://supportraisingsolutions.org/wp-content/uploads/2013/07/HeaderBG2.png")
