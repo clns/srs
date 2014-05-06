@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script>
+function changeDivDisplay(id)
+{
+   if(id == "")
+     return;
+   div1 = document.getElementById("text1");
+   div2 = document.getElementById("text2");
+   div3 = document.getElementById("text3");
+   div4 = document.getElementById("text4");
+   div5 = document.getElementById("text5");
+ 
+   if(id == "1")
+   {
+       div1.style.display = "block";
+       div2.style.display = "none";
+       div3.style.display = "none";
+       div4.style.display = "none";
+	   div5.style.display = "none"
+   }
+   else if(id == "2")
+   {
+       div1.style.display = "none";
+       div2.style.display = "block";
+       div3.style.display = "none";
+       div4.style.display = "none";
+	   div5.style.display = "none"
+   }
+   else if(id == "3")
+   {
+       div1.style.display = "none";
+       div2.style.display = "none";
+       div3.style.display = "block";
+       div4.style.display = "none";
+	   div5.style.display = "none"
+   }
+   else if(id == "4")
+   {
+       div1.style.display = "none";
+       div2.style.display = "none";
+       div3.style.display = "none";
+       div4.style.display = "block";
+	   div5.style.display = "none"
+   }
+   else if(id == "5")
+   {
+       div1.style.display = "none";
+       div2.style.display = "none";
+       div3.style.display = "none";
+       div4.style.display = "none";
+	   div5.style.display = "block";
+   }   
+}
+</script>
+</head>
+
+<body>
+<h2 style="color: #f1632a !important; margin-top: 15px; margin-bottom:15px; font-size:26px !important;">Bootcamp space is limited. Plan now.</h2>
+<div style="width:700px; height:600px;">
+<div class="styled">
+<select onchange="changeDivDisplay(this.value)">
+<option value="1" selected="selected">Choose your Bootcamp</option>
+<option value="2">Fayetteville, AR  -  April 17-18</option>
+<option value="3">Dallas, TX  -  May 13-14</option>
+<option value="4">Fayetteville, AR  -  June 19-20</option>
+<option value="5">Schroon Lake, NY  -  August 19-20</option>
+</select>
+</div>
+<hr class="register">
+ 
+<span id="text1" style="display:block;"></span>
+<span id="text2" style="display:none;">
+<div style="display:inline-block">
+		<div style="width:225px; float:left; margin-left:15px;"><h2 style="color:#f1632a;">CITY</h2><p>Fayetteville, AR<br />April 17-18</p></div>
+		<div style="width:220px; float:left;"><h2 style="color:#f1632a;">AVAILABILITY</h2><p>Full</p></div>
+		<div style="width:225px; float:left; margin-left:15px;">
+			<div class="registerarrow"><strike><span style="margin-left:10px;">Register here</span></strike> Full</div>
+		</div>
+	</div>
+	<hr class="register" />
+	<div style="display:inline-block">
+		<div style="width:225px; float:left; margin-left:15px;"><h2 style="color:#f1632a;">LOCATION</h2><p>The Grove Church<br />2333 N College<br />Fayetteville, AR 72703</p></div>
+		<div style="width:220px; float:left; "><h2 style="color:#f1632a;">AIRPORT</h2><p>Northwest Arkansas<br />Airport (XNA)</p></div>
+		<div style="width:220px; float:left; margin-left:15px;"><h2 style="color:#f1632a;">SCHEDULE</h2><p>Thursday, 17 <span style="text-align:right;">8:30am-5:30pm</span><br />Friday, 18 <span style="text-align:right;">7:30am-4:30pm</span></p></div>
+	</div>
+	
+	<hr class="register" />
+    <div style="display:inline-block">
+        <div style=" float:left; margin-left:15px;"><h2 style="color:#f1632a;">CONTACT US</h2><p>We are here to serve you.<br />If you have questions please<br />email us:<br /><a href="mailto:info@supportraisingsolutions.org">info@supportraisingsolutions.org</a><br />or call us: (479) 587-9598 x108</p></div>
+	</div>
+</span>
+<span id="text3" style="display:none;">
+	<div style="display:inline-block">
+<div style="width:225px; float:left; margin-left:15px;"><h2 style="color:#f1632a;">CITY</h2><p>Dallas, TX<br />May 13-14, 2014</p></div>
+<div style="width:220px; float:left;"><h2 style="color:#f1632a;">AVAILABILITY</h2><p>Full</p></div>
+<div style="width:225px; float:left; margin-left:15px;">
+   <div class="registerarrow"><span style="margin-left:10px;"><strike>Register here</strike> Full</span></div></a>			
+</div>
+</div>
+<hr class="register" />
+<div style="display:inline-block">
+    <div style="width:225px; float:left; margin-left:15px;"><h2 style="color:#f1632a;">LOCATION</h2><p>The Hope Center<br />2001 W. Plano Pkwy<br />Plano, TX 75075</p></div>
+    <div style="width:220px; float:left; "><h2 style="color:#f1632a;">AIRPORT</h2><p>Dallas/Fort Worth <br />International Airport (DFW)</p></div>
+    <div style="width:220px; float:left; margin-left:15px;"><h2 style="color:#f1632a;">SCHEDULE</h2><p>Tuesday, 13 | <span style="text-align:right;">8:30am-5:30pm</span><br />Wednesday, 14 | <span style="text-align:right;">7:30am-4:30pm</span></p></div>
+</div>
+<hr class="register" />
+    <div style="display:inline-block">
+        <div style=" float:left; margin-left:15px; width:225px;"><h2 style="color:#f1632a;">CONTACT US</h2><p>We are here to serve you.<br />If you have questions please<br />email us:<br /><a href="mailto:info@supportraisingsolutions.org">info@supportraisingsolutions.org</a><br />or call us: (479) 587-9598 x108</p></div>
+        <div style="width:220px; float:left; margin-left:10px;"><h2 style="color:#f1632a;">LODGING</h2><p>You will be responsible for your own transportation, food and lodging.</p></div>
+</div>
+</span>
+
+<span id="text4" style="display:none;">
+<div style="display:inline-block">
+<div style="width:225px; float:left; margin-left:15px;"><h2 style="color:#f1632a;">CITY</h2><p>Fayetteville, AR<br />June 19-20, 2014</p></div>
+<div style="width:220px; float:left;"><h2 style="color:#f1632a;">AVAILABILITY</h2><p>Open</p></div>
+<div style="width:225px; float:left; margin-left:15px;">
+   <a href="https://secure.mobilization.org/civicrm/event/register?reset=1&id=35"> <div class="registerarrow"><span style="margin-left:10px;">Register here</span></div></a>			
+</div>
+</div>
+<hr class="register" />
+<div style="display:inline-block">
+    <div style="width:225px; float:left; margin-left:15px;"><h2 style="color:#f1632a;">LOCATION</h2><p>The Grove Church<br />2223 N. College Ave<br />Fayetteville, AR 72703</p></div>
+    <div style="width:220px; float:left; "><h2 style="color:#f1632a;">AIRPORT</h2><p>Northwest Arkansas<br />Regional Airport (XNA)</p></div>
+    <div style="width:220px; float:left; margin-left:15px;"><h2 style="color:#f1632a;">SCHEDULE</h2><p>Thursday, 19 | <span style="text-align:right;">8:30am-5:30pm</span><br />Friday, 20 | <span style="text-align:right;">7:30am-4:30pm</span></p></div>
+</div>
+<hr class="register" />
+    <div style="display:inline-block">
+        <div style=" float:left; margin-left:15px; width:225px;"><h2 style="color:#f1632a;">CONTACT US</h2><p>We are here to serve you.<br />If you have questions please<br />email us:<br /><a href="mailto:info@supportraisingsolutions.org">info@supportraisingsolutions.org</a><br />or call us: (479) 587-9598 x108</p></div>
+        <div style="width:220px; float:left; margin-left:10px;"><h2 style="color:#f1632a;">LODGING</h2><p>You will be responsible for your own transportation, food and lodging.</p></div>
+</div>
+</span>
+<span id="text5" style="display:none;">
+<div style="display:inline-block">
+<div style="width:225px; float:left; margin-left:15px;"><h2 style="color:#f1632a;">CITY</h2><p>Schroon Lake, NY<br />August 19-20, 2014</p></div>
+<div style="width:220px; float:left;"><h2 style="color:#f1632a;">AVAILABILITY</h2><p>Open</p></div>
+<div style="width:225px; float:left; margin-left:15px;">
+   <a href="https://secure.mobilization.org/civicrm/event/register?reset=1&id=42"> <div class="registerarrow"><span style="margin-left:10px;">Register here</span></div></a>			
+</div>
+</div>
+<hr class="register" />
+<div style="display:inline-block">
+    <div style="width:225px; float:left; margin-left:15px;"><h2 style="color:#f1632a;">LOCATION</h2><p>Word of Life Inn<br />210 Registration Way<br />Schroon Lake, NY 12870</p></div>
+    <div style="width:220px; float:left; "><h2 style="color:#f1632a;">AIRPORT</h2><p>Albany<br />International Airport (ALB)</p></div>
+    <div style="width:220px; float:left; margin-left:15px;"><h2 style="color:#f1632a;">SCHEDULE</h2><p>Tuesday, 19 | <span style="text-align:right;">8:30am-5:30pm</span><br />Wednesday, 20 | <span style="text-align:right;">7:30am-4:30pm</span></p></div>
+</div>
+<hr class="register" />
+    <div style="display:inline-block">
+        <div style=" float:left; margin-left:15px; width:225px;"><h2 style="color:#f1632a;">CONTACT US</h2><p>We are here to serve you.<br />If you have questions please<br />email us:<br /><a href="mailto:info@supportraisingsolutions.org">info@supportraisingsolutions.org</a><br />or call us: (479) 587-9598 x108</p></div>
+        <div style="width:220px; float:left; margin-left:10px;"><h2 style="color:#f1632a;">LODGING</h2><p>You will be responsible for your own transportation, food and lodging.</p></div>
+</div>
+</span>
+</div>
+</body>
+</html>
