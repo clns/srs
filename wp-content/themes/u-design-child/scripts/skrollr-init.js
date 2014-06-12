@@ -5,7 +5,10 @@
         render: function(data) {
             //Debugging - Log the current scroll position.
             //console.log(data.curTop);
-        }
+        },
+        forceHeight: false,
+        smoothScrolling: true,
+        smoothScrollingDuration: 300
     });
 	});
 } )( jQuery );

@@ -8,7 +8,7 @@
  */
 if ( !defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-get_header(); 
+get_header();
 ?>
 <div id="content-container" class="full-width">
 	<div id="main-content" class="full-width">
@@ -252,6 +252,3 @@ get_header();
 <div class="clear"></div>
 
 <?php
-
-
-
