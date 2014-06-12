@@ -13,28 +13,38 @@ get_header();
 <div id="content-container" class="full-width">
 	<div id="main-content" class="full-width">
 		<div id="marketing">
-			<div class="marketing-bg-image" id="section1">
-				<div class="marketing-content">
-					<div id="numbers">
-						<div>15</div>
-						<div>7500</div>
-						<div>500</div>
-					</div>
-					<div id="quantifiers">
-						<div>YEARS OF MINISTRY</div>
-						<div>LABORERS TRAINED</div>
-						<div>MINISTRIES SERVED</div>
-					</div>
-					<div id="orangeheader">
-						<h1>Welcome to the new Bootcamp</h1>
-						<h1>where you can be the trainer.</h1>
-					</div>
-					<div id="subheading">
-						<h1>Helping your staff become spiritually healthy,</h1>
-						<h1>vision driven, fully funded, Great Commission workers.</h1>
+			<section id="slide-1" class="homeSlide">
+				<div class="bcg"
+					data-center="background-position: 50% 0px;"
+					data-top-bottom="background-position: 50% -200px"
+					data-anchor-target="#slide-1"
+				>
+					<div class="hsContainer">
+						<div class="hsContent">
+							<div class="marketing-content">
+								<div id="numbers">
+									<div>15</div>
+									<div>7500</div>
+									<div>500</div>
+								</div>
+								<div id="quantifiers">
+									<div>YEARS OF MINISTRY</div>
+									<div>LABORERS TRAINED</div>
+									<div>MINISTRIES SERVED</div>
+								</div>
+								<div id="orangeheader">
+									<h1>Welcome to the new Bootcamp</h1>
+									<h1>where you can be the trainer.</h1>
+								</div>
+								<div id="subheading">
+									<h1>Helping your staff become spiritually healthy,</h1>
+									<h1>vision driven, fully funded, Great Commission workers.</h1>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 			<div class="marketing-white-bg" id="section2">
 				<div class="marketing-content">
 					<div class="section-header">Completely interactive, discussion-led format</div>
@@ -63,34 +73,45 @@ get_header();
 					</div>
 				</div>
 			</div>
-			<div class="marketing-bg-image" id="section3">
-				<div class="marketing-content">
-					<div class="section-header">We help you succeed</div>
-					<div id="four-img-container">
-						<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Sec-2_Square-Icon_1.jpg" alt="">
-						<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Sec-2_Square-Icon_2.jpg" alt="">
-						<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Sec-2_Square-Icon_3.jpg" alt="">
-						<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Sec-2_Square-Icon_4.jpg" alt="" class="last">
-					</div>
-					<div id="description-container">
-						<div class="img-description">Annual Training Conference</div>
-						<div class="img-description">Ongoing Coaching</div>
-						<div class="img-description">Updating Resources</div>
-						<div class="img-description last">Connecting to SRS network of trainers &amp; your peers.</div>
-					</div>
-					<div class="section-header" id="big-section-header">We ask that you:</div>
-					<div id="three-img-container">
-						<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Sec-2_Circle-icon_1.png" alt="">
-						<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Sec-2_Circle-icon_2.png" alt="">
-						<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Sec-2_Circle-icon_3.png" alt="" class="last">
-					</div>
-					<div id="description-container-2">
-						<div class="img-description">Have raised your own support</div>
-						<div class="img-description">Attend our training conference</div>
-						<div class="img-description">Comply with our annual agreement</div>
+			<section id="slide-3" class="homeSlide">
+				<div class="bcg"
+					data-center="background-position: 50% 0px;"
+					data-top-bottom="background-position: 50% -50px"
+					data-bottom-top="background-position: 50% 50px"
+					data-anchor-target="#slide-3"
+				>
+					<div class="hsContainer">
+						<div class="hsContent">
+							<div class="marketing-content">
+								<div class="section-header">We help you succeed</div>
+								<div id="four-img-container">
+									<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Sec-2_Square-Icon_1.jpg" alt="">
+									<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Sec-2_Square-Icon_2.jpg" alt="">
+									<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Sec-2_Square-Icon_3.jpg" alt="">
+									<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Sec-2_Square-Icon_4.jpg" alt="" class="last">
+								</div>
+								<div id="description-container">
+									<div class="img-description">Annual Training Conference</div>
+									<div class="img-description">Ongoing Coaching</div>
+									<div class="img-description">Updating Resources</div>
+									<div class="img-description last">Connecting to SRS network of trainers &amp; your peers.</div>
+								</div>
+								<div class="section-header" id="big-section-header">We ask that you:</div>
+								<div id="three-img-container">
+									<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Sec-2_Circle-icon_1.png" alt="">
+									<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Sec-2_Circle-icon_2.png" alt="">
+									<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Sec-2_Circle-icon_3.png" alt="" class="last">
+								</div>
+								<div id="description-container-2">
+									<div class="img-description">Have raised your own support</div>
+									<div class="img-description">Attend our training conference</div>
+									<div class="img-description">Comply with our annual agreement</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 			<div class="marketing-white-bg" id="section4">
 				<div class="marketing-content">
 					<div class="section-header">Your Bootcamp essentials</div>
@@ -117,28 +138,39 @@ get_header();
 					</div>
 				</div>
 			</div>
-			<div class="marketing-bg-image" id="section5">
-				<div class="marketing-content">
-					<div class="section-header">What's required of your participants</div>
-					<div class="img-container group">
-						<div class="image-div" id="image1">
-							<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Participants-1.png" alt="" class="non-hover-img">
-							<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Participants-1over.png" alt="" class="hover-img">
-							<div class="hover-text left">Finish The God Ask prior to the Bootcamp.</div>
-						</div>
-						<div class="image-div middle" id="image2">
-							<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Participants-2.png" alt="" class="non-hover-img">
-							<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Participants-2over.png" alt="" class="hover-img">
-							<div class="hover-text middle">Complete the bootcamp prep packet</div>
-						</div>
-						<div class="image-div" id="image3">
-							<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Participants-3.png" alt="" class="non-hover-img last">
-							<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Participants-3over.png" alt="" class="hover-img last">
-							<div class="hover-text right">Go through the required bible studies</div>
+			<section id="slide-5" class="homeSlide">
+				<div class="bcg"
+					data-center="background-position: 50% 0px;"
+					data-top-bottom="background-position: 50% -50px"
+					data-bottom-top="background-position: 50% 50px"
+					data-anchor-target="#slide-5"
+				>
+					<div class="hsContainer">
+						<div class="hsContent">
+							<div class="marketing-content">
+								<div class="section-header">What's required of your participants</div>
+								<div class="img-container group">
+									<div class="image-div" id="image1">
+										<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Participants-1.png" alt="" class="non-hover-img">
+										<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Participants-1over.png" alt="" class="hover-img">
+										<div class="hover-text left">Finish The God Ask prior to the Bootcamp.</div>
+									</div>
+									<div class="image-div middle" id="image2">
+										<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Participants-2.png" alt="" class="non-hover-img">
+										<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Participants-2over.png" alt="" class="hover-img">
+										<div class="hover-text middle">Complete the bootcamp prep packet</div>
+									</div>
+									<div class="image-div" id="image3">
+										<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Participants-3.png" alt="" class="non-hover-img last">
+										<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Participants-3over.png" alt="" class="hover-img last">
+										<div class="hover-text right">Go through the required bible studies</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 			<div class="marketing-white-bg" id="section6">
 				<div class="marketing-content">
 					<div class="section-header">Simple and affordable cost model</div>
@@ -159,28 +191,39 @@ get_header();
 					<div class="subheading">SRS will continue to hold public Bootcamps at our normal $389 participant cost</div>
 				</div>
 			</div>
-			<div class="marketing-bg-image" id="section7">
-				<div class="marketing-content">
-					<div class="section-header">Envision your staff fully funded</div>
-					<div class="img-container">
-						<img src="<?php bloginfo('template_directory');?>-child/images/marketing/100.png" alt="">
-					</div>
-					<div class="three-columns group">
-						<div>
-							<h1>Individual</h1>
-							<p>Helping individuals thrive in ministry</p>
-						</div>
-						<div>
-							<h1>Fully Funded Culture</h1>
-							<p class="middle">100% matters. Not only for individuals, but for ministry.</p>
-						</div>
-						<div>
-							<h1>Supporters</h1>
-							<p>Donor base is strengthened</p>
+			<section id="slide-7" class="homeSlide">
+				<div class="bcg"
+					data-center="background-position: 50% 0px;"
+					data-top-bottom="background-position: 50% -50px"
+					data-bottom-top="background-position: 50% 50px"
+					data-anchor-target="#slide-7"
+				>
+					<div class="hsContainer">
+						<div class="hsContent">
+							<div class="marketing-content">
+								<div class="section-header">Envision your staff fully funded</div>
+								<div class="img-container">
+									<img src="<?php bloginfo('template_directory');?>-child/images/marketing/100.png" alt="">
+								</div>
+								<div class="three-columns group">
+									<div>
+										<h1>Individual</h1>
+										<p>Helping individuals thrive in ministry</p>
+									</div>
+									<div>
+										<h1>Fully Funded Culture</h1>
+										<p class="middle">100% matters. Not only for individuals, but for ministry.</p>
+									</div>
+									<div>
+										<h1>Supporters</h1>
+										<p>Donor base is strengthened</p>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 			<div class="marketing-bg-image" id="section8">
 				<div class="marketing-content">
 					<div class="section-header">Get Going!</div>
