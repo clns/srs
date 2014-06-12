@@ -1,0 +1,214 @@
+<?php
+/**
+ * @package WordPress
+ * @subpackage U-Design
+ */
+/**
+ * Template Name: Marketing
+ */
+if ( !defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
+get_header(); 
+?>
+<div id="content-container" class="full-width">
+	<div id="main-content" class="full-width">
+		<div id="marketing">
+			<div class="marketing-bg-image" id="section1">
+				<div class="marketing-content">
+					<div id="numbers">
+						<div>15</div>
+						<div>7500</div>
+						<div>500</div>
+					</div>
+					<div id="quantifiers">
+						<div>YEARS OF MINISTRY</div>
+						<div>LABORERS TRAINED</div>
+						<div>MINISTRIES SERVED</div>
+					</div>
+					<div id="orangeheader">
+						<h1>Welcome to the new Bootcamp</h1>
+						<h1>where you can be the trainer.</h1>
+					</div>
+					<div id="subheading">
+						<h1>Helping your staff become spiritually healthy,</h1>
+						<h1>vision driven, fully funded, Great Commission workers.</h1>
+					</div>
+				</div>
+			</div>
+			<div class="marketing-white-bg" id="section2">
+				<div class="marketing-content">
+					<div class="section-header">Completely interactive, discussion-led format</div>
+					<div class="flexslider">
+						<ul class="slides">
+							<li>
+								<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Slider_1.jpg" alt="">
+								<h1>Facilitation vs. Teaching</h1>
+								<p>After teaching on support raising for 15 years, we have seen energy and engagement multiplied as we moved towards a facilitation and hands-on training model.  This new Bootcamp doesn’t require your trainer to be a world-class speaker and support raiser.</p>
+							</li>
+							<li>
+								<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Slider_2.jpg" alt="">
+								<h1>Kinetic Learning Experiences</h1>
+								<p>Bootcampers experience challenging and engaging activities that help develop the tools and skills needed to reach and stay at full support.<p>
+							</li>
+							<li>
+								<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Slider_3.jpg" alt="">
+								<h1>We learn best by doing</h1>
+								<p>Bootcampers will watch, then do, then evaluate. We practice multiple mock support calls, appointment and follow up. After crafting and rehearsing answers to frequently asked questions, the participants make real calls to set up real appointments.</p>
+							</li>
+						</ul>
+						<div class="flex-controls-container">
+							<img src="<?php bloginfo('template_directory');?>-child/images/marketing/slider-prev.png" alt="" class="previous disable">
+							<img src="<?php bloginfo('template_directory');?>-child/images/marketing/slider-next.png" alt="" class="next">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="marketing-bg-image" id="section3">
+				<div class="marketing-content">
+					<div class="section-header">We help you succeed</div>
+					<div id="four-img-container">
+						<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Sec-2_Square-Icon_1.jpg" alt="">
+						<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Sec-2_Square-Icon_2.jpg" alt="">
+						<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Sec-2_Square-Icon_3.jpg" alt="">
+						<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Sec-2_Square-Icon_4.jpg" alt="" class="last">
+					</div>
+					<div id="description-container">
+						<div class="img-description">Annual Training Conference</div>
+						<div class="img-description">Ongoing Coaching</div>
+						<div class="img-description">Updating Resources</div>
+						<div class="img-description last">Connecting to SRS network of trainers &amp; your peers.</div>
+					</div>
+					<div class="section-header" id="big-section-header">We ask that you:</div>
+					<div id="three-img-container">
+						<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Sec-2_Circle-icon_1.png" alt="">
+						<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Sec-2_Circle-icon_2.png" alt="">
+						<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Sec-2_Circle-icon_3.png" alt="" class="last">
+					</div>
+					<div id="description-container-2">
+						<div class="img-description">Have raised your own support</div>
+						<div class="img-description">Attend our training conference</div>
+						<div class="img-description">Comply with our annual agreement</div>
+					</div>
+				</div>
+			</div>
+			<div class="marketing-white-bg" id="section4">
+				<div class="marketing-content">
+					<div class="section-header">Your Bootcamp essentials</div>
+					<div class="img-container">
+						<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Materials.jpg" alt="">
+					</div>
+					<div class="three-columns group">
+						<div>
+							<h1>Participants Receive</h1>
+							<p>Copies of the God Ask and Viewpoints, along with the Bootcamp prep packet</p>
+						</div>
+						<div>
+							<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Amp.jpg" alt="">
+						</div>
+						<div>
+							<h1>Trainers Receive</h1>
+							<p>PowerPoint presentation, facilitators guide, activities kit, and other Bootcamp essentials</p>
+						</div>
+					</div>
+					<div id="download-button">
+						<a href="#">
+							<button>Download Examples</button>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="marketing-bg-image" id="section5">
+				<div class="marketing-content">
+					<div class="section-header">What's required of your participants</div>
+					<div class="img-container group">
+						<div class="image-div" id="image1">
+							<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Participants-1.png" alt="" class="non-hover-img">
+							<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Participants-1over.png" alt="" class="hover-img">
+							<div class="hover-text left">Finish The God Ask prior to the Bootcamp.</div>
+						</div>
+						<div class="image-div middle" id="image2">
+							<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Participants-2.png" alt="" class="non-hover-img">
+							<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Participants-2over.png" alt="" class="hover-img">
+							<div class="hover-text middle">Complete the bootcamp prep packet</div>
+						</div>
+						<div class="image-div" id="image3">
+							<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Participants-3.png" alt="" class="non-hover-img last">
+							<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Participants-3over.png" alt="" class="hover-img last">
+							<div class="hover-text right">Go through the required bible studies</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="marketing-white-bg" id="section6">
+				<div class="marketing-content">
+					<div class="section-header">Simple and affordable cost model</div>
+					<div id="cost-container" class="group">
+						<div class="content-small">
+							<h1>$100</h1>
+							<p>Participant cost paid online</p>
+						</div>
+						<div class="content-small">
+							<h1>$25</h1>
+							<p>Per person paid by organization</p>
+						</div>
+						<div class="content-big last">
+							<h1>$900/yr.</h1>
+							<p>Facilitator cost Including annual conference, monthly call-in, and resource updates</p>
+						</div>
+					</div>
+					<div class="subheading">SRS will continue to hold public Bootcamps at our normal $389 participant cost</div>
+				</div>
+			</div>
+			<div class="marketing-bg-image" id="section7">
+				<div class="marketing-content">
+					<div class="section-header">Envision your staff fully funded</div>
+					<div class="img-container">
+						<img src="<?php bloginfo('template_directory');?>-child/images/marketing/100.png" alt="">
+					</div>
+					<div class="three-columns group">
+						<div>
+							<h1>Individual</h1>
+							<p>Helping individuals thrive in ministry</p>
+						</div>
+						<div>
+							<h1>Fully Funded Culture</h1>
+							<p class="middle">100% matters. Not only for individuals, but for ministry.</p>
+						</div>
+						<div>
+							<h1>Supporters</h1>
+							<p>Donor base is strengthened</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="marketing-bg-image" id="section8">
+				<div class="marketing-content">
+					<div class="section-header">Get Going!</div>
+					<div class="two-columns group">
+						<div class="left-column">
+							<h1>Experience the new SRS Bootcamp</h1>
+							<p>See for yourself how Bootcamp can empower your ministry</p>
+							<button>Explore upcoming Bootcamps</button>
+						</div>
+						<div class="right-column">
+							<h1>Continue the conversation</h1>
+							<p>We're here to help your ministry thrive and give your staff the training they deserve</p>
+							<button>Contact us</button>
+						</div>
+					</div>
+					<div class="footer">
+						<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Logo.png" alt="">
+						<p>Support Raising Solutions is a ministry of the Center for Mission Mobilization. Mobilization.org</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- end main-content -->
+</div><!-- end content-container -->
+
+<div class="clear"></div>
+
+<?php
+
+
+
