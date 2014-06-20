@@ -123,7 +123,7 @@ Version: 1.0.0
 	color: #FFFFFF;
 }
 
-#slide-1 .bcg, .marketing-bg-image#section8 {
+#slide-1 .bcg, .marketing-bg-image#slide-8 {
 	background-image: url('images/marketing/Fullwidth-Image-1.jpg');
 }
 
@@ -155,13 +155,14 @@ Version: 1.0.0
 #slide-1 .hsContainer {
 	height: 670px;
 }
+
 #slide-1 .marketing-content div {
 	width: 100%;
 	float: left;
 }
 
 #slide-1 #numbers {
-	font-size: 140px;
+	font-size: 130px;
 	font-weight: 300;
 	margin-top: 110px;
 }
@@ -201,30 +202,30 @@ Version: 1.0.0
 
 #slide-1 #subheading h1 {
 	font-size: 28px !important;
-	font-weight: 300;
+	font-weight: 500;
 	line-height: 35px;
 }
 
-#section2 .marketing-content {
+#slide-2 .marketing-content {
 	padding-top: 55px;
 }
 
-#section2 .flexslider {
-	margin-top: 45px;
+#slide-2 .flexslider .flex-viewport {
+	height: 100%;
 }
 
-#section2 .flexslider h1 {
+#slide-2 .flexslider h1 {
 	margin-top: 35px;
 	font-size: 30px !important;
 	font-weight: 700;
 	line-height: 36px;
 }
 
-#section2 .flexslider p {
+#slide-2 .flexslider p {
 	margin-left: auto;
 	margin-right: auto;
 	width: 70%;
-	font-size: 18px !important;
+	font-size: 17px !important;
 	line-height: 26px;
 }
 
@@ -275,29 +276,31 @@ Version: 1.0.0
 	width: 200px;
 }
 
-#section4 {
-
-}
-
-#section4 .section-header {
+#slide-4 .section-header {
 	margin-top: 70px;
 }
 
-#section4 .img-container {
+#slide-4 .img-container {
 	margin-top: 50px;
 }
 
-#section4 .three-columns {
+#slide-4 .three-columns {
 	margin-top: 45px;
 }
 
-#section4 .three-columns h1 {
+#slide-4 .three-columns h1 {
 	font-weight: 700;
 	font-size: 30px;
 	line-height: 36px;
 }
 
-#section4 #download-button {
+#slide-4 .three-columns p {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#slide-4 #download-button {
 	position: absolute;
 	margin: 0 auto;
 	left: 0;
@@ -305,7 +308,7 @@ Version: 1.0.0
 	bottom: 0;
 }
 
-#section4 #download-button button {
+#slide-4 #download-button button {
 	margin-bottom: 0;
 	padding: 10px 25px;
 	font-size: 24px;
@@ -316,12 +319,12 @@ Version: 1.0.0
 	border: none;
 }
 
-#section4 #download-button button:hover {
+#slide-4 #download-button button:hover {
 	background: #838383;
 	cursor: pointer;
 }
 
-#section4 #download-button button:active {
+#slide-4 #download-button button:active {
 	background: #434343;
 }
 
@@ -396,59 +399,59 @@ Version: 1.0.0
 	display: none;
 }
 
-#section6 .section-header {
+#slide-6 .section-header {
 	margin-top: 100px;
 }
 
-#section6 #cost-container {
+#slide-6 #cost-container {
 	margin-top: 90px;
 }
 
-#section6 #cost-container div {
+#slide-6 #cost-container div {
 	height: 215px;
 	float: left;
 	overflow: hidden;
 	border-right: 3px dotted #333;
 }
 
-#section6 #cost-container div.last {
+#slide-6 #cost-container div.last {
 	border-right: none;
 }
 
-#section6 #cost-container .content-small {
+#slide-6 #cost-container .content-small {
 	width: 29%;
 }
 
-#section6 #cost-container .content-small p {
+#slide-6 #cost-container .content-small p {
 	width: 45%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-#section6 #cost-container .content-big p {
+#slide-6 #cost-container .content-big p {
 	width: 65%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-#section6 #cost-container .content-big {
+#slide-6 #cost-container .content-big {
 	width: 41%;
 }
 
-#section6 #cost-container h1 {
+#slide-6 #cost-container h1 {
 	margin-top: 30px;
 	font-size: 67px !important;
 	color: #FC6A1B;
 }
 
-#section6 #cost-container p {
+#slide-6 #cost-container p {
 	margin-top: 25px;
 	font-size: 18px !important;
 	line-height: 26px;
 	color: #555151;
 }
 
-#section6 .subheading {
+#slide-6 .subheading {
 	margin-top: 90px;
 	margin-left: auto;
 	margin-right: auto;
@@ -494,43 +497,43 @@ Version: 1.0.0
 	width: 95%;
 }
 
-#section8 .section-header {
+#slide-8 .section-header {
 	margin-top: 65px;
 	font-size: 58px;
 	font-style: italic;
 	color: #555151;
 }
 
-#section8 .two-columns {
+#slide-8 .two-columns {
 	margin-top: 75px;
 }
 
-#section8 .two-columns div {
+#slide-8 .two-columns div {
 	width: 50%;
 	float: left;
 }
 
-#section8 h1, #section8 p {
+#slide-8 h1, #slide-8 p {
 	color: #555151;
 }
 
-#section8 h1 {
+#slide-8 h1 {
 	font-size: 30px !important;
 	font-weight: 700;
 	line-height: 36px;
 }
 
-#section8 p {
-	font-size: 18px !important;
+#slide-8 p {
+	font-size: 17px !important;
 	line-height: 26px;
 	width: 70%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-#section8 button {
+#slide-8 a.footerlink {
 	margin-top: 55px;
-	padding: 10px 25px;
+	padding: 10px 0;
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 17px;
@@ -538,27 +541,30 @@ Version: 1.0.0
 	background: #FF6633;
 	border: none;
 	width: 405px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-#section8 button:hover {
+#slide-8 a.footerlink:hover {
 	background: #FF8653;
 	cursor: pointer;
 }
 
-#section8 button:active {
+#slide-8 a.footerlink:active {
 	background: #FF4613;
 }
 
-#section8 .footer {
+#slide-8 .footer {
 	margin-top: 90px;
 	border-top: 1px solid #000;
 }
 
-#section8 .footer img {
+#slide-8 .footer img {
 	margin-top: 45px;
 }
 
-#section8 .footer p {
+#slide-8 .footer p {
 	margin-top: 35px;
 	font-size: 14px !important;
 	line-height: 30px;

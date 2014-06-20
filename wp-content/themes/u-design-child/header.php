@@ -52,7 +52,7 @@ if ( $udesign_options['enable_responsive'] ) echo '<meta name="viewport" content
 
 <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'><link rel="shortcut icon" href="favicon.ico" >
 
-<?php if (is_page('Marketing')) { ?>
+<?php if (is_page('Facilitators')) { ?>
     <style type="text/css">
         #page-content {
             padding-bottom: 0px !important;

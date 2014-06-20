@@ -22,15 +22,8 @@
 }
 
 .flex-controls-container {
-	position: absolute;
-	top: 452px;
-	left: 431px;
-}
-
-.flex-controls-container {
-	position: absolute;
-	top: 450px;
-	left: 420px;
+	position: relative;
+	top: 500px;
 }
 
 .flex-controls-container .previous {
