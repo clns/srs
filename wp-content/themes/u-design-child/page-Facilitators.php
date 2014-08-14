@@ -57,7 +57,7 @@ get_header();
 							</li>
 							<li>
 								<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Slider_2.jpg" alt="">
-								<h1>Kinetic Learning Experiences</h1>
+								<h1>Kinesthetic Learning Experiences</h1>
 								<p>Bootcampers experience challenging and engaging activities that help develop the tools and skills needed to reach and stay at full support.<p>
 							</li>
 							<li>
