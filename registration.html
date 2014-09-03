@@ -11,25 +11,36 @@ function changeDivDisplay(id)
    div1 = document.getElementById("text1");
    div2 = document.getElementById("text2");
    div3 = document.getElementById("text3");
+   div4 = document.getElementById("text4");
  
    if(id == "1")
    {
        div1.style.display = "block";
        div2.style.display = "none";
        div3.style.display = "none";
+       div4.style.display = "none";	   
    }
    else if(id == "2")
    {
        div1.style.display = "none";
        div2.style.display = "block";
        div3.style.display = "none";
+       div4.style.display = "none";	   
    }
    else if(id == "3")
    {
        div1.style.display = "none";
        div2.style.display = "none";
        div3.style.display = "block";
+       div4.style.display = "none";	   	   
    }
+   else if(id == "4")
+   {
+       div1.style.display = "none";
+       div2.style.display = "none";
+       div3.style.display = "none";
+       div4.style.display = "block";	   	   
+   }   
 }
 </script>
 </head>
@@ -42,6 +53,7 @@ function changeDivDisplay(id)
 <option value="1" selected="selected">Choose your Bootcamp</option>
 <option value="2">Charlotte, NC  -  September 17-18</option>
 <option value="3">Fayetteville, AR  -  October 28-29</option>
+<option value="4">Kansas City, MO  -  January 21-22</option>
 </select>
 </div>
 <hr class="register">
@@ -87,6 +99,34 @@ function changeDivDisplay(id)
     <div style="display:inline-block">
         <div style=" float:left; margin-left:15px; width:225px;"><h2 style="color:#f1632a;">CONTACT US</h2><p>We are here to serve you.<br />If you have questions please<br />email us:<br /><a href="mailto:info@supportraisingsolutions.org">info@supportraisingsolutions.org</a><br />or call us: (479) 587-9598 x108</p></div>
         <div style="width:220px; float:left; margin-left:10px;"><h2 style="color:#f1632a;">LODGING</h2><p>You will be responsible for your own transportation, food and lodging.</p></div>
+	</div>
+</span>
+
+<span id="text4" style="display:none;">
+	<div style="display:inline-block">
+		<div style="width:225px; float:left; margin-left:15px;"><h2 style="color:#f1632a;">CITY</h2><p>Kansas City, MO<br />January 21-22, 2015</p></div>
+		<div style="width:220px; float:left;"><h2 style="color:#f1632a;">AVAILABILITY</h2><p>Open</p></div>
+		<div style="width:225px; float:left; margin-left:15px;">
+		   <a href="https://secure.mobilization.org/civicrm/event/register?reset=1&id=162"> <div class="registerarrow"><span style="margin-left:10px;">Register here</span></div></a>			
+		</div>
+	</div>
+	<hr class="register" />
+	<div style="display:inline-block">
+	    <div style="width:225px; float:left; margin-left:15px;"><h2 style="color:#f1632a;">LOCATION</h2><p>FCA National Support Center<br />8701 Leeds Road<br />Kansas City, MO 64129</p></div>
+	    <div style="width:220px; float:left; "><h2 style="color:#f1632a;">AIRPORT</h2><p>Kansas City<br />International Airport (MCI)</p></div>
+	    <div style="width:220px; float:left; margin-left:15px;"><h2 style="color:#f1632a;">SCHEDULE</h2><p>Wednesday, 21 | <span style="text-align:right;">8:30am-5:30pm</span><br />Thursday, 22 | <span style="text-align:right;">7:30am-4:30pm</span></p></div>
+	</div>
+	<hr class="register" />
+    <div style="display:inline-block">
+        <div style=" float:left; margin-left:15px; width:225px;"><h2 style="color:#f1632a;">CONTACT US</h2>
+		<p>We are here to serve you.<br />If you have questions please<br />email us:<br />
+		<a href="mailto:info@supportraisingsolutions.org">info@supportraisingsolutions.org</a><br />or call us: (479) 587-9598 x108</p></div>
+        <div style="width:220px; float:left; margin-left:10px;"><h2 style="color:#f1632a;">LODGING</h2><p>
+		<ol>
+			<li>Holiday Inn Coco Keys<br />9103 E. 39th St.<br />Kansas City, MO 64133<br />(877) 425-2746</li>
+			<li>Hilton Garden Inn<br />19677 E. Jackson Drive<br />Independence, MO 64057<br />(816) 350-3000</li>
+		</ol>
+		Call and say you will be at the SRS Bootcamp at the FCA National Support Center for discounted rate.</p></div>
 	</div>
 </span>
 
