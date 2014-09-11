@@ -13,6 +13,7 @@ function changeDivDisplay(id)
    div3 = document.getElementById("text3");
    div4 = document.getElementById("text4");
    div5 = document.getElementById("text5");
+   div6 = document.getElementById("text6");
  
    if(id == "1")
    {
@@ -21,6 +22,7 @@ function changeDivDisplay(id)
        div3.style.display = "none";
        div4.style.display = "none";	   
        div5.style.display = "none";	   
+       div6.style.display = "none";	   
    }
    else if(id == "2")
    {
@@ -29,6 +31,7 @@ function changeDivDisplay(id)
        div3.style.display = "none";
        div4.style.display = "none";	   
        div5.style.display = "none";	   
+       div6.style.display = "none";	   
    }
    else if(id == "3")
    {
@@ -37,6 +40,7 @@ function changeDivDisplay(id)
        div3.style.display = "block";
        div4.style.display = "none";	   	   
        div5.style.display = "none";	   
+       div6.style.display = "none";	   
    }
    else if(id == "4")
    {
@@ -45,6 +49,7 @@ function changeDivDisplay(id)
        div3.style.display = "none";
        div4.style.display = "block";	   	   
        div5.style.display = "none";	   
+       div6.style.display = "none";	   
    } 
    else if(id == "5")
    {
@@ -53,6 +58,16 @@ function changeDivDisplay(id)
        div3.style.display = "none";
        div4.style.display = "none";	   	   
        div5.style.display = "block";	   
+       div6.style.display = "none";	   
+   }  
+   else if(id == "6")
+   {
+       div1.style.display = "none";
+       div2.style.display = "none";
+       div3.style.display = "none";
+       div4.style.display = "none";	   	   
+       div5.style.display = "none";	   
+       div6.style.display = "block";	   
    }    
 }
 </script>
@@ -67,7 +82,8 @@ function changeDivDisplay(id)
 <option value="2">Charlotte, NC  -  September 17-18</option>
 <option value="3">Fayetteville, AR  -  October 28-29</option>
 <option value="4">Minneapolis, MN  -  November 17-18</option>
-<option value="5">Kansas City, MO  -  January 21-22</option>
+<option value="5">Dallas, TX  -  December 15-16</option>
+<option value="6">Kansas City, MO  -  January 21-22</option>
 </select>
 </div>
 <hr class="register">
@@ -135,11 +151,38 @@ function changeDivDisplay(id)
         <div style=" float:left; margin-left:15px; width:225px;"><h2 style="color:#f1632a;">CONTACT US</h2>
 		<p>We are here to serve you.<br />If you have questions please<br />email us:<br />
 		<a href="mailto:info@supportraisingsolutions.org">info@supportraisingsolutions.org</a><br />or call us: (479) 587-9598 x108</p></div>
-		<div style="width:220px; float:left; margin-left:10px;"><h2 style="color:#f1632a;">LODGING</h2><p>You will be responsible for your own transportation, food and lodging.</p></div>
+		<div style="width:220px; float:left; margin-left:10px;"><h2 style="color:#f1632a;">LODGING</h2>
+		<p>You will be responsible for your own transportation, food and lodging.</p>
+		</div>
 	</div>
 </span>
 
 <span id="text5" style="display:none;">
+	<div style="display:inline-block">
+		<div style="width:225px; float:left; margin-left:15px;"><h2 style="color:#f1632a;">CITY</h2><p>Dallas, TX<br />December 15-16, 2014</p></div>
+		<div style="width:220px; float:left;"><h2 style="color:#f1632a;">AVAILABILITY</h2><p>Open</p></div>
+		<div style="width:225px; float:left; margin-left:15px;">
+		   <a href="https://secure.mobilization.org/civicrm/event/register?reset=1&id=165"> <div class="registerarrow"><span style="margin-left:10px;">Register here</span></div></a>			
+		</div>
+	</div>
+	<hr class="register" />
+	<div style="display:inline-block">
+	    <div style="width:225px; float:left; margin-left:15px;"><h2 style="color:#f1632a;">LOCATION</h2><p>The Hope Cente<br />2001 W Plano Pkwy<br />Plano, TX 75075</p></div>
+	    <div style="width:220px; float:left; "><h2 style="color:#f1632a;">AIRPORT</h2><p>Dallas/ Fort Worth<br />International Airport (DFW)</p></div>
+	    <div style="width:220px; float:left; margin-left:15px;"><h2 style="color:#f1632a;">SCHEDULE</h2><p>Monday, 15 | <span style="text-align:right;">8:30am-5:30pm</span><br />Tuesday, 16 | <span style="text-align:right;">7:30am-4:30pm</span></p></div>
+	</div>
+	<hr class="register" />
+    <div style="display:inline-block">
+        <div style=" float:left; margin-left:15px; width:225px;"><h2 style="color:#f1632a;">CONTACT US</h2>
+		<p>We are here to serve you.<br />If you have questions please<br />email us:<br />
+		<a href="mailto:info@supportraisingsolutions.org">info@supportraisingsolutions.org</a><br />or call us: (479) 587-9598 x108</p></div>
+        <div style="width:220px; float:left; margin-left:10px;"><h2 style="color:#f1632a;">LODGING</h2>
+		<p>You will be responsible for your own transportation, food and lodging.</p>
+		</div>
+	</div>
+</span>
+
+<span id="text6" style="display:none;">
 	<div style="display:inline-block">
 		<div style="width:225px; float:left; margin-left:15px;"><h2 style="color:#f1632a;">CITY</h2><p>Kansas City, MO<br />January 21-22, 2015</p></div>
 		<div style="width:220px; float:left;"><h2 style="color:#f1632a;">AVAILABILITY</h2><p>Open</p></div>
