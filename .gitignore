@@ -30,3 +30,6 @@ wp-content/wp-cache-config.php
 /*.txt
 error_log
 favicon.ico
+/.buildpath
+/.project
+/.settings/
