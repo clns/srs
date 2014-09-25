@@ -12,4 +12,15 @@ function my_add_styles() {
 }
 add_action('wp_enqueue_scripts', 'my_add_styles');
 
+register_new_royalslider_files(1);
+
+add_filter('new_royalslider_skins', 'new_royalslider_add_custom_skin', 10, 2);
+function new_royalslider_add_custom_skin($skins) {
+      $skins['rsFacilitators'] = array(
+           'label' => 'Facilitators',
+           'path' => get_stylesheet_directory_uri() . '/royalslider-facilitators-skin/rs-facilitators.css'  // get_stylesheet_directory_uri returns path to your theme folder
+      );
+      return $skins;
+}
+
 ?>

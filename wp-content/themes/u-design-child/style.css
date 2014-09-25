@@ -36,6 +36,25 @@ Version: 1.0.0
 
 /**** Marketing Page Styles ****/
 
+/* Begin Royal Slider Styles */
+/*.royalSlider,
+.royalSlider .rsOverflow,
+.royalSlider .rsSlide
+,
+.royalSlider .rsVideoFrameHolder,
+.royalSlider .rsThumbs {
+    background: #FFF !important;
+}
+
+#royalslider-1 {
+	background: #FFF !important;
+}*/
+
+
+
+
+/* End Royal Slider Styles */
+
 /* Clear fix */
 .group:after { 
 	visibility: hidden;
@@ -295,7 +314,7 @@ Version: 1.0.0
 }
 
 #slide-4 .three-columns p {
-	width: 80%;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 }
