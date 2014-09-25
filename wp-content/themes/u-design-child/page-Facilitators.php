@@ -48,7 +48,9 @@ get_header();
 			<div class="marketing-white-bg" id="slide-2">
 				<div class="marketing-content">
 					<div class="section-header">Completely interactive, discussion-led format</div>
-					<div class="flexslider">
+					
+					<?php echo get_new_royalslider(1);?>
+					<!-- <div class="flexslider">
 						<ul class="slides">
 							<li>
 								<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Slider_1.jpg" alt="">
@@ -70,7 +72,7 @@ get_header();
 							<img src="<?php bloginfo('template_directory');?>-child/images/marketing/slider-prev.png" alt="" class="previous disable">
 							<img src="<?php bloginfo('template_directory');?>-child/images/marketing/slider-next.png" alt="" class="next">
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<section id="slide-3" class="homeSlide">
@@ -132,7 +134,7 @@ get_header();
 						</div>
 					</div>
 					<div id="download-button">
-						<a href="#">
+						<a href="http://supportraisingsolutions.org/docs/SRS_Particpant-Facilitator-Guide_Preview.pdf">
 							<button>Download Examples</button>
 						</a>
 					</div>
@@ -252,3 +254,5 @@ get_header();
 <div class="clear"></div>
 
 <?php
+
+get_footer();
