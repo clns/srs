@@ -606,12 +606,10 @@ h1,h2,h3,h4,h5,h6,#slogan,.single-post-categories {
 	height: 80px;
 }
 
-#logo h1 a,#logo .site-name a {
-	background: transparent
-		url( http://supportraisingsolutions.org/wp-content/uploads/2013/05/logo5.png )
-		no-repeat 0 100%;
-	width: 325px;
-	height: 115px;
+#logo h1 a, #logo .site-name a {
+	background: transparent url(http://supportraisingsolutions.org/wp-content/uploads/2014/07/support-raising-solutions-logo.png ) no-repeat 0 100%;
+	width: 325px;	
+	height: 91px;
 }
 
 #slogan {
@@ -682,11 +680,8 @@ h1,h2,h3,h4,h5,h6 {
 	text-transform: uppercase;
 }
 
-
 #top-wrapper {
-	background:
-		url("http://supportraisingsolutions.org/wp-content/uploads/2013/07/HeaderBG2.png")
-		repeat-x scroll left top #333333;
+	background: #ffffff;
 }
 
 #slogan,#top-elements .phone-number,#top-elements .social_media_title,#search input.blur,#search input.inputbox_focus {
@@ -702,7 +697,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #navigation-menu ul.sf-menu>li>a>span {
-	color: #F0F0F0;
+	color: #252525;
 }
 
 #navigation-menu ul.sf-menu>li.current-menu-item>a>span,#navigation-menu ul.sf-menu>li.current_page_item>a>span {
@@ -796,7 +791,7 @@ body {
 
 #search .search_box {
 	height: 24px;
-	margin-top: 0px;
+	margin-top: 4px;
 	margin-left: 52px;
 	display: inline-block;
 	float: right;
@@ -807,21 +802,18 @@ body {
 	height: 9px;
 }
 
-#search input.inputbox_focus {
+#search input.inputbox_focus, #search input.blur {
 	background: #ffffff;
-}
-
-#search input.blur {
-	background: #ffffff;
+	border: 1px solid #707070;
 }
 
 #search input.search-btn {
-	background: transparent
-		url("http://supportraisingsolutions.org/wp-content/uploads/2013/06/search.jpg")
-		no-repeat scroll 100% 0;
-	height: 21px;
-	margin-top: -1px;
+	background: transparent url("http://supportraisingsolutions.org/wp-content/uploads/2014/07/search.png") no-repeat scroll 100% 0;
+	height: 22px;
+	margin-top: 0px;
 	width: 24px;
+	border: 1px solid #707070;
+	border-bottom: 2px solid #707070;		
 }
 
 #top-elements .phone-number {
