@@ -694,6 +694,9 @@ h1,h2,h3,h4,h5,h6 {
 
 #gs-header,#piecemaker-header,#c1-header,#c2-header,#c3-header,#rev-slider-header {
 	background-color: #E5E5E5;
+	-webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.23);
+	-moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.23);
+	box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.23);	
 }
 
 #navigation-menu ul.sf-menu>li>a>span {
@@ -1069,6 +1072,7 @@ ul.host span {
 
 #logo {
     top: 0px !important;
+    padding-left: 4px;
 }
 
 .back-to-top {
