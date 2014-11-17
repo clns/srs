@@ -596,6 +596,9 @@ Version: 1.0.0
     border-bottom: 4px solid #F36F20;
     margin-top: -12px;
 }
+#franchise-banner img {
+    margin-top: 21px;
+}
 #page-franchise-participant {
     margin-top: 20px;
 }
@@ -642,10 +645,13 @@ Version: 1.0.0
 .expanding-content {
     display: none;
     background: #FFF;
+    padding: 20px;
 }
-.expanding-content {
-    padding-left: 30px;
-    padding-right: 20px;
+.expanding-content ol {
+    margin-bottom: 0;
+}
+.first-expanding-content {
+    display: block;
 }
 .clearfix:after {
     content: " "; /* Older browser do not support empty content */

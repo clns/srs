@@ -20,7 +20,7 @@ get_header();
 <div id="franchise-banner">
     <div class="container_24">
         <div class="grid_24">
-            <img style="margin-top: 14px" src="http://supportraisingsolutions.org/wp-content/themes/u-design-child/images/franchise/avant_logo.png">
+            <img src="http://supportraisingsolutions.org/wp-content/themes/u-design-child/images/franchise/avant_logo.png">
         </div>
     </div>
 </div>
@@ -37,14 +37,14 @@ get_header();
                 <h1 style="font-weight: 700;">SRS Bootcamp</h1>
                 <h2 style="color: #000; text-transform: none; font-size: 24px !important; font-weight: 300; margin-top: 5px; margin-bottom: 30px;">Kansas City, MO, January 20-21</h2>
                 <div style="width: 160px; height: 35px; line-height: 22px; margin: 0 auto; text-align: center; background: #f1632a;">
-                    <p style="text-align: center; color: #ffffff; font-size: 16px;"><a href="http://cmmpress.org/viewpoints.html" style="color:#FFF;">Register</a></p>
+                    <p style="text-align: center; color: #ffffff; font-size: 16px;"><a href="http://supportraisingsolutions.org/bootcamp/" style="color:#FFF;">Register</a></p>
                 </div>
             </div>
         </div>
         <div class="clear"></div>
         <div class="grid_12 expanding-container col-left">
-            <h3 class="expanding-heading">Dates <span class="expanding-icon expanding-icon-plus"></span></h3>
-            <div class="expanding-content">
+            <h3 class="expanding-heading">Dates <span class="expanding-icon expanding-icon-minus"></span></h3>
+            <div class="expanding-content first-expanding-content">
                 <p>Tuesday, 1/20/15, 9:00 a.m. - 5:00 p.m.<br/>
                    Wednesday, 1/21/15, 9:00 a.m. - 5:00 p.m.</p>
             </div>
@@ -74,15 +74,13 @@ get_header();
             </div>
         </div>
         <div class="grid_12 expanding-container col-right">
-            <h3 class="expanding-heading">Before Coming to Bootcamp<span class="expanding-icon expanding-icon-plus"></span></h3>
-            <div class="expanding-content">
-                <p>
-                    <ol>
-                        <li>Register and pay by clicking the button above.</li>
-                        <li><a href="http://supportraisingsolutions.org/preppacket/">Download</a> and complete the Preparation Packet</li>
-                        <li>Receive The God Ask and Viewpoints, which will be mailed to you.</li>
-                    </ol>
-                </p>
+            <h3 class="expanding-heading">Before Coming to Bootcamp<span class="expanding-icon expanding-icon-minus"></span></h3>
+            <div class="expanding-content first-expanding-content">
+                <ol>
+                    <li>Register and pay by clicking the button above.</li>
+                    <li><a href="http://supportraisingsolutions.org/preppacket/">Download</a> and complete the Preparation Packet</li>
+                    <li>Receive The God Ask and Viewpoints, which will be mailed to you.</li>
+                </ol>
             </div>
             <h3 class="expanding-heading">About SRS Bootcamp <span class="expanding-icon expanding-icon-plus"></span></h3>
             <div class="expanding-content">
