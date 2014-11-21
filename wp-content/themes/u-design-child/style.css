@@ -596,21 +596,30 @@ Version: 1.0.0
     border-bottom: 4px solid #F36F20;
     margin-top: -12px;
 }
-#franchise-banner img {
-    margin-top: 21px;
+.banner-container {
+    height: 130px;
+    white-space: nowrap;
+}
+.banner-container .image-helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.banner-container img {
+    vertical-align: middle;
+    max-height: 100px;
+    max-width: 250px;
 }
 #page-franchise-participant {
-    margin-top: 20px;
-}
-#page-franchise-participant .container_24 {
     background-image: url("http://supportraisingsolutions.org/wp-content/themes/u-design-child/images/franchise/container_background.png");
     background-repeat: no-repeat;
+    background-position: top 75px center;
     overflow: auto;
     min-height: 650px;
 }
 .expanding-container {
     width: 460px !important;
-    margin-top: 75px;
+    margin-top: 40px;
 }
 .expanding-container.col-left {
     padding-right: 20px;
