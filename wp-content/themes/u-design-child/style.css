@@ -590,44 +590,77 @@ Version: 1.0.0
 }
 
 /**** Franchise Participant Landing Page Styles ****/
-#franchise-banner {
+#page-franchise-participant {
+    background-image: url("http://supportraisingsolutions.org/wp-content/themes/u-design-child/images/franchise/container_background.png");
+    background-repeat: no-repeat;
+    background-position: top 205px center;
+    overflow: auto;
+    min-height: 650px;
+    margin-top: -12px;
+}
+#page-franchise-participant #franchise-banner {
     height: 130px;
     background: #E5E5E5;
     border-bottom: 4px solid #F36F20;
-    margin-top: -12px;
 }
-.banner-container {
+#page-franchise-participant .banner-container {
     height: 130px;
     white-space: nowrap;
 }
-.banner-container .image-helper {
+#page-franchise-participant .banner-container .image-helper {
     display: inline-block;
     height: 100%;
     vertical-align: middle;
 }
-.banner-container img {
+#page-franchise-participant .banner-container img {
     vertical-align: middle;
     max-height: 100px;
     max-width: 250px;
 }
-#page-franchise-participant {
-    background-image: url("http://supportraisingsolutions.org/wp-content/themes/u-design-child/images/franchise/container_background.png");
-    background-repeat: no-repeat;
-    background-position: top 75px center;
-    overflow: auto;
-    min-height: 650px;
+#page-franchise-participant #select-container {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 90px;
+    text-align: center;
 }
-.expanding-container {
+#page-franchise-participant .location-header {
+    color: #000; 
+    text-transform: none; 
+    font-size: 24px !important; 
+    font-weight: 300; 
+    margin-top: 5px; 
+    margin-bottom: 30px;
+}
+#page-franchise-participant .button-container {
+    width: 160px; 
+    height: 35px; 
+    line-height: 22px; 
+    margin: 0 auto; 
+    text-align: center; 
+    background: #f1632a;
+} 
+#page-franchise-participant .button-text {
+    text-align: center; 
+    color: #FFFFFF; 
+    font-size: 16px;
+}
+#page-franchise-participant .button-text a {
+    color: #FFFFFF;
+}
+#page-franchise-participant .expanding-container {
     width: 460px !important;
     margin-top: 40px;
 }
-.expanding-container.col-left {
+#page-franchise-participant .expanding-container.col-left {
     padding-right: 20px;
 }
-.expanding-container.col-right {
+#page-franchise-participant .expanding-container.col-right {
     padding-left: 20px;
 }
-.expanding-heading {
+#page-franchise-participant .expanding-heading {
     background: #D9D9D9;
     color: #414042;
     line-height: 40px;
@@ -636,7 +669,7 @@ Version: 1.0.0
     margin-bottom: 0px;
     cursor: pointer;
 }
-.expanding-icon {
+#page-franchise-participant .expanding-icon {
     background-image: url("http://supportraisingsolutions.org/wp-content/themes/u-design-child/images/franchise/accordion_icons.png");
     height: 12px;
     width: 13px;
@@ -645,21 +678,21 @@ Version: 1.0.0
     top: 22px;
     margin-top: -8px;
 }
-.expanding-icon-plus {
+#page-franchise-participant .expanding-icon-plus {
     background-position: 0px 0px;
 }
-.expanding-icon-minus {
+#page-franchise-participant .expanding-icon-minus {
     background-position: 0px 12px;
 }
-.expanding-content {
+#page-franchise-participant .expanding-content {
     display: none;
     background: #FFF;
     padding: 20px;
 }
-.expanding-content ol {
+#page-franchise-participant .expanding-content ol {
     margin-bottom: 0;
 }
-.first-expanding-content {
+#page-franchise-participant .first-expanding-content {
     display: block;
 }
 .clearfix:after {
