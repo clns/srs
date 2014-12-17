@@ -935,7 +935,7 @@ body {
 
 #search input.search-btn {
 	background: transparent url("http://supportraisingsolutions.org/wp-content/uploads/2014/07/search.png") no-repeat scroll 100% 0;
-	height: 22px;
+	height: 19px;
 	margin-top: 0px;
 	width: 24px;
 	border: 1px solid #707070;
@@ -1422,7 +1422,7 @@ background: none;
 }
 
 #social-icons {
-	padding-left: 437px;
+	padding-left: 453px;
 	z-index: 2;
 }
 
@@ -1439,7 +1439,8 @@ background: none;
 }
 
 #search {
-	margin: -26px 0 0;
+	margin: -25px 0 0;
+  padding-left: 818px;
 }
 
 #search_field {
