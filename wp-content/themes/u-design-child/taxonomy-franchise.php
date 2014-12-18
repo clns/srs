@@ -27,10 +27,11 @@ $args = array(
   ),
 );
 $the_query = new WP_Query($args);
+$is_private = get_queried_object()->term_id != 12 ? true : false;
 ?>
 
 <div id="page-franchise-participant">
-<?php if ( get_queried_object()->term_id != 13 ): ?>
+<?php if ( $is_private ): ?>
   <div id="franchise-banner">
     <div class="container_24">
       <div class="grid_24 banner-container">
@@ -114,13 +115,15 @@ $the_query = new WP_Query($args);
                 if ( $bootcamp_status == 'Closed') {
                   $closed_style = 'style="text-decoration: line-through"';
                   $closed_text = ' CLOSED';
+                  $include_link = false;
                 } else {
                   $closed_style = '';
                   $closed_text = '';
+                  $include_link = true;
                 } 
                 ?>
                 <div class="bc<?php echo get_the_ID() ?> bootcampInfoBlock button-container" <?php echo $display ?>>
-                  <p class="button-text"><a href="<?php echo get_post_meta($post->ID, 'registration_link', true); ?>" <?php echo $closed_style ?>>Register</a><?php echo $closed_text ?></p>
+                  <p class="button-text"><?php if ($include_link) { echo '<a href="' . get_post_meta($post->ID, 'registration_link', true) . '">';} echo '<span ' . $closed_style . '>Register</span>'; if ($include_link) { echo '</a>'; } echo $closed_text; ?></p>
                 </div>
               <?php endwhile; wp_reset_postdata(); // end of the loop. ?>
             </div>
@@ -229,15 +232,16 @@ $the_query = new WP_Query($args);
           <div class="grid_12 expanding-container col-right">
             <h3 class="expanding-heading">Before Coming to Bootcamp<span class="expanding-icon expanding-icon-minus"></span></h3>
             <div class="expanding-content first-expanding-content">
+              <?php if ($is_private) { $prep_packet_text = '<a href="' . home_url() . '/preppacket/" target="_blank">Download</a> and complete the Preparation Packet</li>'; } else { $prep_packet_text = 'After registering, download and complete the Preparation Packet (<a href="' . home_url() . '/docs/SRSBootcamp-Prep-Checklist.pdf" target="_blank">preview the Prep Checklist</a>)'; } ?>
               <ol>
-                <li>Register and pay $100 per adult by clicking the button above.</li>
-                <li><a href="http://supportraisingsolutions.org/preppacket/">Download</a> and complete the Preparation Packet</li>
+                <li>Register and pay full registration (if you complete the Prep, you will receive the rebate after the Bootcamp)</li>
+                <li><?php echo $prep_packet_text ?></li>
                 <li>Receive <span style="font-style: italic;">The God Ask</span> and <span style="font-style: italic;">Viewpoints</span>, which will be mailed to you.</li>
               </ol>
             </div>
             <h3 class="expanding-heading">About SRS Bootcamp <span class="expanding-icon expanding-icon-plus"></span></h3>
             <div class="expanding-content">
-              <p>Since 2001, SRS has trained nearly 10,000 people from over 500 ministries to be spiritually healthy, vision-driven, and fully funded Great Commission workers. SRS staff raise their own support to help you overcome obstacles in support raising, provide excellent training resources, and help you thrive in ministry. In 2014, SRS began equipping and certifying trainers in other ministries to facilitate the SRS Bootcamp amongst their own staff (such as the training you will be attending).</p>
+              <p>Since 2001, SRS has trained nearly 10,000 people from over 500 ministries to be spiritually healthy, vision-driven, and fully funded Great Commission workers. SRS staff raise their own support to help you overcome obstacles in support raising, provide excellent training resources, and help you thrive in ministry. </p>
               <p>SRS Bootcamp is a completely interactive and engaging workshop. It is essential that you complete all the Bootcamp preparation before you come (24-40 hours), as that is the teaching aspect of the training. When you get to the Bootcamp, you will be synthesizing and practicing what you learned with others.  At the Bootcamp, you will: </p>
               <ul>
                 <li>Gain confidence in communicating the Biblical foundation for living on support, asking others to invest, and understanding “The God Ask” </li>

@@ -589,7 +589,7 @@ Version: 1.0.0
 	line-height: 30px;
 }
 
-/**** Franchise Participant Landing Page Styles ****/
+/**** Franchise Landing Page Styles ****/
 #page-franchise-participant {
     background-image: url("http://supportraisingsolutions.org/wp-content/themes/u-design-child/images/franchise/container_background.png");
     background-repeat: no-repeat;
@@ -598,21 +598,24 @@ Version: 1.0.0
     min-height: 650px;
     margin-top: -12px;
 }
-#page-franchise-participant #franchise-banner {
+#page-franchise-facilitator {
+    margin-top: -12px;
+}
+#franchise-banner {
     height: 130px;
     background: #E5E5E5;
     border-bottom: 4px solid #F36F20;
 }
-#page-franchise-participant .banner-container {
+.banner-container {
     height: 130px;
     white-space: nowrap;
 }
-#page-franchise-participant .banner-container .image-helper {
+.banner-container .image-helper {
     display: inline-block;
     height: 100%;
     vertical-align: middle;
 }
-#page-franchise-participant .banner-container img {
+.banner-container img {
     vertical-align: middle;
     max-height: 100px;
     max-width: 250px;

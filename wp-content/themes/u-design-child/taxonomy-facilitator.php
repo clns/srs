@@ -12,6 +12,7 @@ get_header();
 
 $content_position = 'grid_24';
 ?>
+<div id="page-franchise-facilitator">
     <div id="franchise-banner">
         <div class="container_24">
             <div class="grid_24 banner-container">
@@ -24,7 +25,6 @@ $content_position = 'grid_24';
     </div>
     <div id="content-container" class="container_24" style="padding: 0;">
         <div id="main-content" class="<?php echo $content_position; ?>">
-            <div id="page-facilitator-participant">
                 <div class="grid_24 page-facilitator-participant clearfix">
                     <div class="grid_12" style="font-color: #333333;">
                         <div style="padding-top: 80px;">
@@ -36,12 +36,11 @@ $content_position = 'grid_24';
                             </div>
                         </div>
                     </div>
-                </div><!-- end container_24 page-franchise-participant clearfix -->
-            </div><!-- end page-franchise-participant -->
-        </div><!-- end main-content-padding -->
-        <div class="clear"></div>
-    </div><!-- end main-content -->
-
+              </div><!-- end container_24 page-franchise-participant clearfix -->
+      </div><!-- end main-content-padding -->
+      <div class="clear"></div>
+  </div><!-- end main-content -->
+</div><!-- end page-franchise-participant -->
     </div><!-- end content-container -->
 
     <div class="clear"></div>
