@@ -241,10 +241,10 @@ $is_private = get_queried_object()->term_id != 12 ? true : false;
             </div>
             <h3 class="expanding-heading">About SRS Bootcamp <span class="expanding-icon expanding-icon-plus"></span></h3>
             <div class="expanding-content">
-              <p>Since 2001, SRS has trained nearly 10,000 people from over 500 ministries to be spiritually healthy, vision-driven, and fully funded Great Commission workers. SRS staff raise their own support to help you overcome obstacles in support raising, provide excellent training resources, and help you thrive in ministry. </p>
-              <p>SRS Bootcamp is a completely interactive and engaging workshop. It is essential that you complete all the Bootcamp preparation before you come (24-40 hours), as that is the teaching aspect of the training. When you get to the Bootcamp, you will be synthesizing and practicing what you learned with others.  At the Bootcamp, you will: </p>
+              <p>Since 2001, SRS has trained nearly 10,000 mission workers from over 500 ministries to be spiritually healthy, vision-driven, and fully funded Great Commission workers. SRS staff members raise their own support to provide excellent training resources, equip you to overcome obstacles in support raising, and help you thrive in ministry. </p>
+              <p>SRS Bootcamp is a completely interactive and engaging workshop. It is essential that you complete all the Bootcamp preparation before you arrive (24-40 hours), because once you get to Bootcamp, you will synthesize and practice with others what you learned during your preparation work. At the Bootcamp, you will: </p>
               <ul>
-                <li>Gain confidence in communicating the Biblical foundation for living on support, asking others to invest, and understanding “The God Ask” </li>
+                <li>Gain confidence in communicating the biblical foundation for living on support, asking others to invest, and understanding the "God Ask" </li>
                 <li>Learn best practices and gain confidence in sharing your presentation</li>
                 <li>Rehearse with your peers and make real calls for appointments</li>
                 <li>Experience the value of meeting with people and asking for support face to face</li>
