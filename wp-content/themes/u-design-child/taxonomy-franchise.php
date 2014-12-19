@@ -232,7 +232,13 @@ $is_private = get_queried_object()->term_id != 12 ? true : false;
           <div class="grid_12 expanding-container col-right">
             <h3 class="expanding-heading">Before Coming to Bootcamp<span class="expanding-icon expanding-icon-minus"></span></h3>
             <div class="expanding-content first-expanding-content">
-              <?php if ($is_private) { $prep_packet_text = '<a href="' . home_url() . '/preppacket/" target="_blank">Download</a> and complete the Preparation Packet</li>'; } else { $prep_packet_text = 'After registering, download and complete the Preparation Packet (<a href="' . home_url() . '/docs/SRSBootcamp-Prep-Checklist.pdf" target="_blank">preview the Prep Checklist</a>)'; } ?>
+              <?php 
+                if ($is_private) { 
+                  $prep_packet_text = 'After registering, download and complete the Preparation Packet (<a href="' . home_url() . '/docs/SRSBootcamp-Prep-Checklist-Network.pdf" target="_blank">Preview Checklist</a> | <a href="' . home_url() . '/preppacketnetwork/" target="_blank">Download Prep Packet</a>)'; 
+                } else { 
+                  $prep_packet_text = 'After registering, download and complete the Preparation Packet (<a href="' . home_url() . '/docs/SRSBootcamp-Prep-Checklist.pdf" target="_blank">preview the Prep Checklist</a>)'; 
+                } 
+              ?>
               <ol>
                 <li>Register and pay full registration (if you complete the Prep, you will receive the rebate after the Bootcamp)</li>
                 <li><?php echo $prep_packet_text ?></li>
