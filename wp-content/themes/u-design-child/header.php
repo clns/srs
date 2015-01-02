@@ -43,10 +43,18 @@ if ( $udesign_options['enable_responsive'] ) echo '<meta name="viewport" content
 <meta property="og:image" content="http://supportraisingsolutions.org/wp-content/uploads/2013/06/SRSFacebookDefault.png" />
 
 
+<?php if (is_tax()) {
+  $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy')); 
+  if ($term->term_id != 12) {
+    $title = $term->name . ' '; 
+  }
+  $title = $title . 'SRS Bootcamp';
+} else {
+  $title = wp_title('', false); 
+}
+?>
 
-<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
-
-
+<title><?php echo $title; ?></title>
 
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
