@@ -34,12 +34,16 @@ $content_position = 'grid_24';
                             
 								<?php
 								// Get the registration_report_link custom field which was added to the faciliator taxonomy using PODs 
+								$term =	$wp_query->queried_object; // get taxonomy of current page
 								$args = array('hide_empty' => 0);                            
 								$taxterms = get_terms('facilitator', $args);
 								$podterms = pods('facilitator');
 								foreach($taxterms as $taxterm) :
-									$podterms->fetch($taxterm->term_id);
-									$reportlink = $podterms->get_field('registration_report_link');
+									if($taxterm->name == $term->name) {
+										$podterms->fetch($taxterm->term_id);
+										$reportlink = $podterms->get_field('registration_report_link');
+										break;
+									}
 								endforeach;
 								?>                            
                             
