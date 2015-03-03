@@ -55,7 +55,15 @@ $is_private = get_queried_object()->term_id != 12 ? true : false;
                   $first = false;
                 } ?> 
                 <div class="bc<?php echo get_the_ID() ?> bootcampInfoBlock" <?php echo $display ?>>
-                  <h1 style="font-size: 26px; line-height: 34px;">Welcome to <?php echo get_post_meta($post->ID, 'ministry_name', true) ?>'s registration site for support raising training.</h1>
+                  <?php $ministry_name = get_post_meta($post->ID, 'ministry_name', true); 
+                    $ministry_name_possessive = "";
+                    if (substr($ministry_name, -1) == "s") {
+                      $ministry_name_possessive = $ministry_name . "'";
+                    } else {
+                      $ministry_name_possessive = $ministry_name . "'s";
+                    }
+                  ?>
+                  <h1 style="font-size: 26px; line-height: 34px;">Welcome to <?php echo $ministry_name_possessive ?> registration site for support raising training.</h1>
                   <?php echo get_post_meta(get_the_ID(), 'welcome_message', true); ?>
                 </div>
               <?php endwhile; wp_reset_postdata(); // end of the loop. ?>
