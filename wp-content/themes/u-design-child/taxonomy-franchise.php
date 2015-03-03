@@ -58,9 +58,9 @@ $is_private = get_queried_object()->term_id != 12 ? true : false;
                   <?php $ministry_name = get_post_meta($post->ID, 'ministry_name', true); 
                     $ministry_name_possessive = "";
                     if (substr($ministry_name, -1) == "s") {
-                      $ministry_name_possessive = $ministry_name . "'";
+                      $ministry_name_possessive = $ministry_name + "'";
                     } else {
-                      $ministry_name_possessive = $ministry_name . "'s";
+                      $ministry_name_possessive = $ministry_name + "'s";
                     }
                   ?>
                   <h1 style="font-size: 26px; line-height: 34px;">Welcome to <?php echo $ministry_name_possessive ?> registration site for support raising training.</h1>
@@ -242,13 +242,15 @@ $is_private = get_queried_object()->term_id != 12 ? true : false;
             <div class="expanding-content first-expanding-content">
               <?php 
                 if ($is_private) { 
+                  $registration_text = "Register and pay full registration.";
                   $prep_packet_text = 'After registering, download and complete the Preparation Packet (<a href="' . home_url() . '/docs/SRSBootcamp-Prep-Checklist-Network.pdf" target="_blank">Preview Checklist</a> | <a href="' . home_url() . '/preppacketnetwork/" target="_blank">Download Prep Packet</a>)'; 
                 } else { 
+                  $registration_text = "Register and pay full registration (if you complete the Prep, you will receive the rebate after the Bootcamp).";
                   $prep_packet_text = 'After registering, download and complete the Preparation Packet (<a href="' . home_url() . '/docs/SRSBootcamp-Prep-Checklist.pdf" target="_blank">preview the Prep Checklist</a>)'; 
                 } 
               ?>
               <ol>
-                <li>Register and pay full registration (if you complete the Prep, you will receive the rebate after the Bootcamp)</li>
+                <li><?php echo $registration_text ?></li>
                 <li><?php echo $prep_packet_text ?></li>
                 <li>Receive <span style="font-style: italic;">The God Ask</span> and <span style="font-style: italic;">Viewpoints</span>, which will be mailed to you.</li>
               </ol>
