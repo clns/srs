@@ -629,6 +629,13 @@ Version: 1.0.0
     top: 90px;
     text-align: center;
 }
+#page-franchise-participant .bootcamp-header {
+	text-align: center;
+	padding-top: 150px;
+}
+#page-franchise-participant .bootcamp-header h1 {
+	font-weight: 700;
+}
 #page-franchise-participant .location-header {
     color: #000; 
     text-transform: none; 
@@ -699,11 +706,46 @@ Version: 1.0.0
     display: block;
 }
 .clearfix:after {
-    content: " "; /* Older browser do not support empty content */
+    content: " "; /* Older browsers do not support empty content */
     visibility: hidden;
     display: block;
     height: 0;
     clear: both;
+}
+/**** Facilitator Landing Page Styles ****/
+#page-franchise-facilitator #content-container {
+    padding: 0;
+    color: #333333;
+}
+#page-franchise-facilitator .left-container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#page-franchise-facilitator .left-container h1 {
+    font-size: 26px;
+    line-height: 34px;
+    margin-top: 0px;
+}
+#page-franchise-facilitator .left-container h2 {
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    color: #000000;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+#page-franchise-facilitator .left-container .button {
+    width: 115px;
+    height: 35px;
+    line-height: 22px;
+    margin: 0 auto;
+    text-align: center;
+    background: #F1632A;
+    display: inline-block;
+}
+#page-franchise-facilitator .left-container .button p {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 16px;
 }
 /**** From custom_style.css ****/
 body {

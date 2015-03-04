@@ -23,35 +23,32 @@ $content_position = 'grid_24';
             </div>
         </div>
     </div>
-    <div id="content-container" class="container_24" style="padding: 0;">
+    <div id="content-container" class="container_24">
         <div id="main-content" class="<?php echo $content_position; ?>">
-                <div class="grid_24 page-facilitator-participant clearfix">
-                    <div class="grid_12" style="font-color: #333333;">
-                        <div style="padding-top: 80px; padding-bottom: 80px;">
-                            <h1 style="font-size: 26px; line-height: 34px; color: #333333; margin-top: 0px;">Bootcamp Facilitator Portal</h1>
-                            <h2 style="font-size: 18px !important; font-weight: 500 !important; color: #000; margin-top: 50px; margin-bottom: 20px;">Registration Reports</h2>
-                            <div style="width: 115px; height: 35px; line-height: 22px; margin: 0 auto; text-align: center; background: #F1632A; display: inline-block;">
-                            
-								<?php
-								// Get the registration_report_link custom field which was added to the faciliator taxonomy using PODs 
-								$term =	$wp_query->queried_object; // get taxonomy of current page
-								$args = array('hide_empty' => 0);                            
-								$taxterms = get_terms('facilitator', $args);
-								$podterms = pods('facilitator');
-								foreach($taxterms as $taxterm) :
-									if($taxterm->name == $term->name) {
-										$podterms->fetch($taxterm->term_id);
-										$reportlink = $podterms->get_field('registration_report_link');
-										break;
-									}
-								endforeach;
-								?>                            
-                            
-                                <p style="text-align: center; color: #ffffff; font-size: 16px;"><a href="<?php echo $reportlink; ?>" style="color:#FFF;">View Reports</a></p>
-                            </div>
-                        </div>
+            <div class="grid_24 clearfix">
+                <div class="grid_12 left-container">
+                    <h1>Bootcamp Facilitator Portal</h1>
+                    <h2>Registration Reports</h2>
+                    <div class="button">                   
+						<?php
+						// Get the registration_report_link custom field which was added to the faciliator taxonomy using PODs 
+						$term =	$wp_query->queried_object; // get taxonomy of current page
+						$args = array('hide_empty' => 0);                            
+						$taxterms = get_terms('facilitator', $args);
+						$podterms = pods('facilitator');
+						foreach($taxterms as $taxterm) :
+							if($taxterm->name == $term->name) {
+								$podterms->fetch($taxterm->term_id);
+								$reportlink = $podterms->get_field('registration_report_link');
+								break;
+							}
+						endforeach;
+						?>                            
+                    
+                        <p><a href="<?php echo $reportlink; ?>">View Reports</a></p>
                     </div>
-              </div><!-- end container_24 page-franchise-participant clearfix -->
+                </div>
+            </div><!-- end container_24 page-franchise-participant clearfix -->
       </div><!-- end main-content-padding -->
       <div class="clear"></div>
   </div><!-- end main-content -->

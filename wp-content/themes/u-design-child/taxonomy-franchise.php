@@ -58,9 +58,9 @@ $is_private = get_queried_object()->term_id != 12 ? true : false;
                   <?php $ministry_name = get_post_meta($post->ID, 'ministry_name', true); 
                     $ministry_name_possessive = "";
                     if (substr($ministry_name, -1) == "s") {
-                      $ministry_name_possessive = $ministry_name + "'";
+                      $ministry_name_possessive = $ministry_name . "'";
                     } else {
-                      $ministry_name_possessive = $ministry_name + "'s";
+                      $ministry_name_possessive = $ministry_name . "'s";
                     }
                   ?>
                   <h1 style="font-size: 26px; line-height: 34px;">Welcome to <?php echo $ministry_name_possessive ?> registration site for support raising training.</h1>
@@ -88,8 +88,8 @@ $is_private = get_queried_object()->term_id != 12 ? true : false;
                 </select>
               </div>
             <?php endif; ?>
-            <div style="text-align:center; padding-top: 150px">
-              <h1 style="font-weight: 700;">SRS Bootcamp</h1>
+            <div class="bootcamp-header">
+              <h1>SRS Bootcamp</h1>
               <?php $first = true; 
                 if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post(); 
                 if ( !$first ) {
