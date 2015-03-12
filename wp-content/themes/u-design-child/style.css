@@ -747,6 +747,9 @@ Version: 1.0.0
     color: #FFFFFF;
     font-size: 16px;
 }
+#page-franchise-facilitator .left-container .button p a {
+  color: white;
+}
 /**** From custom_style.css ****/
 body {
 	font-family: 'Lato';
