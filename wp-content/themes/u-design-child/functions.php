@@ -35,4 +35,31 @@ function execute_php($html) {
   }
   return $html;
 }
+
+/*
+ * Parse the title of a franchise bootcamp. Used in the taxonomy-franchise.php file
+ * Format with unique identifier: City, State - Unique Identifer, Start Date-End Date
+ * Example: Fayetteville, AR - Veteran, December 31-January 1
+ *
+ * Format without unique identifier: City, State Start Date-End Date
+ * Example: Fayetteville, AR December 31-January 1
+ *
+ */
+function generate_franchise_title($post) {
+  $start_date_raw = strtotime(get_post_meta($post->ID, 'start_date',true));
+  $end_date_raw = strtotime(get_post_meta($post->ID, 'end_date',true));
+  $start_date = date("F j", $start_date_raw);
+  if (date("m", $start_date_raw) != date("m", $end_date_raw)) {
+    $end_date = date("F j", strtotime(get_post_meta($post->ID, 'end_date',true)));
+  } else {
+    $end_date = date("j", strtotime(get_post_meta($post->ID, 'end_date',true)));
+  }
+  $unique_identifier = get_post_meta($post->ID, 'unique_identifier', true);
+  if (empty($unique_identifier)) {
+    $franchise_title = get_post_meta( $post->ID, 'location_city', true ) . ', ' . get_post_meta( $post->ID, 'location_state', true ) . ' ' . $start_date . '-' . $end_date;
+  } else {
+    $franchise_title = get_post_meta( $post->ID, 'location_city', true ) . ', ' . get_post_meta( $post->ID, 'location_state', true ) . ' - ' . $unique_identifier . ', ' . $start_date . '-' . $end_date;
+  }
+  return $franchise_title;
+}
 ?>
