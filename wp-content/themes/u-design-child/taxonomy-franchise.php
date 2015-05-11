@@ -260,18 +260,24 @@ $is_private = get_queried_object()->term_id != 12 ? true : false;
           <h3 class="expanding-heading">Before Coming to Bootcamp<span class="expanding-icon expanding-icon-minus"></span></h3>
           <div class="expanding-content first-expanding-content">
             <?php
-            if ($is_private) {
-              $registration_text = "Register and pay full registration.";
-              $prep_packet_text = 'After registering, download and complete the Preparation Packet (<a href="' . home_url() . '/docs/SRSBootcamp-Prep-Checklist-Network.pdf" target="_blank">Preview Checklist</a> | <a href="' . home_url() . '/preppacketnetwork/" target="_blank">Download Prep Packet</a>)';
+            $before_coming = get_post_meta($post->ID, 'before_coming', true);
+            if (empty($before_coming)) {
+              if ( $is_private ) {
+                $before_coming_text = '<li>Register and pay full registration.</li>'
+                                        . '<li>After registering, download and complete the Preparation Packet (<a href="' . home_url() . '/docs/SRSBootcamp-Prep-Checklist-Network.pdf" target="_blank">Preview Checklist</a> | <a href="' . home_url() . '/preppacketnetwork/" target="_blank">Download Prep Packet</a>)</li>'
+                                        . '<li>Receive <span style="font-style: italic;">The God Ask</span> and <span style="font-style: italic;">Viewpoints</span>, which will be mailed to you.</li>';
+
+              } else {
+                $before_coming_text = '<li>Register and pay full registration (if you complete the Prep, you will receive the rebate after the Bootcamp)'
+                                        . '<li>After registering, download and complete the Preparation Packet (<a href="' . home_url() . '/docs/SRSBootcamp-Prep-Checklist.pdf" target="_blank">preview the Prep Checklist</a>)</li>'
+                                        . '<li>Receive <span style="font-style: italic;">The God Ask</span> and <span style="font-style: italic;">Viewpoints</span>, which will be mailed to you.</li>';
+              }
             } else {
-              $registration_text = "Register and pay full registration (if you complete the Prep, you will receive the rebate after the Bootcamp).";
-              $prep_packet_text = 'After registering, download and complete the Preparation Packet (<a href="' . home_url() . '/docs/SRSBootcamp-Prep-Checklist.pdf" target="_blank">preview the Prep Checklist</a>)';
+              $before_coming_text = $before_coming;
             }
             ?>
             <ol>
-              <li><?php echo $registration_text ?></li>
-              <li><?php echo $prep_packet_text ?></li>
-              <li>Receive <span style="font-style: italic;">The God Ask</span> and <span style="font-style: italic;">Viewpoints</span>, which will be mailed to you.</li>
+              <?php echo $before_coming_text; ?>
             </ol>
           </div>
           <!-- ### End Other Details Expanding Block ### -->
@@ -279,15 +285,26 @@ $is_private = get_queried_object()->term_id != 12 ? true : false;
           <!-- ### About SRS Bootcamp Expanding Block ### -->
           <h3 class="expanding-heading">About SRS Bootcamp <span class="expanding-icon expanding-icon-plus"></span></h3>
           <div class="expanding-content">
-            <p>Since 2001, SRS has trained nearly 10,000 mission workers from over 500 ministries to be spiritually healthy, vision-driven, and fully funded Great Commission workers. SRS staff members raise their own support to provide excellent training resources, equip you to overcome obstacles in support raising, and help you thrive in ministry. </p>
-            <p>SRS Bootcamp is a completely interactive and engaging workshop. It is essential that you complete all the Bootcamp preparation before you arrive (24-40 hours), because once you get to Bootcamp, you will synthesize and practice with others what you learned during your preparation work. At the Bootcamp, you will: </p>
-            <ul>
-              <li>Gain confidence in communicating the biblical foundation for living on support, asking others to invest, and understanding the "God Ask" </li>
-              <li>Learn best practices and gain confidence in sharing your presentation</li>
-              <li>Rehearse with your peers and make real calls for appointments</li>
-              <li>Experience the value of meeting with people and asking for support face to face</li>
-              <li>Discover how to cultivate lasting relationships with your supporters</li>
-            </ul>
+            <?php
+            $about_srs_bootcamp = get_post_meta($post->ID, 'about_srs_bootcamp', true);
+
+            if (empty($about_srs_bootcamp)) {
+              $about_srs_bootcamp_text = '<p>Since 2001, SRS has trained nearly 10,000 mission workers from over 500 ministries to be spiritually healthy, vision-driven, and fully funded Great Commission workers. SRS staff members raise their own support to provide excellent training resources, equip you to overcome obstacles in support raising, and help you thrive in ministry. </p>'
+                                          . '<p>SRS Bootcamp is a completely interactive and engaging workshop. It is essential that you complete all the Bootcamp preparation before you arrive (24-40 hours), because once you get to Bootcamp, you will synthesize and practice with others what you learned during your preparation work. At the Bootcamp, you will: </p>'
+                                          . '<ul>'
+                                            . '<li>Gain confidence in communicating the biblical foundation for living on support, asking others to invest, and understanding the "God Ask" </li>'
+                                            . '<li>Learn best practices and gain confidence in sharing your presentation</li>'
+                                            . '<li>Rehearse with your peers and make real calls for appointments</li>'
+                                            . '<li>Experience the value of meeting with people and asking for support face to face</li>'
+                                            . '<li>Discover how to cultivate lasting relationships with your supporters</li>'
+                                          . '</ul>';
+            } else {
+              $about_srs_bootcamp_text = $about_srs_bootcamp;
+            }
+
+            echo $about_srs_bootcamp_text;
+
+            ?>
           </div>
           <!-- ### About SRS Bootcamp Expanding Block ### -->
 
