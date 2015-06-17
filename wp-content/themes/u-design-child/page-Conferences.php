@@ -140,9 +140,19 @@ if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query-
           <?php echo srs_expanding_block( "Cost", "cost", $the_query ); ?>
           <!-- ### End Cost Expanding Block ### -->
 
+          <!-- ### Before Coming Expanding Block ### -->
+          <?php echo srs_expanding_block( "Before Coming to Conference", "before_coming", $the_query, true, "<ol>",  "</ol>"); ?>
+          <!-- ### End Before Coming Expanding Block ### -->
+
+        </div>
+        <!-- ### End Left Column ### -->
+
+        <!-- ### Right Column ### -->
+        <div class="grid_12 expanding-container col-right">
+
           <!-- ### Location Expanding Block ### -->
-          <h3 class="expanding-heading">Location <span class="expanding-icon expanding-icon-plus"></span></h3>
-          <div class="expanding-content">
+          <h3 class="expanding-heading">Location <span class="expanding-icon expanding-icon-minus"></span></h3>
+          <div class="expanding-content first-expanding-content">
             <?php $first = true;
             if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post();
               if ( !$first ) {
@@ -187,16 +197,6 @@ if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query-
           <!-- ### Other Details Expanding Block ### -->
           <?php echo srs_expanding_block( "Other Details", "other_details", $the_query ); ?>
           <!-- ### End Other Details Expanding Block ### -->
-
-        </div>
-        <!-- ### End Left Column ### -->
-
-        <!-- ### Right Column ### -->
-        <div class="grid_12 expanding-container col-right">
-
-          <!-- ### Before Coming Expanding Block ### -->
-          <?php echo srs_expanding_block( "Before Coming to Conference", "before_coming", $the_query, true, "<ol>",  "</ol>"); ?>
-          <!-- ### End Before Coming Expanding Block ### -->
 
           <!-- ### About SRS Expanding Block ### -->
           <?php echo srs_expanding_block( "About SRS Conference", "about_srs_conference", $the_query ); ?>
