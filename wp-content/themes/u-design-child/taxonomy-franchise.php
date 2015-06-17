@@ -135,39 +135,11 @@ $is_private = get_queried_object()->term_id != 12 ? true : false;
         <div class="grid_12 expanding-container col-left">
 
           <!-- ### Dates Expanding Block ### -->
-          <h3 class="expanding-heading">Dates <span class="expanding-icon expanding-icon-minus"></span></h3>
-          <div class="expanding-content first-expanding-content">
-            <?php $first = true;
-            if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post();
-              if ( !$first ) {
-                $display = 'style="display: none;"';
-              } else {
-                $display = '';
-                $first = false;
-              } ?>
-              <div class="bc<?php echo get_the_ID() ?> bootcampInfoBlock" <?php echo $display ?>>
-                <?php echo get_post_meta(get_the_ID(), 'date_and_times', true); ?>
-              </div>
-            <?php endwhile; wp_reset_postdata(); // end of the loop. ?>
-          </div>
+          <?php echo srs_expanding_block( "Dates", "date_and_times", $the_query, true); ?>
           <!-- ### End Dates Expanding Block ### -->
 
           <!-- ### Cost Expanding Block ### -->
-          <h3 class="expanding-heading">Cost <span class="expanding-icon expanding-icon-plus"></span></h3>
-          <div class="expanding-content">
-            <?php $first = true;
-            if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post();
-              if ( !$first ) {
-                $display = 'style="display: none;"';
-              } else {
-                $display = '';
-                $first = false;
-              } ?>
-              <div class="bc<?php echo get_the_ID() ?> bootcampInfoBlock" <?php echo $display ?>>
-                <?php echo get_post_meta(get_the_ID(), 'cost', true); ?>
-              </div>
-            <?php endwhile; wp_reset_postdata(); // end of the loop. ?>
-          </div>
+          <?php echo srs_expanding_block( "Cost", "cost", $the_query ); ?>
           <!-- ### End Cost Expanding Block ### -->
 
           <!-- ### Location Expanding Block ### -->
@@ -197,57 +169,15 @@ $is_private = get_queried_object()->term_id != 12 ? true : false;
           <!-- ### End Location Expanding Block ### -->
 
           <!-- ### Lodging Expanding Block ### -->
-          <h3 class="expanding-heading">Lodging <span class="expanding-icon expanding-icon-plus"></span></h3>
-          <div class="expanding-content">
-            <?php $first = true;
-            if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post();
-              if ( !$first ) {
-                $display = 'style="display: none;"';
-              } else {
-                $display = '';
-                $first = false;
-              } ?>
-              <div class="bc<?php echo get_the_ID() ?> bootcampInfoBlock" <?php echo $display ?>>
-                <?php echo get_post_meta(get_the_ID(), 'lodging', true); ?>
-              </div>
-            <?php endwhile; wp_reset_postdata(); // end of the loop. ?>
-          </div>
+          <?php echo srs_expanding_block( "Lodging", "lodging", $the_query ); ?>
           <!-- ### End Lodging Expanding Block ### -->
 
           <!-- ### Contact Expanding Block ### -->
-          <h3 class="expanding-heading">Contact <span class="expanding-icon expanding-icon-plus"></span></h3>
-          <div class="expanding-content">
-            <?php $first = true;
-            if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post();
-              if ( !$first ) {
-                $display = 'style="display: none;"';
-              } else {
-                $display = '';
-                $first = false;
-              } ?>
-              <div class="bc<?php echo get_the_ID() ?> bootcampInfoBlock" <?php echo $display ?>>
-                <?php echo get_post_meta(get_the_ID(), 'contact', true); ?>
-              </div>
-            <?php endwhile; wp_reset_postdata(); // end of the loop. ?>
-          </div>
+          <?php echo srs_expanding_block( "Contact", "contact", $the_query ); ?>
           <!-- ### End Contact Expanding Block ### -->
 
           <!-- ### Other Details Expanding Block ### -->
-          <h3 class="expanding-heading">Other Details <span class="expanding-icon expanding-icon-plus"></span></h3>
-          <div class="expanding-content">
-            <?php $first = true;
-            if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post();
-              if ( !$first ) {
-                $display = 'style="display: none;"';
-              } else {
-                $display = '';
-                $first = false;
-              } ?>
-              <div class="bc<?php echo get_the_ID() ?> bootcampInfoBlock" <?php echo $display ?>>
-                <?php echo get_post_meta(get_the_ID(), 'other_details', true); ?>
-              </div>
-            <?php endwhile; wp_reset_postdata(); // end of the loop. ?>
-          </div>
+          <?php echo srs_expanding_block( "Other Details", "other_details", $the_query ); ?>
           <!-- ### End Other Details Expanding Block ### -->
 
         </div>

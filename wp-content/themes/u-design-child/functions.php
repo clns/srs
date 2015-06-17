@@ -62,4 +62,45 @@ function generate_franchise_title($post) {
   }
   return $franchise_title;
 }
+
+
+if ( ! function_exists( 'srs_expanding_block' ) ) :
+/**
+ * Display expanding accordian block
+*/
+function srs_expanding_block( $title, $key, $the_query, $auto_expand = false, $pre = "", $post = "" ) {
+
+  if ($auto_expand) {
+    $expand_class = "expanding-icon-minus";
+    $expand_content_class = "first-expanding-content";
+  } else {
+    $expand_class = "expanding-icon-plus";
+    $expand_content_class = "";
+  }
+  ?>
+
+  <h3 class="expanding-heading"><?php echo $title; ?><span class="expanding-icon <?php echo $expand_class; ?>"></span></h3>
+  <div class="expanding-content <?php echo $expand_content_class; ?>">
+    <?php $first = true;
+    if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post();
+      if ( !$first ) {
+        $display = 'style="display: none;"';
+      } else {
+        $display = '';
+        $first = false;
+      } ?>
+      <div class="bc<?php echo get_the_ID() ?> bootcampInfoBlock" <?php echo $display ?>>
+        <?php $postmeta = get_post_meta(get_the_ID(), $key, true);
+        if (!empty($postmeta)) {
+          echo $pre . $postmeta . $post;
+        } ?>
+
+      </div>
+    <?php endwhile; wp_reset_postdata(); // end of the loop. ?>
+  </div>
+
+  <?php
+}
+endif; // srs_expanding_block
+
 ?>

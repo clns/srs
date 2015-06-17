@@ -13,7 +13,7 @@ get_header();
 $content_position = 'grid_24';
 $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
 $args = array(
-    'post_type'  => 'conferences',
+    'post_type'  => 'conference',
     'franchise'  => $term->slug,
     'orderby'    => 'meta_value_num',
     'meta_key'   => 'start_date',
@@ -30,16 +30,23 @@ $the_query = new WP_Query($args);
 ?>
 
 <div id="page-franchise-participant">
-<?php if ( $is_private ): ?>
-    <div id="franchise-banner">
-        <div class="container_24">
-            <div class="grid_24 banner-container">
-               <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-                <span class="image-helper"></span><img src="<?php echo $image[0]; ?>">
-            </div>
+  <div class="container_24">
+
+    <?php $first = true;
+    if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post();
+        if ( !$first ) {
+            $display = 'style="display: none;"';
+        } else {
+            $display = '';
+            $first = false;
+        } ?>
+        <div class="grid_24 bc<?php echo get_the_ID() ?> bootcampInfoBlock" <?php echo $display ?>>
+          <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+          <span class="image-helper"></span><img src="<?php echo $image[0]; ?>">
         </div>
-    </div>
-<?php endif;?>
+    <?php endwhile; wp_reset_postdata(); // end of the loop. ?>
+
+  </div>
   <div id="content-container" class="container_24" style="padding: 0;">
     <div id="main-content" class="<?php echo $content_position; ?>">
       <div class="grid_24 page-franchise-participant clearfix">
@@ -56,9 +63,8 @@ if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query-
         $first = false;
     } ?>
     <div class="bc<?php echo get_the_ID() ?> bootcampInfoBlock" <?php echo $display ?>>
-        <?php $ministry_name = get_post_meta($post->ID, 'ministry_name', true); ?>
-        <h1 style="font-size: 26px; line-height: 34px;">Welcome to <?php echo $ministry_name_possessive ?> registration site for support raising training.</h1>
-        <?php echo get_post_meta(get_the_ID(), 'welcome_message', true); ?>
+        <h1 style="font-size: 26px; line-height: 34px;"><?php echo get_post_meta($post->ID, 'welcome_title', true); ?></h1>
+        <?php echo get_post_meta($post->ID, 'welcome_message', true); ?>
     </div>
 <?php endwhile; wp_reset_postdata(); // end of the loop. ?>
           </div>
@@ -70,7 +76,7 @@ if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query-
           <?php if ($the_query->post_count > 1): ?>
     <div id="select-container">
         <h2>Select your Conference.</h2>
-        <select id="select-conference" style="display: block; margin: 0 auto;" onChange="changeConferenceDisplay(this.value)">
+        <select id="select-bootcamp" style="display: block; margin: 0 auto;" onChange="changeBootcampDisplay(this.value)">
             <?php if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post();
                 $franchise_title = generate_franchise_title($post);
                 ?>
@@ -80,7 +86,7 @@ if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query-
     </div>
 <?php endif; ?>
           <div class="bootcamp-header">
-            <h1>SRS Conference</h1>
+            <h1>Next Event</h1>
             <?php $first = true;
 if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post();
     if ( !$first ) {
@@ -127,119 +133,59 @@ if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query-
         <div class="grid_12 expanding-container col-left">
 
           <!-- ### Dates Expanding Block ### -->
-          <h3 class="expanding-heading">Dates <span class="expanding-icon expanding-icon-minus"></span></h3>
-          <div class="expanding-content first-expanding-content">
-            <?php $first = true;
-if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post();
-    if ( !$first ) {
-        $display = 'style="display: none;"';
-    } else {
-        $display = '';
-        $first = false;
-    } ?>
-    <div class="bc<?php echo get_the_ID() ?> bootcampInfoBlock" <?php echo $display ?>>
-        <?php echo get_post_meta(get_the_ID(), 'date_and_times', true); ?>
-    </div>
-<?php endwhile; wp_reset_postdata(); // end of the loop. ?>
-          </div>
+          <?php echo srs_expanding_block( "Dates", "date_and_times", $the_query, true); ?>
           <!-- ### End Dates Expanding Block ### -->
 
           <!-- ### Cost Expanding Block ### -->
-          <h3 class="expanding-heading">Cost <span class="expanding-icon expanding-icon-plus"></span></h3>
-          <div class="expanding-content">
-            <?php $first = true;
-if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post();
-    if ( !$first ) {
-        $display = 'style="display: none;"';
-    } else {
-        $display = '';
-        $first = false;
-    } ?>
-    <div class="bc<?php echo get_the_ID() ?> bootcampInfoBlock" <?php echo $display ?>>
-        <?php echo get_post_meta(get_the_ID(), 'cost', true); ?>
-    </div>
-<?php endwhile; wp_reset_postdata(); // end of the loop. ?>
-          </div>
+          <?php echo srs_expanding_block( "Cost", "cost", $the_query ); ?>
           <!-- ### End Cost Expanding Block ### -->
 
           <!-- ### Location Expanding Block ### -->
           <h3 class="expanding-heading">Location <span class="expanding-icon expanding-icon-plus"></span></h3>
           <div class="expanding-content">
             <?php $first = true;
-if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post();
-    if ( !$first ) {
-        $display = 'style="display: none;"';
-    } else {
-        $display = '';
-        $first = false;
-    } ?>
-    <div class="bc<?php echo get_the_ID() ?> bootcampInfoBlock" <?php echo $display ?>>
-        <?php
-        echo '<p>' .
-            get_post_meta(get_the_ID(), 'location_name', true) . '<br/>' .
-            get_post_meta(get_the_ID(), 'location_address', true) . '<br/>' .
-            ((get_post_meta(get_the_ID(), 'location_address_line_2', true))? get_post_meta(get_the_ID(), 'location_address_line_2', true) . '<br/>':'') .
-            get_post_meta(get_the_ID(), 'location_city', true) . ', ' .
-            get_post_meta(get_the_ID(), 'location_state', true) . ' ' .
-            get_post_meta(get_the_ID(), 'location_zip_code', true) . '</p>';
-        ?>
-    </div>
-<?php endwhile; wp_reset_postdata(); // end of the loop. ?>
+            if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post();
+              if ( !$first ) {
+                $display = 'style="display: none;"';
+              } else {
+                $display = '';
+                $first = false;
+              } ?>
+              <div class="bc<?php echo get_the_ID() ?> bootcampInfoBlock" <?php echo $display ?>>
+                <?php
+                $loc_name = get_post_meta(get_the_ID(), 'location_name', true);
+                $loc_addr = get_post_meta(get_the_ID(), 'location_address', true);
+                $loc_addr2 = get_post_meta(get_the_ID(), 'location_address_line_2', true);
+                $loc_city = get_post_meta(get_the_ID(), 'location_city', true);
+                $loc_state = get_post_meta(get_the_ID(), 'location_state', true);
+                $loc_zip = get_post_meta(get_the_ID(), 'location_zip_code', true);
+                if (!empty($loc_name) || !empty($loc_addr) || !empty($loc_addr2) || !empty($loc_city) || !empty($loc_state) || !empty($loc_zip)) {
+                  $loc_full = "<p>";
+                  $loc_full .= $loc_name ? $loc_name . "<br/>" : "";
+                  $loc_full .= $loc_addr ? $loc_addr . "<br/>" : "";
+                  $loc_full .= $loc_addr2 ? $loc_addr2 . "<br/>" : "";
+                  $loc_full .= $loc_city ? $loc_city . ", " : "";
+                  $loc_full .= $loc_state ? $loc_state . " " : "";
+                  $loc_full .= $loc_zip ? $loc_zip : "";
+                  $loc_full .= "</p>";
+                  echo $loc_full;
+                }
+                ?>
+              </div>
+            <?php endwhile; wp_reset_postdata(); // end of the loop. ?>
           </div>
           <!-- ### End Location Expanding Block ### -->
 
           <!-- ### Lodging Expanding Block ### -->
-          <h3 class="expanding-heading">Lodging <span class="expanding-icon expanding-icon-plus"></span></h3>
-          <div class="expanding-content">
-            <?php $first = true;
-if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post();
-    if ( !$first ) {
-        $display = 'style="display: none;"';
-    } else {
-        $display = '';
-        $first = false;
-    } ?>
-    <div class="bc<?php echo get_the_ID() ?> bootcampInfoBlock" <?php echo $display ?>>
-        <?php echo get_post_meta(get_the_ID(), 'lodging', true); ?>
-    </div>
-<?php endwhile; wp_reset_postdata(); // end of the loop. ?>
-          </div>
+          <?php echo srs_expanding_block( "Lodging", "lodging", $the_query ); ?>
           <!-- ### End Lodging Expanding Block ### -->
 
           <!-- ### Contact Expanding Block ### -->
-          <h3 class="expanding-heading">Contact <span class="expanding-icon expanding-icon-plus"></span></h3>
-          <div class="expanding-content">
-            <?php $first = true;
-if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post();
-    if ( !$first ) {
-        $display = 'style="display: none;"';
-    } else {
-        $display = '';
-        $first = false;
-    } ?>
-    <div class="bc<?php echo get_the_ID() ?> bootcampInfoBlock" <?php echo $display ?>>
-        <?php echo get_post_meta(get_the_ID(), 'contact', true); ?>
-    </div>
-<?php endwhile; wp_reset_postdata(); // end of the loop. ?>
-          </div>
+          <?php echo srs_expanding_block( "Contact", "contact", $the_query ); ?>
           <!-- ### End Contact Expanding Block ### -->
 
           <!-- ### Other Details Expanding Block ### -->
-          <h3 class="expanding-heading">Other Details <span class="expanding-icon expanding-icon-plus"></span></h3>
-          <div class="expanding-content">
-            <?php $first = true;
-if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post();
-    if ( !$first ) {
-        $display = 'style="display: none;"';
-    } else {
-        $display = '';
-        $first = false;
-    } ?>
-    <div class="bc<?php echo get_the_ID() ?> bootcampInfoBlock" <?php echo $display ?>>
-        <?php echo get_post_meta(get_the_ID(), 'other_details', true); ?>
-    </div>
-<?php endwhile; wp_reset_postdata(); // end of the loop. ?>
-          </div>
+          <?php echo srs_expanding_block( "Other Details", "other_details", $the_query ); ?>
           <!-- ### End Other Details Expanding Block ### -->
 
         </div>
@@ -248,57 +194,13 @@ if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query-
         <!-- ### Right Column ### -->
         <div class="grid_12 expanding-container col-right">
 
-          <!-- ### Other Details Expanding Block ### -->
-          <h3 class="expanding-heading">Before Coming to Conference<span class="expanding-icon expanding-icon-minus"></span></h3>
-          <div class="expanding-content first-expanding-content">
-            <?php
-$before_coming = get_post_meta($post->ID, 'before_coming', true);
-if (empty($before_coming)) {
-    if ( $is_private ) {
-        $before_coming_text = '<li>Register and pay full registration.</li>'
-            . '<li>After registering, download and complete the Preparation Packet (<a href="' . home_url() . '/docs/SRSBootcamp-Prep-Checklist-Network.pdf" target="_blank">Preview Checklist</a> | <a href="' . home_url() . '/preppacketnetwork/" target="_blank">Download Prep Packet</a>)</li>'
-            . '<li>Receive <span style="font-style: italic;">The God Ask</span> and <span style="font-style: italic;">Viewpoints</span>, which will be mailed to you.</li>';
+          <!-- ### Before Coming Expanding Block ### -->
+          <?php echo srs_expanding_block( "Before Coming to Conference", "before_coming", $the_query, true, "<ol>",  "</ol>"); ?>
+          <!-- ### End Before Coming Expanding Block ### -->
 
-    } else {
-        $before_coming_text = '<li>Register and pay full registration (if you complete the Prep, you will receive the rebate after the Bootcamp)'
-            . '<li>After registering, download and complete the Preparation Packet (<a href="' . home_url() . '/docs/SRSBootcamp-Prep-Checklist.pdf" target="_blank">preview the Prep Checklist</a>)</li>'
-            . '<li>Receive <span style="font-style: italic;">The God Ask</span> and <span style="font-style: italic;">Viewpoints</span>, which will be mailed to you.</li>';
-    }
-} else {
-    $before_coming_text = $before_coming;
-}
-?>
-            <ol>
-              <?php echo $before_coming_text; ?>
-            </ol>
-          </div>
-          <!-- ### End Other Details Expanding Block ### -->
-
-          <!-- ### About SRS Bootcamp Expanding Block ### -->
-          <h3 class="expanding-heading">About SRS Conference <span class="expanding-icon expanding-icon-plus"></span></h3>
-          <div class="expanding-content">
-            <?php
-$about_srs_conference = get_post_meta($post->ID, 'about_srs_conference', true);
-
-if (empty($about_srs_conference)) {
-    $about_srs_conference_text = '<p>Since 2001, SRS has trained nearly 10,000 mission workers from over 500 ministries to be spiritually healthy, vision-driven, and fully funded Great Commission workers. SRS staff members raise their own support to provide excellent training resources, equip you to overcome obstacles in support raising, and help you thrive in ministry. </p>'
-        . '<p>SRS Bootcamp is a completely interactive and engaging workshop. It is essential that you complete all the Bootcamp preparation before you arrive (24-40 hours), because once you get to Bootcamp, you will synthesize and practice with others what you learned during your preparation work. At the Bootcamp, you will: </p>'
-        . '<ul>'
-        . '<li>Gain confidence in communicating the biblical foundation for living on support, asking others to invest, and understanding the "God Ask" </li>'
-        . '<li>Learn best practices and gain confidence in sharing your presentation</li>'
-        . '<li>Rehearse with your peers and make real calls for appointments</li>'
-        . '<li>Experience the value of meeting with people and asking for support face to face</li>'
-        . '<li>Discover how to cultivate lasting relationships with your supporters</li>'
-        . '</ul>';
-} else {
-    $about_srs_conference_text = $about_srs_conference;
-}
-
-echo $about_srs_conference_text;
-
-?>
-          </div>
-          <!-- ### About SRS Bootcamp Expanding Block ### -->
+          <!-- ### About SRS Expanding Block ### -->
+          <?php echo srs_expanding_block( "About SRS Conference", "about_srs_conference", $the_query ); ?>
+          <!-- ### End About SRS Expanding Block ### -->
 
         </div>
         <!-- ### End Right Column ### -->
@@ -316,8 +218,16 @@ echo $about_srs_conference_text;
         var bootcampID = getParameterByName('bootcampID');
         if (bootcampID) {
             setDropDownLink(bootcampID);
-            changeBootcampDisplay(bootcampID);
         }
+        changeBootcampDisplay($("#select-bootcamp").val());
+    </script>
+<?php else :
+  if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post();
+    $bcid = "bc" . $post->ID;
+  endwhile; wp_reset_postdata(); // end of the loop
+?>
+    <script>
+      changeBootcampDisplay( <?php echo '"'.$bcid.'"'; ?> );
     </script>
 <?php
 endif;
