@@ -142,6 +142,93 @@ Version: 1.0.0
 	color: #FFFFFF;
 }
 
+body{
+  overflow-x: hidden;
+}
+#network .page-banner {
+ background: url('images/network/network_banner.jpg') no-repeat center center;
+ height: 200px;
+}
+#network .banner-text{
+  margin-top: 50px;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 300;
+}
+#network .banner-text sup {
+  font-size: 0.25em;
+}
+#network .logo-text{
+  color: gray;
+}
+#network .page-subtitle{
+  font-size: 3em;
+  font-weight: 300;
+  margin: 25px auto;
+  text-align: center;
+}
+#network .page-container{
+  width: 950px;
+  margin: 0 auto;
+}
+#network .member-container{
+  border: 2px solid #00a651;
+  width: 460px;
+  float: left;
+}
+#network .fac-container {
+  border: 2px solid #008ad0;
+  width: 460px;
+  float: right;
+  margin-bottom: 50px;
+}
+#network .member-splash{
+  background: url('images/network/member.jpg') no-repeat center center;
+  height: 220px;
+  text-align: center;
+}
+#network .fac-splash{
+  background: url('images/network/facilitator.jpg') no-repeat center center;
+  height: 220px;
+  text-align: center;
+}
+#network .label{
+  color: white;
+  font-size: 2.5em;
+  font-weight: 300;
+  padding: 50px 0 20px 0;
+}
+#network button{
+  color: white;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 10px 15px;
+  font-weight: 600;
+  border: 0;
+  background-color: #eb752e;
+}
+#network .description{
+  background-color: #f2f2f2;
+  padding: 20px;
+  font-style: italic;
+}
+#network .details{
+  padding: 20px 25px;
+  height: 300px;
+}
+#network .member-container .detail-heading{
+  font-size: 1.5em;
+  color: #72bf44;
+}
+#network .fac-container .detail-heading{
+  font-size: 1.5em;
+  color: #42baf1;
+}
+#network li{
+  margin-left: 20px;
+}
+
 #slide-1 .bcg, .marketing-bg-image#slide-8 {
 	background-image: url('images/marketing/Fullwidth-Image-1.jpg');
 }
