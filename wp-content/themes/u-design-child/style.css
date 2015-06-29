@@ -229,6 +229,107 @@ body{
   margin-left: 20px;
 }
 
+#network-page{
+  width: 950px;
+  margin: 50px auto;
+}
+#network-page .page-banner{
+ background: #00a651 url('images/network/member_banner.jpg') no-repeat center right;
+ height: 200px;
+ margin-bottom: 30px;
+}
+#network-page .banner-text{
+  padding-top: 60px;
+  margin-left: 250px;
+  font-size: 3em;
+  font-weight: 300;
+  color: white;
+}
+#network-page .description-container{
+  float: left;
+  width: 600px;
+}
+#network-page .topic-header{
+  font-size: 1.5em;
+  color: #72bf44;
+}
+#network-page .intro-text{
+  margin-bottom: 30px;
+}
+#network-page .bullet-benefits{
+  border-right: 1px solid gray;
+  float: left;
+  padding-right: 30px;
+}
+#network-page .bullet-join-req{
+  float: right;
+  width: 250px;
+}
+#network-page .join-box{
+  border: 2px solid #f37021;
+  padding: 25px;
+  float: right;
+  font-size: 2.5em;
+  font-weight: 300;
+  text-align: center;
+  width: 275px;
+}
+#network-page .join-box hr {
+  width: 65%;
+  margin: 0 auto;
+}
+#network-page .join-box button{
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+  background-color: #f37021;
+  border: 0;
+  border-radius: 3px;
+  padding: 10px 50px;
+  margin-top: 20px;
+}
+#network-page li {
+  margin-left: 20px;
+}
+#network-page .benefits-container{
+  border-top: 2px solid #72bf44;
+  border-bottom: 2px solid #72bf44;
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+#network-page .benefits-border{
+  background-color: #72bf44;
+  height: 5px;
+  width: 300px;
+}
+#network-page .section-header{
+  font-size: 2.5em;
+  color: #8c8c8c;
+  font-weight: 300;
+}
+#network-page .benefit{
+  display: inline-block;
+  width: 32%;
+  vertical-align: top;
+}
+#network-page .benefit.middle{
+  margin: 0 15px;
+}
+
+#network-page.fac-membership .page-banner{
+ background: #008ad0 url('images/network/facilitator_banner.jpg') no-repeat center right;
+}
+#network-page.fac-membership .topic-header{
+  color: #00aeef;
+}
+#network-page.fac-membership .benefits-container{
+  border-top-color: #00aeef;
+  border-bottom-color: #00aeef;
+}
+#network-page.fac-membership .benefits-border{
+  background-color: #00aeef;
+}
+
 #slide-1 .bcg, .marketing-bg-image#slide-8 {
 	background-image: url('images/marketing/Fullwidth-Image-1.jpg');
 }
