@@ -56,16 +56,18 @@ get_header();
           instill a fully funded culture in your ministry.
         </div>
         <div class="benefit middle">
+          <a href="catapult">
           <img src="<?php bloginfo('template_directory');?>-child/images/network/catapult_benefit.jpg" alt="">
-          <div class="topic-header">Catapult Series</div>
+          <div class="topic-header">Catapult Series</div></a>
           Equip and refuel yourself through hundreds of 
           topical teaching videos on personal support raising 
           by Steve Shadrach, author of The God Ask and the
           SRS Bootcamp.
         </div>
         <div class="benefit">
+          <a href="webinar">
           <img src="<?php bloginfo('template_directory');?>-child/images/network/webinar_benefit.jpg" alt="">
-          <div class="topic-header">Monthly Webinars</div>
+          <div class="topic-header">Monthly Webinars</div></a>
           Develop yourself and your support raising coaches 
           through monthly one hour webinars led by veteran 
           trainers who teach on common support raising 

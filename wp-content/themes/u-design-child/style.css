@@ -228,6 +228,9 @@ body{
 #network li{
   margin-left: 20px;
 }
+#network a button{
+  cursor: pointer;
+}
 
 #network-page{
   width: 950px;
@@ -315,6 +318,20 @@ body{
 #network-page .benefit.middle{
   margin: 0 15px;
 }
+#network-page .bullet-left{
+  float: left;
+  width: 250px;
+}
+#network-page .bullet-right{
+  float: right;
+  width: 300px;
+}
+#network-page a {
+  outline: none;
+}
+#network-page a button{
+  cursor: pointer;
+}
 
 #network-page.fac-membership .page-banner{
  background: #008ad0 url('images/network/facilitator_banner.jpg') no-repeat center right;
@@ -332,14 +349,6 @@ body{
 
 #network-page.webinar .page-banner{
    background: #2e3192 url('images/network/webinar_banner.jpg') no-repeat center right;
-}
-#network-page.webinar .bullet-left{
-  float: left;
-  width: 250px;
-}
-#network-page.webinar .bullet-right{
-  float: right;
-  width: 300px;
 }
 #network-page.webinar .topic-header{
   color: #8052a1;
@@ -386,6 +395,33 @@ body{
 }
 #network-page.webinar .date{
   font-size: 1.75em;
+}
+
+#network-page.catapult .page-banner{
+ background: #008ad0 url('images/network/catapult_banner.jpg') no-repeat center right;
+}
+#network-page.catapult .topic-header{
+  color: #00aeef;
+}
+#network-page.catapult .join-box .status-text{
+  font-size: 0.5em;
+}
+#network-page.catapult .previews-container{
+  border-top: 2px solid #00aeef;
+  border-bottom: 2px solid #00aeef;
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+#network-page.catapult .previews-border{
+  background-color: #00aeef;
+  height: 5px;
+  width: 300px;
+}
+#network-page.catapult a{
+  color: #00aeef;
+}
+#network-page.catapult .benefit div{
+  margin: 10px 0 20px 0;
 }
 
 #slide-1 .bcg, .marketing-bg-image#slide-8 {

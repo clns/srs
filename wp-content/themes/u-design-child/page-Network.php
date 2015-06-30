@@ -26,7 +26,7 @@ get_header();
         <div class="member-container">
           <div class="member-splash">
             <div class="label">Become a Network Member</div>
-            <button>Learn more</button>
+            <a href="network-membership"><button>Learn more</button></a>
           </div>
           <div class="description">
             <b>When you become a member</b> of the SRS Network, you become
@@ -55,7 +55,7 @@ get_header();
         <div class="fac-container">
           <div class="fac-splash">
             <div class="label">Become a Facilitator</div>
-            <button>Learn more</button>
+            <a href="facilitator-membership"><button>Learn more</button></a>
           </div>
           <div class="description">
             <b>Ready to take the next step</b> and facilitate your own

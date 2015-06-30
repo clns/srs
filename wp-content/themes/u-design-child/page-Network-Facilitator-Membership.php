@@ -44,7 +44,7 @@ get_header();
         Become a Certified Facilitator
         <hr>
         $900/yr<br>
-        <button>Preview</button>
+        <a href="facilitators"><button>Preview</button></a>
       </div>
       <div class="clear"></div>
       <div class="benefits-container">
