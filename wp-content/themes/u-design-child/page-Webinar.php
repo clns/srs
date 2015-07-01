@@ -40,39 +40,69 @@ get_header();
       </div>
       <div class="clear"></div>
       <div class="event-container">
-        <div class="event">
-          <div class="event-border"></div>
-          <div class="leader-bio">
-          <img src="<?php bloginfo('template_directory');?>-child/images/network/scott_morton.jpg" alt="">
-            <span class="leader-name">Scott Morton</span><br>
-            Funding Coach,<br>
-            <i>The Navigators</i>
-          </div>
-          <div class="event-header">
-            False Theologies in Raising Personal Support
-          </div>
-          <div class="event-time">
-            <div class="date">June 30</div>
-            1 p.m. CST
-          </div>
-        </div>
-        <div class="clear"></div>
-        <div class="event">
-          <div class="event-border"></div>
-          <div class="leader-bio">
-          <img src="<?php bloginfo('template_directory');?>-child/images/network/betty_barnett.jpg" alt="">
-            <span class="leader-name">Betty Barnett</span><br>
-            <i>Youth With A Mission</i>
-          </div>
-          <div class="event-header">
-            Finishing Well: Navigating Life's Transitions with Grief, Grace and Gratitude
-          </div>
-          <div class="event-time">
-            <div class="date">July 28</div>
-            1 p.m. CST
-          </div>
-        </div>
-        <div class="clear"></div>
+      
+      <?php
+        $global_posts_query = new WP_Query(
+          array(
+            'post_type' => 'webinar',
+            'meta_query' => array(
+              array(
+                'key' => 'webinar_date',
+                'value' => date("Y-m-d"),
+                'compare' => '>=',
+                'type' => 'DATE'
+              )
+            ),
+            'meta_key' => 'webinar_date',
+            'orderby' => 'meta_value',
+            'order' => 'ASC'
+          )
+        );
+        
+        if($global_posts_query->have_posts()) :
+          while($global_posts_query->have_posts()) : $global_posts_query->the_post(); ?>		
+            <div class="event">
+              <div class="event-border"></div>
+              <div class="leader-bio">
+                <a href="<?php echo get_author_posts_url(get_the_author_meta('ID'));?>"><?php echo get_wp_user_avatar($userID); ?>
+                <span class="leader-name"><?php the_author(); ?></span></a><br>
+                <?php if (!empty(get_the_author_meta("job_title"))) {
+                   echo the_author_meta("job_title");?>,<br>
+                <?php } ?>
+                <i>
+                  <?php $organization = get_the_author_meta("organization"); 
+                  if (!empty($organization)) {
+                    echo $organization; 
+                  } ?>
+                </i>
+              </div>
+              <div class="event-header">
+                <?php the_title(); ?>
+              </div>
+              <div class="event-time">
+                <div class="date">
+                  <?php $webinar_date = get_post_meta($post->ID, "webinar_date", true);
+                    if (!empty($webinar_date)) {
+                     $date = new DateTime($webinar_date);
+                     $webinar_date = $date->format('M j');
+                      echo $webinar_date;
+                    }
+                  ?>
+                </div>
+                  <?php $webinar_time = get_post_meta($post->ID, "webinar_time", true);
+                    if (!empty($webinar_time)) {
+                     $time = new DateTime($webinar_time);
+                     $webinar_time = $time->format('g a ');
+                      echo $webinar_time;
+                    } 
+                  ?>CT
+              </div>
+            </div>
+            <div class="clear"></div>
+        <?php		
+          endwhile;
+        endif;
+        ?>
     </div>
     </div>
 	</div><!-- end main-content -->
