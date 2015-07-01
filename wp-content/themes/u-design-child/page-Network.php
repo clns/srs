@@ -17,7 +17,7 @@ get_header();
         <div class="banner-text">Join the community.
           <div class="logo-text">
             <img src="<?php bloginfo('template_directory');?>-child/images/network/srs_logo.png" alt="">
-            Network<sup>TM</sup>
+            <span>Network<sup>TM</sup></span>
           </div>
         </div>
       </div>
@@ -29,13 +29,13 @@ get_header();
             <a href="network-membership"><button>Learn more</button></a>
           </div>
           <div class="description">
-            <b>When you become a member</b> of the SRS Network, you become
+            <span>When you become a member</span> of the SRS Network, you become
             part of a vibrant community all over the world. Get access to 
             exclusive resources and training opportunities, helping you 
             create a culture of a fully funded ministry.
           </div>
           <div class="details">
-            <div class="detail-heading">Membership benefits</div>
+            <div class="detail-heading">Membership Benefits</div>
             <ul>
               <li>50% off registration to the annual National Conference (a $175 value)</li>
               <li>Access to monthly webinars</li>
@@ -63,7 +63,7 @@ get_header();
             to exclusive resources and training opportunities.
           </div>
           <div class="details">
-            <div class="detail-heading">Membership benefits</div>
+            <div class="detail-heading">Membership Benefits</div>
             All Network Member benefits plus
             <ul>
               <li>SRS Bootcamp Facilitator Training</li>

@@ -23,14 +23,14 @@ get_header();
 						<div class="hsContent">
 							<div class="marketing-content">
 								<div id="numbers">
-									<div>15</div>
-									<div>10,000</div>
-									<div>500</div>
+									<div class="num1">15</div>
+									<div class="num2">10,000</div>
+									<div class="num3">500</div>
 								</div>
 								<div id="quantifiers">
-									<div>YEARS OF MINISTRY</div>
-									<div>LABORERS TRAINED</div>
-									<div>MINISTRIES SERVED</div>
+									<div class="num1">YEARS OF MINISTRY</div>
+									<div class="num2">LABORERS TRAINED</div>
+									<div class="num3">MINISTRIES SERVED</div>
 								</div>
 								<div id="orangeheader">
 									<h1>Welcome to the new Bootcamp</h1>
@@ -205,7 +205,7 @@ get_header();
 							<div class="marketing-content">
 								<div class="section-header">Envision your staff fully funded</div>
 								<div class="img-container">
-									<img src="<?php bloginfo('template_directory');?>-child/images/marketing/100.png" alt="">
+									<img src="<?php bloginfo('template_directory');?>-child/images/marketing/100-thin.png" alt="">
 								</div>
 								<div class="three-columns group">
 									<div>

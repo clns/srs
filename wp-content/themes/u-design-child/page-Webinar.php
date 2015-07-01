@@ -12,15 +12,15 @@ get_header();
 ?>
 <div id="content-container" class="full-width">
 	<div id="main-content" class="full-width">
-		<div id="network-page" class="webinar">
+		<div id="network" class=" network-page webinar">
 			<div class="page-banner">
         <div class="banner-text">Monthly Webinars</div>
       </div>
       <div class="description-container">
-        <div class="intro-text"><i><b>Develop yourself and grow your staff</b> through one-hour, live webinars led by veteran trainers 
+        <div class="intro-text"><span>Develop yourself and grow your staff</span> through one-hour, live webinars led by veteran trainers 
         and coaches every month. Receive training beyond Bootcamp to help coach your staff through 
-        obstacles in their personal support raising</i></div>
-        <div class="bullet-columns"><div class="topic-header">Monthly Webinar Benefits</div>
+        obstacles in their personal support raising</div>
+        <div class="bullet-columns"><div class="detail-heading">Monthly Webinar Benefits</div>
           <ul>
             <div class="bullet-left">
               <li>Receive training beyond Bootcamp to help coach your staff</li>
