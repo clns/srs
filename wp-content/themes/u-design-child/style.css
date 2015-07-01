@@ -464,7 +464,7 @@ body{
 }
 
 #slide-1 #numbers {
-	font-size: 130px;
+	font-size: 100px;
 	font-weight: 300;
 	margin-top: 110px;
 }
@@ -494,7 +494,6 @@ body{
 #slide-1 #orangeheader h1{
 	color: #FA6F41;
 	font-size: 56px !important;
-	font-weight: 700;
 	line-height: 50px;
 }
 
@@ -603,19 +602,17 @@ body{
 }
 
 #slide-4 #download-button {
-	position: absolute;
-	margin: 0 auto;
-	left: 0;
-	right: 0;
-	bottom: 0;
+	margin: 15px auto 0 auto;
 }
 
 #slide-4 #download-button button {
 	margin-bottom: 0;
 	padding: 10px 25px;
-	font-size: 24px;
+  text-transform: uppercase;
+	font-size: 18px;
 	font-weight: 700;
 	line-height: 30px;
+  border-radius: 3px;
 	color: #FFF;
 	background: #636363;
 	border: none;
@@ -758,9 +755,8 @@ body{
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 24px;
-	font-weight: 700;
 	line-height: 30px;
-	color: #FC6A1B;
+	color: #555151;
 	width: 475px;
 }
 
@@ -802,17 +798,32 @@ body{
 #slide-8 .section-header {
 	margin-top: 65px;
 	font-size: 58px;
-	font-style: italic;
 	color: #555151;
+}
+
+#slide-8 .subheading{
+  color: #555151;
+  font-size: 18px;
+  font-style: italic;
+  margin: 75px auto 0 auto;
 }
 
 #slide-8 .two-columns {
 	margin-top: 75px;
 }
 
-#slide-8 .two-columns div {
-	width: 50%;
-	float: left;
+#slide-8 .two-columns img {
+  margin-right: 20px;
+}
+
+#slide-8 .two-columns .left-column{
+  float: left;
+  width: 45%;
+}
+
+#slide-8 .two-columns .right-column{
+  float: right;
+  width: 55%;
 }
 
 #slide-8 h1, #slide-8 p {
@@ -821,40 +832,9 @@ body{
 
 #slide-8 h1 {
 	font-size: 30px !important;
-	font-weight: 700;
+	font-weight: 500;
 	line-height: 36px;
-}
-
-#slide-8 p {
-	font-size: 17px !important;
-	line-height: 26px;
-	width: 70%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#slide-8 a.footerlink {
-	margin-top: 55px;
-	padding: 10px 0;
-	font-size: 24px;
-	font-weight: 700;
-	line-height: 17px;
-	color: #FFF;
-	background: #FF6633;
-	border: none;
-	width: 405px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#slide-8 a.footerlink:hover {
-	background: #FF8653;
-	cursor: pointer;
-}
-
-#slide-8 a.footerlink:active {
-	background: #FF4613;
+  display: inline;
 }
 
 #slide-8 .footer {
@@ -863,13 +843,31 @@ body{
 }
 
 #slide-8 .footer img {
-	margin-top: 45px;
+  float: left;
 }
 
 #slide-8 .footer p {
 	margin-top: 35px;
 	font-size: 14px !important;
 	line-height: 30px;
+}
+
+#slide-8 .footer .logo {
+  width: 250px;
+  margin: 45px auto 0 auto;
+}
+
+#slide-8 .footer .logo-text .line-2{
+  font-size: 36px;
+  line-height: 1;
+}
+
+#slide-8 .footer .logo-text {
+  color: #555151;
+  float: right;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: left;
 }
 
 /**** Franchise Landing Page Styles ****/

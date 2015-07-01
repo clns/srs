@@ -24,7 +24,7 @@ get_header();
 							<div class="marketing-content">
 								<div id="numbers">
 									<div>15</div>
-									<div>7500</div>
+									<div>10,000</div>
 									<div>500</div>
 								</div>
 								<div id="quantifiers">
@@ -34,7 +34,7 @@ get_header();
 								</div>
 								<div id="orangeheader">
 									<h1>Welcome to the new Bootcamp</h1>
-									<h1>where you can be the trainer.</h1>
+									<h1>where you can be the Facilitator.</h1>
 								</div>
 								<div id="subheading">
 									<h1>Helping your staff become spiritually healthy,</h1>
@@ -93,7 +93,7 @@ get_header();
 									<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Sec-2_Square-Icon_4.jpg" alt="" class="last">
 								</div>
 								<div id="description-container">
-									<div class="img-description">Annual Training Conference</div>
+									<div class="img-description">Annual National SRS Conference</div>
 									<div class="img-description">Ongoing Coaching</div>
 									<div class="img-description">Updating Resources</div>
 									<div class="img-description last">Connecting to SRS network of trainers &amp; your peers.</div>
@@ -105,8 +105,8 @@ get_header();
 									<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Sec-2_Circle-icon_3.png" alt="" class="last">
 								</div>
 								<div id="description-container-2">
-									<div class="img-description">Have raised your own support</div>
-									<div class="img-description">Attend our training conference</div>
+									<div class="img-description">Raise your own personal support</div>
+									<div class="img-description">Participate in a Facilitator's Training</div>
 									<div class="img-description">Comply with our annual agreement</div>
 								</div>
 							</div>
@@ -123,7 +123,7 @@ get_header();
 					<div class="three-columns group">
 						<div>
 							<h1>Participants Receive</h1>
-							<p>Copies of <i>The God Ask</i> and <i>Viewpoints</i>, along with the Bootcamp prep packet</p>
+							<p>Copies of both <i>The God Ask</i> and <i>Viewpoints</i>, along with the Bootcamp prep packet and workbook</p>
 						</div>
 						<div>
 							<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Amp.jpg" alt="">
@@ -214,7 +214,7 @@ get_header();
 									</div>
 									<div>
 										<h1>Fully Funded Culture</h1>
-										<p class="middle">100% matters. Not only for individuals, but for your ministry.</p>
+										<p class="middle">100% matters. Not only for individuals, but for ministry.</p>
 									</div>
 									<div>
 										<h1>Supporters</h1>
@@ -228,21 +228,30 @@ get_header();
 			</section>
 			<div class="marketing-bg-image" id="slide-8">
 				<div class="marketing-content">
-					<div class="section-header">Get Going!</div>
+					<div class="section-header">Contact Us!</div>
+          <div class="subheading">
+            Contacting us is the next step toward becoming a Certified Facilitator.<br>
+            We look forward to serving you!
+          </div>
 					<div class="two-columns group">
 						<div class="left-column">
-							<h1>Experience the new SRS Bootcamp</h1>
-							<p>See for yourself how Bootcamp can empower your ministry.</p>
-							<a class="footerlink" href="http://supportraisingsolutions.org/bootcamp/#tab-5">Explore upcoming Bootcamps</a>
+            	<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Mobile.png" alt="">
+							<h1>800 595 4881</h1>
 						</div>
 						<div class="right-column">
-							<h1>Continue the conversation</h1>
-							<p>We're here to help your ministry thrive and give your staff the training they deserve.</p>
-							<a class="footerlink" href="mailto:info@supportraisingsolutions.org?Subject=Interested%20in%20Becoming%20an%20SRS%20Trainer&body=Hello,%20I%20am%20interested%20in%20learning%20more%20about%20becoming%20an%20SRS%20trainer.">Contact us</a>
+              <img src="<?php bloginfo('template_directory');?>-child/images/marketing/Mail.png" alt="">
+							<h1>info@SupportRaisingSolutions.org</h1>
 						</div>
 					</div>
 					<div class="footer">
-						<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Logo.png" alt="">
+            <div class="logo">
+              <img src="<?php bloginfo('template_directory');?>-child/images/marketing/SRS_logo.png" alt="">
+              <div class="logo-text">
+                Support Raising<br>
+                <div class="line-2">Solutions</div>
+              </div>
+            </div>
+            <div class="clear"></div>
 						<p>Support Raising Solutions is a ministry of the Center for Mission Mobilization. <a href="http://mobilization.org">Mobilization.org</a></p>
 					</div>
 				</div>
