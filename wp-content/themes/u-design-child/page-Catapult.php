@@ -45,31 +45,31 @@ get_header();
         <div class="previews-border"></div>
         <div class="section-header">Catapult Series Previews</div>
         <div class="benefit">
-          <a href="http://vimeo.com/131461432" rel="prettyPhoto">
+          <a href="https://vimeo.com/131104564" rel="prettyPhoto">
             <img src="<?php bloginfo('template_directory');?>-child/images/network/biblical_basis.jpg" alt="">
             <div>Biblical Basis for Personal Support Raising</div>
           </a>
         </div>
         <div class="benefit middle">
-          <a href="http://vimeo.com/131461432" rel="prettyPhoto">
+          <a href="https://vimeo.com/131451143" rel="prettyPhoto">
             <img src="<?php bloginfo('template_directory');?>-child/images/network/right_perspective.jpg" alt="">
             <div>Gaining the Right Perspective on Support Raising</div>
           </a>
         </div>
         <div class="benefit">
-          <a href="http://vimeo.com/131461432" rel="prettyPhoto">
+          <a href="https://vimeo.com/131678534" rel="prettyPhoto">
             <img src="<?php bloginfo('template_directory');?>-child/images/network/preparing_planning.jpg" alt="">
             <div>Preparing and Planning to Raise Support</div>
           </a>
         </div>
         <div class="benefit">
-          <a href="http://vimeo.com/131461432" rel="prettyPhoto">
+          <a href="https://vimeo.com/131884254" rel="prettyPhoto">
             <img src="<?php bloginfo('template_directory');?>-child/images/network/phone_call.jpg" alt="">
             <div>The Phone Call, Appointment, and Follow Up</div>
           </a>
         </div>
         <div class="benefit middle">
-          <a href="http://vimeo.com/131461432" rel="prettyPhoto">
+          <a href="https://vimeo.com/131566017" rel="prettyPhoto">
             <img src="<?php bloginfo('template_directory');?>-child/images/network/maintenance_cultivation.jpg" alt="">
             <div>Maintenance and Cultivation of Your Support Team</div>
           </a>

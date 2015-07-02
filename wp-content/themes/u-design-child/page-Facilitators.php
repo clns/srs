@@ -238,19 +238,19 @@ get_header();
             	<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Mobile.png" alt="">
 							<h1>800 595 4881</h1>
 						</div>
-						<div class="right-column">
+						<div class="right-column"><a href="mailto:info@supportraisingsolutions.org">
               <img src="<?php bloginfo('template_directory');?>-child/images/marketing/Mail.png" alt="">
-							<h1>info@SupportRaisingSolutions.org</h1>
+							<h1>info@SupportRaisingSolutions.org</h1></a>
 						</div>
 					</div>
 					<div class="footer">
-            <div class="logo">
+            <a href="http://supportraisingsolutions.org"><div class="logo">
               <img src="<?php bloginfo('template_directory');?>-child/images/marketing/SRS_logo.png" alt="">
               <div class="logo-text">
                 Support Raising<br>
                 <div class="line-2">Solutions</div>
               </div>
-            </div>
+            </div></a>
             <div class="clear"></div>
 						<p>Support Raising Solutions is a ministry of the Center for Mission Mobilization. <a href="http://mobilization.org">Mobilization.org</a></p>
 					</div>

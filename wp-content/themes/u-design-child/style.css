@@ -190,6 +190,11 @@ url("Fonts/e590a993-9202-42bc-a22f-25243e6b0d5a.svg#e590a993-9202-42bc-a22f-2524
 body{
   overflow-x: hidden;
 }
+
+#wrapper-1 #before-content .textwidget span{
+  font-family: 'Myriad Regular' !important;
+}
+
 #network{
   width: 950px;
   margin: 50px auto;
@@ -1086,6 +1091,16 @@ body{
   text-align: left;
 }
 
+#slide-8 a {
+  outline: none;
+}
+
+#crm-container input, #crm-container select{
+  font-family: 'Myriad Regular';
+  padding: 5px 10px;
+  margin: 5px 0;
+}
+
 /**** Franchise Landing Page Styles ****/
 #page-franchise-participant {
     background-image: url("http://supportraisingsolutions.org/wp-content/themes/u-design-child/images/franchise/container_background.png");
@@ -1276,7 +1291,7 @@ h1,h2,h3,h4,h5,h6,#slogan,.single-post-categories {
 }
 
 #navigation-menu {
-	font-family: 'Lato';
+	font-family: 'Myriad Regular';
 }
 
 #navigation-menu {
@@ -1303,7 +1318,7 @@ h1,h2,h3,h4,h5,h6,#slogan,.single-post-categories {
 
 #c2-slider .slide-desc h2 {
 	font-size: 1.8em !important;
-	font-family: 'Lato';
+	font-family: 'Myriad Regular';
 	line-height: 1.7;
 }
 
@@ -1930,7 +1945,7 @@ margin-bottom:0px;
 
 h1.posttitle {
 color:#f1632a;
-font-family: 'Lato' sans-serif;
+font-family: 'Myriad Regular' sans-serif;
 font-weight: 300;
 font-size:  30px !important;
 margin-bottom:15px;
@@ -1939,7 +1954,7 @@ margin-bottom:15px;
 pullright {
 float:right;
 color:#f1632a;
-font-family: 'Lato' sans-serif;
+font-family: 'Myriad Regular' sans-serif;
 font-weight: 400;
 font-size:  20px !important;
 margin-left:15px;
@@ -1949,7 +1964,7 @@ width:150px;
 pullleft {
 float:left;
 color:#f1632a;
-font-family: 'Lato' sans-serif;
+font-family: 'Myriad Regular' sans-serif;
 font-weight: 400;
 font-size:  20px !important;
 margin-right:15px;
@@ -1959,7 +1974,7 @@ width:150px;
 blockquote {
 color:#f1632a;
 background: none;
-    font-family: 'Lato' sans-serif;
+    font-family: 'Myriad Regular' sans-serif;
     padding: 5px 10px 5px 35px;
     font-size: 20px;
     line-height: 24px;
