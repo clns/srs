@@ -12,7 +12,7 @@ get_header();
 ?>
 <div id="content-container" class="full-width">
 	<div id="main-content" class="full-width">
-		<div id="network" class=" network-page webinar">
+		<div id="network" class="network-page webinar">
 			<div class="page-banner">
         <div class="banner-text">Monthly Webinars</div>
       </div>
@@ -60,15 +60,17 @@ get_header();
         );
         
         if($global_posts_query->have_posts()) :
-          while($global_posts_query->have_posts()) : $global_posts_query->the_post(); ?>		
+          while($global_posts_query->have_posts()) : $global_posts_query->the_post(); ?>    
             <div class="event">
               <div class="event-border"></div>
               <div class="leader-bio">
                 <a href="<?php echo get_author_posts_url(get_the_author_meta('ID'));?>"><?php echo get_wp_user_avatar($userID); ?>
                 <span class="leader-name"><?php the_author(); ?></span></a><br>
-                <?php if (!empty(get_the_author_meta("job_title"))) {
-                   echo the_author_meta("job_title");?>,<br>
-                <?php } ?>
+                <?php
+                  $jobtitle = get_the_author_meta("job_title"); 
+                  if (!empty($jobtitle)) {
+                    echo $jobtitle.",<br>"; 
+                  } ?>
                 <i>
                   <?php $organization = get_the_author_meta("organization"); 
                   if (!empty($organization)) {
@@ -99,10 +101,12 @@ get_header();
               </div>
             </div>
             <div class="clear"></div>
-        <?php		
+        <?php   
           endwhile;
         endif;
         ?>
+
+
     </div>
     </div>
 	</div><!-- end main-content -->
