@@ -43,15 +43,16 @@ get_header();
           <hr>
           $300/yr
         </div>
-        <button>Join</button>
+        <a href="mailto:info@supportraisingsolutions.org"><button>Contact Us</button></a>
       </div>
       <div class="clear"></div>
       <div class="benefits-container">
         <div class="benefits-border"></div>
         <div class="section-header">Membership Benefits</div>
         <div class="benefit">
+          <a href="index.php?page_id=1894">
           <img src="<?php bloginfo('template_directory');?>-child/images/network/national_conference_benefit.jpg" alt="">
-          <div class="detail-heading">National Conference</div>
+          <div class="detail-heading">National Conference</div></a>
           Come and be equipped by workshops and plenary
           sessions on best practices to help recruits overcome
           the fear of supoprt raising, train new staff, coach veterans, and 

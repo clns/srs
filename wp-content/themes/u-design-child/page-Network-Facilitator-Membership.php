@@ -51,8 +51,9 @@ get_header();
         <div class="benefits-border"></div>
         <div class="section-header">Membership Benefits</div>
         <div class="benefit">
+          <a href="index.php?page_id=1894">
           <img src="<?php bloginfo('template_directory');?>-child/images/network/facilitator_training_benefit.jpg" alt="">
-          <div class="detail-heading">Facilitator Training</div>
+          <div class="detail-heading">Facilitator Training</div></a>
           Through our practical hands-on training, you will 
           develop your skills as a facilitator and learn all the 
           elements of hosting and leading a SRS Bootcamp. 
@@ -68,8 +69,9 @@ get_header();
           need for Bootcamp, we also walk you through the process.
         </div>
         <div class="benefit">
+        <a href="index.php?page_id=1894">
           <img src="<?php bloginfo('template_directory');?>-child/images/network/national_conference_benefit.jpg" alt="">
-          <div class="detail-heading">National Conference</div>
+          <div class="detail-heading">National Conference</div></a>
           Come be encouraged and equipped by workshops 
           and plenary sessions on best practices how to help 
           recruits overcome the fear of support raising, train 

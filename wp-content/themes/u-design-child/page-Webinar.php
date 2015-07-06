@@ -36,7 +36,7 @@ get_header();
       </div>
       <div class="join-box">
         Plug Into the Community
-        <button>Join</button>
+        <a href="mailto:info@supportraisingsolutions.org"><button>Contact Us</button></a>
       </div>
       <div class="clear"></div>
       <div class="event-container">

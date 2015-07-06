@@ -38,7 +38,7 @@ get_header();
       <div class="join-box">
         Get 250+ Catapult Videos
         <div class="status-text">(Coming Soon!)</div>
-        <button>Join</button>
+        <a href="mailto:info@supportraisingsolutions.org"><button>Contact Us</button></a>
       </div>
       <div class="clear"></div>
       <div class="previews-container">
