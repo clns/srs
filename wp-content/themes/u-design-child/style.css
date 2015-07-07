@@ -242,6 +242,9 @@ body{
   width: 460px;
   float: left;
 }
+#network .member-container hr {
+  margin-top: 40px;
+}
 #network .fac-container {
   border: 2px solid #008ad0;
   width: 460px;

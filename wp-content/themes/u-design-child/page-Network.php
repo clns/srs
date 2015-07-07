@@ -37,7 +37,7 @@ get_header();
           <div class="details">
             <div class="detail-heading">Membership Benefits</div>
             <ul>
-              <li>$150 off registration to the annual National Conference (a $175 value)</li>
+              <li>$150 off registration to the annual National Conference</li>
               <li>Access to monthly webinars</li>
               <li>SRS Audit Survey</li>
               <li>Access to over 250 Catapult Series videos</li>
