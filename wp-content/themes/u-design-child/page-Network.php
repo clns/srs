@@ -37,7 +37,7 @@ get_header();
           <div class="details">
             <div class="detail-heading">Membership Benefits</div>
             <ul>
-              <li>50% off registration to the annual National Conference (a $175 value)</li>
+              <li>$150 off registration to the annual National Conference (a $175 value)</li>
               <li>Access to monthly webinars</li>
               <li>SRS Audit Survey</li>
               <li>Access to over 250 Catapult Series videos</li>
@@ -74,8 +74,8 @@ get_header();
             <hr>
             <div class="detail-heading">Required Qualifications</div>
             <ul>
-              <li>Participate in a SRS Bootcamp (2015 or later)</li>
-              <li>Participate in a SRS Facilitator Training</li>
+              <li>Participate in an SRS Bootcamp (2014 or later)</li>
+              <li>Participate in an SRS Facilitator Training</li>
               <li>Attend the annual SRS National Conference each year</li>
               <li>Live and minister on personal support</li>
             </ul>

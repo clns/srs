@@ -18,14 +18,14 @@ get_header();
       </div>
       <div class="description-container">
         <div class="intro-text"><span>When you become a member of the SRS Network</span>, you will become part of a vibrant community
-        all over the world. Members of the SRS Trainers Network will have access to exclusive resources and training opportunities,
+        all over the world. Members of the SRS Network will have access to exclusive resources and training opportunities,
         helping you create a culture of a fully funded ministry. Join today and discover all that membership has to offer!</div>
         <div class="bullet-benefits"><div class="detail-heading">Your Membership Benefits</div>
           <ul>
-            <li>50% off registration to the National Conference</li>
+            <li>$150 off registration to the National Conference</li>
             <li>Access to monthly webinars</li>
-            <li>Access to over 250 Catapult Series videos</li>
             <li>SRS Audit Survey</li>
+            <li>Access to over 250 Catapult Series videos</li>
           </ul>
         </div>
         <div class="bullet-join-req"><div class="detail-heading">Who Can Join</div>
@@ -55,7 +55,7 @@ get_header();
           <div class="detail-heading">National Conference</div></a>
           Come and be equipped by workshops and plenary
           sessions on best practices to help recruits overcome
-          the fear of supoprt raising, train new staff, coach veterans, and 
+          the fear of support raising, train new staff, coach veterans, and 
           instill a fully funded culture in your ministry.
         </div>
         <div class="benefit middle">
@@ -64,15 +64,14 @@ get_header();
           <div class="detail-heading">Catapult Series</div></a>
           Equip and refuel yourself through hundreds of 
           topical teaching videos on personal support raising 
-          by Steve Shadrach, author of The God Ask and the
-          SRS Bootcamp.
+          by Steve Shadrach, author of The God Ask and founder of Support Raising Solutions.
         </div>
         <div class="benefit">
           <a href="webinar">
           <img src="<?php bloginfo('template_directory');?>-child/images/network/webinar_benefit.jpg" alt="">
           <div class="detail-heading">Monthly Webinars</div></a>
           Develop yourself and your support raising coaches 
-          through monthly one hour webinars led by veteran 
+          through monthly one-hour webinars led by veteran 
           trainers who teach on common support raising 
           challenges and answer your questions directly on the call.
         </div>

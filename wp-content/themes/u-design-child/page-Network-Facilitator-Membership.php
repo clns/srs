@@ -19,7 +19,7 @@ get_header();
       <div class="description-container">
         <div class="intro-text"><span>Are you ready to take the next step</span> and facilitate your own Bootcamp? With a Facilitator 
         Membership, you can equip your staff and help create a culture of a fully funded ministry. As a 
-        certified Facilitator, you will haev access to exclusive resources and training opportunities, like 
+        certified Facilitator, you will have access to exclusive resources and training opportunities, like 
         Bootcamp in a Box and free registration to the National Conference.</div>
         <div class="bullet-benefits"><div class="detail-heading">Your Membership Benefits</div>
           <ul>
@@ -32,8 +32,8 @@ get_header();
         </div>
         <div class="bullet-join-req"><div class="detail-heading">Required Qualifications</div>
           <ul>
-            <li>Participate in a SRS Bootcamp (2015 or later)</li>
-            <li>Participate in a SRS Facilitator Training</li>
+            <li>Participate in an SRS Bootcamp (2014 or later)</li>
+            <li>Participate in an SRS Facilitator Training</li>
             <li>Attend annual National Conference</li>
             <li>Live and minister on personal support</li>
           </ul>
@@ -56,7 +56,7 @@ get_header();
           <div class="detail-heading">Facilitator Training</div></a>
           Through our practical hands-on training, you will 
           develop your skills as a facilitator and learn all the 
-          elements of hosting and leading a SRS Bootcamp. 
+          elements of hosting and leading an SRS Bootcamp. 
           You will be certified in training your staff to reach 
           full support and stay fully funded.
         </div>
