@@ -552,7 +552,7 @@ body{
   -ms-transform: scale(1.1, 1); /* IE 9 */
   -webkit-transform: scale(1.1, 1); /* Safari */
   transform: scale(1.1, 1);
-  margin: 10px 0 20px 15px;
+  margin: 10px 7px 20px 15px;
   letter-spacing: 0.01em;
   font-size: 18px;
   line-height: 116%;
