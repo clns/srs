@@ -1,9 +1,5 @@
 <?php
 
-/**
-Template Name: Single Catapult Video Page
- */
-
 get_header(); ?>
 <div style="position: relative; left: 625px; margin: 30px auto 30px auto;">
     <?php
