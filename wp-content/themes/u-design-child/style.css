@@ -489,6 +489,8 @@ body{
 .network-page.webinar .event img {
   float: left;
   margin-right: 15px;
+  width: 99px;
+  height: 98px;
 }
 .network-page.webinar .event .leader-name {
   font-size: 24px;
@@ -509,7 +511,7 @@ body{
   -webkit-transform: scale(1.1, 1); /* Safari */
   transform: scale(1.1, 1);
   display: inline-block;
-  width: 500px;
+  width: 475px;
   font-size: 30px;
   line-height: 113%;
   color: #8052a1;
@@ -528,6 +530,8 @@ body{
 .network-page.webinar .date{
   font-size: 24px;
   letter-spacing: 0.01em;
+  width: 75px;
+  height: 75px;
 }
 
 #network.network-page.catapult .page-banner{

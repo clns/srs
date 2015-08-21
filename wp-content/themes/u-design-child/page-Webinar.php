@@ -48,14 +48,14 @@ get_header();
             'meta_query' => array(
               array(
                 'key' => 'webinar_date',
-                'value' => date("Y-m-d"),
                 'compare' => '>=',
                 'type' => 'DATE'
               )
             ),
             'meta_key' => 'webinar_date',
             'orderby' => 'meta_value',
-            'order' => 'ASC'
+            'order' => 'DESC',
+            'posts_per_page' => 5
           )
         );
         
