@@ -103,4 +103,40 @@ function srs_expanding_block( $title, $key, $the_query, $auto_expand = false, $p
 }
 endif; // srs_expanding_block
 
+// Restrict so 'super-editor' can only add 'Contributors'
+add_filter( 'editable_roles', 'srs_supereditor_filter_roles' );
+function srs_supereditor_filter_roles( $roles )
+{
+  $user = wp_get_current_user();
+  if( in_array( 'super_editor', $user->roles ) )
+  {
+    $tmp = array_keys( $roles );
+    foreach( $tmp as $r )
+    {
+      if( 'contributor' == $r ) continue;
+      unset( $roles[$r] );
+    }
+  }
+  return $roles;
+}
+
+// Hide Administrator From User List
+function srs_pre_user_query($user_search) {
+  $user = wp_get_current_user();
+  if (!current_user_can('administrator')) { // Is Not Administrator - Remove Administrator
+    global $wpdb;
+
+    $user_search->query_where =
+      str_replace('WHERE 1=1',
+        "WHERE 1=1 AND {$wpdb->users}.ID IN (
+                 SELECT {$wpdb->usermeta}.user_id FROM $wpdb->usermeta
+                    WHERE {$wpdb->usermeta}.meta_key = '{$wpdb->prefix}capabilities'
+                    AND {$wpdb->usermeta}.meta_value NOT LIKE '%administrator%')",
+        $user_search->query_where
+      );
+  }
+}
+add_action('pre_user_query', 'srs_pre_user_query');
+
+
 ?>
