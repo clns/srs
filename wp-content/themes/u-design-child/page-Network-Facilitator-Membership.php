@@ -20,12 +20,12 @@ get_header();
         <div class="intro-text"><span>Are you ready to take the next step</span> and facilitate your own Bootcamp? With a Facilitator 
         Membership, you can equip your staff and help create a culture of a fully funded ministry. As a 
         certified Facilitator, you will have access to exclusive resources and training opportunities, like 
-        Bootcamp in a Box and free registration to the National Conference.</div>
+        Bootcamp in a Box and free registration to the <a href="srs-national-conference">National Conference.</a></div>
         <div class="bullet-benefits"><div class="detail-heading">Your Membership Benefits</div>
           <ul>
             <li><i>Free</i> SRS Bootcamp Facilitator Training</li>
             <li><i>Bootcamp in a Box</i> materials and curriculum</li>
-            <li><i>Free</i> registration to National Conference</li>
+            <li><i>Free</i> registration to <a href="srs-national-conference">National Conference</a></li>
             <li>Discounted additional facilitator memberships</li>
             <li>Access to all Network Member benefits</li>
           </ul>
@@ -34,7 +34,7 @@ get_header();
           <ul>
             <li>Participate in an SRS Bootcamp (2014 or later)</li>
             <li>Participate in an SRS Facilitator Training</li>
-            <li>Attend annual National Conference</li>
+            <li>Attend annual <a href="srs-national-conference">National Conference</a></li>
             <li>Live and minister on personal support</li>
           </ul>
         </div>
@@ -51,7 +51,7 @@ get_header();
         <div class="benefits-border"></div>
         <div class="section-header">Membership Benefits</div>
         <div class="benefit">
-          <a href="index.php?page_id=1894">
+          <a href="srs-national-conference">
           <img src="<?php bloginfo('template_directory');?>-child/images/network/facilitator_training_benefit.jpg" alt="">
           <div class="detail-heading">Facilitator Training</div></a>
           Through our practical hands-on training, you will 
@@ -69,7 +69,7 @@ get_header();
           need for Bootcamp, we also walk you through the process.
         </div>
         <div class="benefit">
-        <a href="index.php?page_id=1894">
+          <a href="srs-national-conference">
           <img src="<?php bloginfo('template_directory');?>-child/images/network/national_conference_benefit.jpg" alt="">
           <div class="detail-heading">National Conference</div></a>
           Come be encouraged and equipped by workshops 
