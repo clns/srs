@@ -49,7 +49,7 @@ get_header();
               array(
                 'key' => 'webinar_date',
                 'compare' => '>=',
-                'type' => 'DATE'
+                'type' => 'DATE',
               )
             ),
             'meta_key' => 'webinar_date',

@@ -37,10 +37,10 @@ get_header();
           <div class="details">
             <div class="detail-heading">Membership Benefits</div>
             <ul>
-              <li>$150 off registration to the annual National Conference</li>
+              <li>$150 off registration to the annual <a href="srs-national-conference">National Conference</a></li>
               <li>Access to monthly webinars</li>
               <li>SRS Audit Survey</li>
-              <li>Access to over 250 Catapult Series videos</li>
+              <li>Access to over 250 <a href="catapult">Catapult Series</a> videos</li>
             </ul>
             <hr>
             <div class="detail-heading">Who Can Join</div>
@@ -68,7 +68,7 @@ get_header();
             <ul>
               <li>SRS Bootcamp Facilitator Training</li>
               <li><i>Bootcamp in a Box</i> setup materials</li>
-              <li><i>Free</i> registration to Annual National Conference</li>
+              <li><i>Free</i> registration to <a href="srs-national-conference">Annual National Conference</a></li>
               <li>Discounted additional facilitator memberships</li>
             </ul>
             <hr>
@@ -76,7 +76,7 @@ get_header();
             <ul>
               <li>Participate in an SRS Bootcamp (2014 or later)</li>
               <li>Participate in an SRS Facilitator Training</li>
-              <li>Attend the annual SRS National Conference each year</li>
+              <li>Attend the annual <a href="srs-national-conference">SRS National Conference</a> each year</li>
               <li>Live and minister on personal support</li>
             </ul>
           </div>

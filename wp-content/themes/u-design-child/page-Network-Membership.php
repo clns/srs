@@ -22,10 +22,10 @@ get_header();
         helping you create a culture of a fully funded ministry. Join today and discover all that membership has to offer!</div>
         <div class="bullet-benefits"><div class="detail-heading">Your Membership Benefits</div>
           <ul>
-            <li>$150 off registration to the National Conference</li>
+            <li>$150 off registration to the <a href="srs-national-conference">National Conference</a></li>
             <li>Access to monthly webinars</li>
             <li>SRS Audit Survey</li>
-            <li>Access to over 250 Catapult Series videos</li>
+            <li>Access to over 250 <a href="catapult">Catapult Series</a> videos</li>
           </ul>
         </div>
         <div class="bullet-join-req"><div class="detail-heading">Who Can Join</div>
@@ -50,13 +50,13 @@ get_header();
         <div class="benefits-border"></div>
         <div class="section-header">Membership Benefits</div>
         <div class="benefit">
-          <a href="index.php?page_id=1894">
+          <a href="srs-national-conference">
           <img src="<?php bloginfo('template_directory');?>-child/images/network/national_conference_benefit.jpg" alt="">
           <div class="detail-heading">National Conference</div></a>
           Come and be equipped by workshops and plenary
           sessions on best practices to help recruits overcome
           the fear of support raising, train new staff, coach veterans, and 
-          instill a fully funded culture in your ministry.
+          instill a fully funded culture in your ministry. <a href="srs-national-conference">Read More.</a>
         </div>
         <div class="benefit middle">
           <a href="catapult">
@@ -64,7 +64,7 @@ get_header();
           <div class="detail-heading">Catapult Series</div></a>
           Equip and refuel yourself through hundreds of 
           topical teaching videos on personal support raising 
-          by Steve Shadrach, author of The God Ask and founder of Support Raising Solutions.
+          by Steve Shadrach, author of The God Ask and founder of Support Raising Solutions. <a href="catapult">Read More.</a>
         </div>
         <div class="benefit">
           <a href="webinar">
@@ -73,7 +73,7 @@ get_header();
           Develop yourself and your support raising coaches 
           through monthly one-hour webinars led by veteran 
           trainers who teach on common support raising 
-          challenges and answer your questions directly on the call.
+          challenges and answer your questions directly on the call. <a href="webinar">Read More.</a>
         </div>
       </div>
 	</div><!-- end main-content -->
