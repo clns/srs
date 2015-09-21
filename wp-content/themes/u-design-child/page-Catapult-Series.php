@@ -15,63 +15,55 @@ get_header(); ?>
 
                 <div class="intro-text">
                     <?php
-                    #This section generates the blurb under the page-banner
-                    $custom_terms = get_terms('catapulttopic');
-                    wp_reset_query();
-                    $args = array(
-                        'post_type'      => 'catapultvideo',
-                        'posts_per_page' => -1,
-                    );
-
-                    $loop = new WP_Query($args);
-
-                    if ($loop->have_posts()) {
-                            echo the_content();
-                        }
-                    wp_reset_postdata();
+                    # This section generates the blurb under the page-banner
+                    the_post();
+                    the_content();
                     ?>
-                </i></div>
-
+                </div>
 
                 <?php
-                $custom_terms = get_terms('catapulttopic');?>
-                <?php
-                foreach($custom_terms as $custom_term) {
-                wp_reset_query();
+                foreach( get_terms( 'catapulttopic', array( 'hide_empty' => false, 'parent' => 0 ) ) as $parent_term ) { ?>
+                    <div class="benefits-container">
+                        <div class="benefits-border"></div>
+                        <div class="section-header"><?php echo $parent_term->name; ?></div>
 
-                $args = array(
-                    'post_type'      => 'catapultvideo',
-                    'posts_per_page' => -1,
-                );
+                        <?php
+                        foreach( get_terms( 'catapulttopic', array( 'hide_empty' => false, 'parent' => $parent_term->term_id ) ) as $child_term ) {
+                            wp_reset_query();
 
-                $loop = new WP_Query($args);
+                            $args = array(
+                                'post_type'      => 'catapultvideo',
+                                'posts_per_page' => -1,
+                            );
 
-                if ($loop->have_posts()) {;?>
-                <div class="previews-container-catapult">
-                    <div class="previews-border"></div>
-                    <div class="section-header">
-                        <?php echo $custom_term->name; ?>
-                    </div>
-                    <?php
-                    while ($loop->have_posts()) : $loop->the_post(); ?>
-                        <div class="catapult-video-content">
+                            $loop = new WP_Query($args);
+
+                            if ($loop->have_posts()) {;?>
+                                <div class="expanding-container">
+                                    <div class="expanding-heading">
+                                        <div class="expand-button expanding-icon expanding-icon-plus"></div>
+                                        <h3><?php echo $child_term->name; ?></h3>
+                                    </div>
+                                    <div class="expanding-content">
+                                        <?php
+                                        while ($loop->have_posts()) : $loop->the_post();
+                                            if(has_term($child_term->name, 'catapulttopic')) {
+                                                echo '<span><a href="' . get_permalink() . '" target="_blank">' . get_the_title() . '</a></span>';
+                                            }
+                                        endwhile; ?>
+                                    </div>
+                                </div>
                             <?php
-                            if(has_term($custom_term->name, 'catapulttopic')){
-                                echo '<a href="' . get_permalink() . '">' . get_the_title() . '</a>';
-                                the_content();
-                                }
-                                ;?>
-                        </div>
-                    <?php
-                    endwhile;
-                    }
-                    ?></div><?php
-                 }
+                            } // end if
+                        } // end foreach ?>
+                    </div>
+                <?php
+                }
+
                 wp_reset_postdata();
                 ?>
 
-            </div>
-            </div>
+            </div><!-- end network -->
         </div><!-- end main-content -->
     </div><!-- end content-container -->
 

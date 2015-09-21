@@ -1233,6 +1233,54 @@ body{
     background: #FFF;
     padding: 20px;
 }
+
+.network-page.catapult .benefits-container{
+  border-bottom: none;
+  padding-bottom: 0px;
+}
+.catapult .expanding-container {
+  margin: 10px 0px;
+  border-bottom: 1px solid lightgray;
+}
+.catapult .expanding-heading {
+  width: 100%;
+  cursor: pointer;
+}
+.catapult .expanding-heading h3 {
+  font-family: MyriadProSemiBold;
+  border-top: 1px solid lightgray;
+  font-size: 21px;
+  padding: 15px 70px 15px 30px;
+  outline: none;
+  margin-bottom: 0px;
+}
+.catapult .expand-button {
+  float: right;
+  position: relative;
+  height: 47px;
+  width: 50px;
+  margin: auto;
+}
+.catapult .expanding-icon-plus {
+  background: url(http://learn.supportraisingsolutions.org/assets/chevron/chevron_inactive.jpg) 50% 50% no-repeat rgb(222, 222, 222);
+}
+.catapult .expanding-icon-minus {
+  background: url(http://learn.supportraisingsolutions.org/assets/chevron/blue_chevron_active.jpg) 50% 50% no-repeat rgb(0, 174, 239);
+}
+.catapult .expanding-content {
+  border-right-width: 50px;
+  border-right-style: solid;
+  border-right-color: rgb(0, 174, 239);
+  display: none;
+  padding-bottom: 20px;
+}
+.catapult .expanding-content span {
+  display: block;
+  padding: 0 0 3px 30px;
+}
+.catapult .expanding-content a {
+  font-size: 16px;
+}
 #page-franchise-participant .expanding-content ol {
     margin-bottom: 0;
 }

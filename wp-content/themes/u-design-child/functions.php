@@ -6,6 +6,7 @@ function my_add_scripts() {
     wp_enqueue_script('flexslider-manual-direction-controls', get_bloginfo('template_directory').'-child/scripts/manualDirectionControl.js', array('jquery', 'flexslider', 'flexslider-init'));
     wp_enqueue_script('bootcamp-selection', get_bloginfo('template_directory').'-child/scripts/bootcamp-selection.js', array('jquery'));
     wp_enqueue_script('get-url-parameters', get_bloginfo('template_directory').'-child/scripts/get-url-parameters.js', array('jquery'));
+    wp_enqueue_script('accordion-init_js', get_bloginfo('template_directory').'-child/scripts/accordion-init.js', array('jquery', 'jquery-ui-accordion'));
 }
 add_action('wp_enqueue_scripts', 'my_add_scripts');
 

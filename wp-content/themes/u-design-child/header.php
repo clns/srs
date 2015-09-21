@@ -69,9 +69,6 @@ if ( $udesign_options['enable_responsive'] ) echo '<meta name="viewport" content
 <?php } ?>
 
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
-<?php wp_enqueue_script('accordion-init_js', get_stylesheet_directory_uri() . '/scripts/accordion-init.js', array('jquery', 'jquery-ui-accordion')); ?>
-
-
 
 <!--[if IE 6]>
 
