@@ -102,7 +102,7 @@ url("Fonts/e590a993-9202-42bc-a22f-25243e6b0d5a.svg#e590a993-9202-42bc-a22f-2524
 /* End Royal Slider Styles */
 
 /* Clear fix */
-.group:after { 
+.group:after {
 	visibility: hidden;
 	display: block;
 	font-size: 0;
@@ -111,18 +111,18 @@ url("Fonts/e590a993-9202-42bc-a22f-25243e6b0d5a.svg#e590a993-9202-42bc-a22f-2524
 	height: 0;
 }
 
-.group { 
+.group {
 	display: inline-block;
 	clear: both;
 }
 
-/* start commented backslash hack \*/ 
-* html .group { 
+/* start commented backslash hack \*/
+* html .group {
 	height: 1%;
 }
 .group {
 	display: block;
-} 
+}
 /* close commented backslash hack */
 
 .full-width {
@@ -263,7 +263,7 @@ body{
 }
 #network .label{
   font-family: 'Myriad Lt';
-  font-size: 30px;  
+  font-size: 30px;
   -ms-transform: scale(1.1, 1); /* IE 9 */
   -webkit-transform: scale(1.1, 1); /* Safari */
   transform: scale(1.1, 1);
@@ -346,7 +346,7 @@ body{
   font-family: 'Myriad It';
   font-size: 15px;
   letter-spacing: 0.015em;
-  line-height: 140%;  
+  line-height: 140%;
   margin-bottom: 30px;
 }
 .network-page .intro-text span {
@@ -416,7 +416,7 @@ body{
 
 .network-page a{
     letter-spacing: 0.01em;
-    font-size: 20px;
+    font-size: 15px !important;
     line-height: 116%;
 }
 .network-page .catapult-video-content p{
@@ -531,6 +531,10 @@ body{
   font-size: 24px;
   letter-spacing: 0.01em;
   width: 75px;
+<<<<<<< Updated upstream
+=======
+  height: 75px;
+>>>>>>> Stashed changes
 }
 
 #network.network-page.catapult .page-banner{
@@ -576,6 +580,50 @@ body{
   font-size: 18px;
   line-height: 116%;
 }
+
+
+#network.network-page.audit .detail-heading{
+  color: #00aeef;
+  margin-left: 10px;
+}
+.network-page.audit .join-box .status-text{
+  font-family: 'Myriad It';
+  -ms-transform: scale(1.1, 1); /* IE 9 */
+  -webkit-transform: scale(1.1, 1); /* Safari */
+  transform: scale(1.1, 1);
+  letter-spacing: 0.01em;
+  font-size: 15px;
+}
+.network-page.audit .previews-container{
+  border-top: 2px solid #00aeef;
+  border-bottom: 2px solid #00aeef;
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+.network-page.audit .previews-container-catapult{
+  border-top: 2px solid #00aeef;
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+.network-page.audit .previews-border{
+  background-color: #00aeef;
+  height: 5px;
+  width: 300px;
+}
+.network-page.audit a{
+  color: #00aeef;
+}
+.network-page.audit .benefit div{
+  -ms-transform: scale(1.1, 1); /* IE 9 */
+  -webkit-transform: scale(1.1, 1); /* Safari */
+  transform: scale(1.1, 1);
+  margin: 10px 7px 20px 15px;
+  letter-spacing: 0.01em;
+  font-size: 18px;
+  line-height: 116%;
+}
+
+
 
 #slide-1 .bcg, .marketing-bg-image#slide-8 {
 	background-image: url('images/marketing/Fullwidth-Image-1.jpg');
@@ -1171,24 +1219,24 @@ body{
 	font-weight: 700;
 }
 #page-franchise-participant .location-header {
-    color: #000; 
-    text-transform: none; 
-    font-size: 24px !important; 
-    font-weight: 300; 
-    margin-top: 5px; 
+    color: #000;
+    text-transform: none;
+    font-size: 24px !important;
+    font-weight: 300;
+    margin-top: 5px;
     margin-bottom: 30px;
 }
 #page-franchise-participant .button-container {
-    width: 160px; 
-    height: 35px; 
-    line-height: 22px; 
-    margin: 0 auto; 
-    text-align: center; 
+    width: 160px;
+    height: 35px;
+    line-height: 22px;
+    margin: 0 auto;
+    text-align: center;
     background: #f1632a;
-} 
+}
 #page-franchise-participant .button-text {
-    text-align: center; 
-    color: #FFFFFF; 
+    text-align: center;
+    color: #FFFFFF;
     font-size: 16px;
 }
 #page-franchise-participant .button-text a {
@@ -1351,7 +1399,7 @@ h1,h2,h3,h4,h5,h6,#slogan,.single-post-categories {
 
 #logo h1 a, #logo .site-name a {
 	background: transparent url(http://supportraisingsolutions.org/wp-content/uploads/2014/07/support-raising-solutions-logo.png ) no-repeat 0 100%;
-	width: 325px;	
+	width: 325px;
 	height: 91px;
 }
 
@@ -1569,7 +1617,7 @@ body {
 	margin-top: 0px;
 	width: 24px;
 	border: 1px solid #707070;
-	border-bottom: 2px solid #707070;		
+	border-bottom: 2px solid #707070;
 }
 
 #top-elements .phone-number {
@@ -1657,7 +1705,7 @@ font-size:14px;
 position:absolute;
 right:0px;
 margin-top:80px;
-margin-right: 220px; 
+margin-right: 220px;
 text-align:right;
 color:#ffffff;
 }
@@ -1706,7 +1754,7 @@ background: none;
 	/* one half of ( (border * 2) + height + padding ) */
     color: black;
     font: bold 15px/13px Helvetica, Verdana, Tahoma;
-    height: 26px; 
+    height: 26px;
     padding: 4px 3px 0 3px;
     text-align: center;
     line-height: 22px;
@@ -1733,8 +1781,8 @@ background: none;
         }
 
 .overviewwrapper span{
-    vertical-align:top; 
-    display:inline-block;      
+    vertical-align:top;
+    display:inline-block;
 }
 
 .box {
@@ -1855,7 +1903,7 @@ ul.about {
    border: 0px solid #ccc;
    height: 34px;
     -webkit-appearance: none;
-} 
+}
 
 .styled{
    width: 260px;
@@ -1866,34 +1914,34 @@ ul.about {
 		no-repeat 96% #e5e5e5;
 }
 
-.registerpacket { 
-   width:200px; 
-   height:30px; 
-   margin-top:15px; 
-   color:#ffffff; 
+.registerpacket {
+   width:200px;
+   height:30px;
+   margin-top:15px;
+   color:#ffffff;
    line-height:30px;
 	background:
 		url(http://supportraisingsolutions.org/wp-content/uploads/2014/01/download.png)
 		no-repeat 96% #585858;
 }
 
-.registerpacket a{ 
-   color:#ffffff; 
+.registerpacket a{
+   color:#ffffff;
 }
 
-.registerarrow { 
-   width:200px; 
-   height:30px; 
-   margin-top:10px; 
-   color:#ffffff; 
+.registerarrow {
+   width:200px;
+   height:30px;
+   margin-top:10px;
+   color:#ffffff;
    line-height:30px;
 	background:
 		url(http://supportraisingsolutions.org/wp-content/uploads/2014/01/register.png)
 		no-repeat 96% #f1632a;
 }
 
-.registerarrow a{ 
-   color:#ffffff; 
+.registerarrow a{
+   color:#ffffff;
 }
 
 img.author {

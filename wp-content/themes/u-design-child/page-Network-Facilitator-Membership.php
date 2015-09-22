@@ -23,17 +23,22 @@ get_header();
         Bootcamp in a Box and free registration to the <a href="srs-national-conference">National Conference.</a></div>
         <div class="bullet-benefits"><div class="detail-heading">Your Membership Benefits</div>
           <ul>
-            <li><i>Free</i> SRS Bootcamp Facilitator Training</li>
+            <li><i>Free</i> SRS Bootcamp <a href="facilitatorstraining">Facilitator Training</a></li>
             <li><i>Bootcamp in a Box</i> materials and curriculum</li>
             <li><i>Free</i> registration to <a href="srs-national-conference">National Conference</a></li>
             <li>Discounted additional facilitator memberships</li>
             <li>Access to all Network Member benefits</li>
+            <li>SRS Bootcamp registration is only $125 for your staff, a savings of $264 from our public Bootcamps</li>
           </ul>
         </div>
         <div class="bullet-join-req"><div class="detail-heading">Required Qualifications</div>
           <ul>
             <li>Participate in an SRS Bootcamp (2014 or later)</li>
+<<<<<<< Updated upstream
             <li>Participate in an SRS Facilitator Training</li>
+=======
+            <li>Participate in an SRS <a href="facilitatorstraining">Facilitator Training</a></li>
+>>>>>>> Stashed changes
             <li>Attend annual <a href="srs-national-conference">National Conference</a></li>
             <li>Live and minister on personal support</li>
           </ul>
@@ -51,14 +56,18 @@ get_header();
         <div class="benefits-border"></div>
         <div class="section-header">Membership Benefits</div>
         <div class="benefit">
+<<<<<<< Updated upstream
           <a href="srs-national-conference">
+=======
+          <a href="facilitatorstraining">
+>>>>>>> Stashed changes
           <img src="<?php bloginfo('template_directory');?>-child/images/network/facilitator_training_benefit.jpg" alt="">
           <div class="detail-heading">Facilitator Training</div></a>
           Through our practical hands-on training, you will 
           develop your skills as a facilitator and learn all the 
           elements of hosting and leading an SRS Bootcamp. 
           You will be certified in training your staff to reach 
-          full support and stay fully funded.
+          full support and stay fully funded. <a href="facilitatorstraining">Read More.</a>
         </div>
         <div class="benefit middle">
           <img src="<?php bloginfo('template_directory');?>-child/images/network/bootcamp_benefit.jpg" alt="">
@@ -76,7 +85,7 @@ get_header();
           and plenary sessions on best practices how to help 
           recruits overcome the fear of support raising, train 
           new staff, coach veterans, and establish a fully funded 
-          culture in your ministry.
+          culture in your ministry.<a href="srs-national-conference">Read More.</a>
         </div>
       </div>
 	</div><!-- end main-content -->

@@ -23,8 +23,13 @@ get_header();
         <div class="bullet-benefits"><div class="detail-heading">Your Membership Benefits</div>
           <ul>
             <li>$150 off registration to the <a href="srs-national-conference">National Conference</a></li>
+<<<<<<< Updated upstream
             <li>Access to monthly webinars</li>
             <li>SRS Audit Survey</li>
+=======
+            <li>Access to monthly <a href="webinar">webinars</a></li>
+            <li><a href="audit">SRS Audit Survey</a></li>
+>>>>>>> Stashed changes
             <li>Access to over 250 <a href="catapult">Catapult Series</a> videos</li>
           </ul>
         </div>
