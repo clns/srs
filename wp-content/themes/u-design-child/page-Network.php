@@ -38,13 +38,8 @@ get_header();
             <div class="detail-heading">Membership Benefits</div>
             <ul>
               <li>$150 off registration to the annual <a href="srs-national-conference">National Conference</a></li>
-<<<<<<< Updated upstream
-              <li>Access to monthly webinars</li>
-              <li>SRS Audit Survey</li>
-=======
               <li>Access to monthly <a href="webinar">webinars</a></li>
               <li><a href="audit">SRS Audit Survey</a></li>
->>>>>>> Stashed changes
               <li>Access to over 250 <a href="catapult">Catapult Series</a> videos</li>
             </ul>
             <hr>
@@ -80,11 +75,7 @@ get_header();
             <div class="detail-heading">Required Qualifications</div>
             <ul>
               <li>Participate in an SRS Bootcamp (2014 or later)</li>
-<<<<<<< Updated upstream
-              <li>Participate in an SRS Facilitator Training</li>
-=======
               <li>Participate in an SRS <a href="facilitatorstraining">Facilitator Training</a></li>
->>>>>>> Stashed changes
               <li>Attend the annual <a href="srs-national-conference">SRS National Conference</a> each year</li>
               <li>Live and minister on personal support</li>
             </ul>

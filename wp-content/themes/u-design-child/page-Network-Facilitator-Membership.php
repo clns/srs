@@ -34,11 +34,7 @@ get_header();
         <div class="bullet-join-req"><div class="detail-heading">Required Qualifications</div>
           <ul>
             <li>Participate in an SRS Bootcamp (2014 or later)</li>
-<<<<<<< Updated upstream
-            <li>Participate in an SRS Facilitator Training</li>
-=======
             <li>Participate in an SRS <a href="facilitatorstraining">Facilitator Training</a></li>
->>>>>>> Stashed changes
             <li>Attend annual <a href="srs-national-conference">National Conference</a></li>
             <li>Live and minister on personal support</li>
           </ul>
@@ -56,11 +52,7 @@ get_header();
         <div class="benefits-border"></div>
         <div class="section-header">Membership Benefits</div>
         <div class="benefit">
-<<<<<<< Updated upstream
-          <a href="srs-national-conference">
-=======
           <a href="facilitatorstraining">
->>>>>>> Stashed changes
           <img src="<?php bloginfo('template_directory');?>-child/images/network/facilitator_training_benefit.jpg" alt="">
           <div class="detail-heading">Facilitator Training</div></a>
           Through our practical hands-on training, you will 

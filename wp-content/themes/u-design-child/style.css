@@ -531,10 +531,7 @@ body{
   font-size: 24px;
   letter-spacing: 0.01em;
   width: 75px;
-<<<<<<< Updated upstream
-=======
   height: 75px;
->>>>>>> Stashed changes
 }
 
 #network.network-page.catapult .page-banner{
@@ -581,49 +578,27 @@ body{
   line-height: 116%;
 }
 
-
-#network.network-page.audit .detail-heading{
-  color: #00aeef;
-  margin-left: 10px;
-}
-.network-page.audit .join-box .status-text{
-  font-family: 'Myriad It';
+.network-page.audit .benefit div{
   -ms-transform: scale(1.1, 1); /* IE 9 */
   -webkit-transform: scale(1.1, 1); /* Safari */
   transform: scale(1.1, 1);
+  margin: 10px 7px 20px 15px;
+  width: 135%;
   letter-spacing: 0.01em;
-  font-size: 15px;
-}
-.network-page.audit .previews-container{
-  border-top: 2px solid #00aeef;
-  border-bottom: 2px solid #00aeef;
-  margin-top: 50px;
-  padding-bottom: 20px;
-}
-.network-page.audit .previews-container-catapult{
-  border-top: 2px solid #00aeef;
-  margin-top: 50px;
-  padding-bottom: 20px;
-}
-.network-page.audit .previews-border{
-  background-color: #00aeef;
-  height: 5px;
-  width: 300px;
-}
-.network-page.audit a{
+  font-size: 21px;
+  line-height: 116%;
   color: #00aeef;
 }
-.network-page.audit .benefit div{
+
+.network-page.audit .benefit ol{
   -ms-transform: scale(1.1, 1); /* IE 9 */
   -webkit-transform: scale(1.1, 1); /* Safari */
   transform: scale(1.1, 1);
   margin: 10px 7px 20px 15px;
   letter-spacing: 0.01em;
   font-size: 18px;
-  line-height: 116%;
+  line-height: 136%;
 }
-
-
 
 #slide-1 .bcg, .marketing-bg-image#slide-8 {
 	background-image: url('images/marketing/Fullwidth-Image-1.jpg');
