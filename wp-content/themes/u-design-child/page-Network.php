@@ -13,14 +13,7 @@ get_header();
 <div id="content-container" class="full-width">
 	<div id="main-content" class="full-width">
 		<div id="network">
-			<div class="page-banner">
-        <div class="banner-text">Join the community.
-          <div class="logo-text">
-            <img src="<?php bloginfo('template_directory');?>-child/images/network/srs_logo.png" alt="">
-            <span>Network<sup>TM</sup></span>
-          </div>
-        </div>
-      </div>
+			<div class="page-banner"></div>
       <div class="page-subtitle">Membership options made with you in mind</div>
       <div class="page-container">
         <div class="member-container">
