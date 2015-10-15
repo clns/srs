@@ -9,7 +9,6 @@ wp-content/plugins/
 !wp-content/plugins/slidetabs
 wp-content/cache/
 wp-content/backups/
-wp-content/themes/u-design
 wp-includes/
 
 # Ignore these files
