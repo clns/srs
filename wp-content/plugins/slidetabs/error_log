@@ -1,2 +1,3 @@
 [19-Aug-2013 17:20:21] PHP Fatal error:  Call to undefined function  get_bloginfo() in /home2/uscwmmob/public_html/supportraisingsolutions.org/wp-content/plugins/slidetabs/slidetabs.php on line 43
 [20-Nov-2013 02:50:22] PHP Fatal error:  Call to undefined function  get_bloginfo() in /home2/uscwmmob/public_html/supportraisingsolutions.org/wp-content/plugins/slidetabs/slidetabs.php on line 43
+[24-Feb-2014 23:52:58 America/Denver] PHP Fatal error:  Call to undefined function get_bloginfo() in /home2/uscwmmob/public_html/supportraisingsolutions.org/wp-content/plugins/slidetabs/slidetabs.php on line 43
