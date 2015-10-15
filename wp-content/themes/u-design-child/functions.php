@@ -139,5 +139,23 @@ function srs_pre_user_query($user_search) {
 }
 add_action('pre_user_query', 'srs_pre_user_query');
 
+// Remove Private/Protected from Post Titles
+function the_title_trim($title) {
+  $title = esc_attr($title);
+  $findthese = array(
+      '#Protected:#',
+      '#Private:#'
+  );
+
+  $replacewith = array(
+      '', // What to replace "Protected:" with
+      '' // What to replace "Private:" with
+  );
+
+  $title = preg_replace($findthese, $replacewith, $title);
+  return $title;
+}
+add_filter('the_title', 'the_title_trim');
+
 
 ?>

@@ -10,7 +10,7 @@ get_header(); ?>
         <div id="main-content" class="full-width">
             <div id="network" class="network-page catapult">
                 <div class="page-banner">
-                    <div class="banner-text"><?php echo wp_title("",true); ?></div>
+                    <div class="banner-text"><?php the_title(); ?></div>
                 </div>
 
                 <div class="intro-text">
