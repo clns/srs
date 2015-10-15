@@ -577,19 +577,23 @@ body{
   font-size: 18px;
   line-height: 116%;
 }
-
 .network-page.audit .benefit div{
   -ms-transform: scale(1.1, 1); /* IE 9 */
   -webkit-transform: scale(1.1, 1); /* Safari */
   transform: scale(1.1, 1);
-  margin: 10px 7px 20px 15px;
-  width: 135%;
+  margin: 10px 0px;
   letter-spacing: 0.01em;
   font-size: 21px;
   line-height: 116%;
   color: #00aeef;
 }
-
+.network-page .benefit-audit{
+  display: inline-block;
+  vertical-align: top;
+  font-size: 13.5px;
+  line-height: 133%;
+  letter-spacing: 0.01em;
+}
 .network-page.audit .benefit ol{
   -ms-transform: scale(1.1, 1); /* IE 9 */
   -webkit-transform: scale(1.1, 1); /* Safari */
