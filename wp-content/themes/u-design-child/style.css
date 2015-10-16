@@ -2167,8 +2167,8 @@ background: none;
 }
 
 .catapult-video-container.network-page .section-header{
-  margin-left: 32px;
-  margin-right: 32px;
+  margin: 20px 32px 0px 32px;
+  line-height: 35px;
 }
 
 .catapult-video-container.network-page #video-footer-wrap{
