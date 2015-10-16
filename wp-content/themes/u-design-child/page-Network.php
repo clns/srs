@@ -67,7 +67,7 @@ get_header();
             <hr>
             <div class="detail-heading">Required Qualifications</div>
             <ul>
-              <li>Participate in an SRS Bootcamp (2014 or later)</li>
+              <li>Participate in a public SRS Bootcamp (2014 or later)</li>
               <li>Participate in an SRS <a href="facilitatorstraining">Facilitator Training</a></li>
               <li>Attend the annual <a href="srs-national-conference">SRS National Conference</a> each year</li>
               <li>Live and minister on personal support</li>

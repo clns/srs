@@ -33,7 +33,7 @@ get_header();
         </div>
         <div class="bullet-join-req"><div class="detail-heading">Required Qualifications</div>
           <ul>
-            <li>Participate in an SRS Bootcamp (2014 or later)</li>
+            <li>Participate in a public SRS Bootcamp (2014 or later)</li>
             <li>Participate in an SRS <a href="facilitatorstraining">Facilitator Training</a></li>
             <li>Attend annual <a href="srs-national-conference">National Conference</a></li>
             <li>Live and minister on personal support</li>
