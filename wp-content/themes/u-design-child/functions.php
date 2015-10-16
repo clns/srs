@@ -157,5 +157,39 @@ function the_title_trim($title) {
 }
 add_filter('the_title', 'the_title_trim');
 
+if ( function_exists('register_sidebar') ) {
+
+  register_sidebar(array(
+      'name' => esc_html__('Catapult Video Page Column 1', 'udesign'),
+      'id' => 'catapult-video-page-column-1',
+      'description' => esc_html__('A widget area, used as the 1st column in the Catapult Video Content area.', 'udesign'),
+      'before_widget' => '<div class="cont_col_1 %2$s substitute_widget_class">',
+      'after_widget' => '</div>',
+      'before_title' => '<h3 class="cont_col_1_title">',
+      'after_title' => '</h3>',
+  ));
+
+  register_sidebar(array(
+      'name' => esc_html__('Catapult Video Page Column 2', 'udesign'),
+      'id' => 'catapult-video-page-column-2',
+      'description' => esc_html__('A widget area, used as the 2nd column in the Catapult Video Content area.', 'udesign'),
+      'before_widget' => '<div class="cont_col_2 %2$s substitute_widget_class">',
+      'after_widget' => '</div>',
+      'before_title' => '<h3 class="cont_col_2_title">',
+      'after_title' => '</h3>',
+  ));
+
+  register_sidebar(array(
+      'name' => esc_html__('Catapult Video Page Column 3', 'udesign'),
+      'id' => 'catapult-video-page-column-3',
+      'description' => esc_html__('A widget area, used as the 3rd column in the Catapult Video Content area.', 'udesign'),
+      'before_widget' => '<div class="cont_col_3 %2$s substitute_widget_class">',
+      'after_widget' => '</div>',
+      'before_title' => '<h3 class="cont_col_3_title">',
+      'after_title' => '</h3>',
+  ));
+
+}
+
 
 ?>

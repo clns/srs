@@ -2115,13 +2115,72 @@ background: none;
 #navigation-menu ul.sf-menu>li {
 	margin: 0px 0px 0px 15px !important;
 }
-
+/*-------------------Styling for Catapult Single Video Page---------------------*/
 .catapult-video-container{
     width: 950px;
     margin: 50px auto;
 }
 
-.catapult-video{
+.catapult-video {
     width: 500px;
-    margin: 0px auto;
+}
+
+.catapult-video-container.network-page #page-banner {
+  background: #008ad0 url('images/network/catapult_banner.jpg') no-repeat center right;
+  height: 100px;
+  width: 950px;
+  margin-bottom: 20px;
+}
+
+.catapult-video-container.network-page .banner-text{
+  padding-top: 10px;
+  font-size: 45px;
+  text-align: left;
+  margin-left: 130px;
+  color: white;
+}
+
+#button-wrapper{
+  float: left;
+  margin-top: 20px;
+  width: 20%;
+  display: inline-block;
+}
+
+#button-wrapper button{
+  font-family: 'Myriad SmBd';
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 11px 22px;
+  border: 0;
+  background-color: #42baf1;
+}
+
+#title-wrapper{
+  float: left;
+  display: inline-block;
+  width: 67%;
+  padding-right: 85px;
+}
+
+.catapult-video-container.network-page .section-header{
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.catapult-video-container.network-page #video-footer-wrap{
+  background-color: #42baf1 ;
+  width: 950px;
+}
+
+.catapult-video-container.network-page .video-footer-text{
+  padding: 10px;
+  font-size: 15.5px;
+  text-align: left;
+  margin-left: 5px;
+  color: white;
+  line-height: 20px;
 }
