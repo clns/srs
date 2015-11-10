@@ -4,7 +4,7 @@
  * @subpackage U-Design
  */
 /**
- * Template Name: Webinar
+ * Template Name: Webinar   
  */
 if ( !defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
