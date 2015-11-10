@@ -133,7 +133,11 @@ url("Fonts/e590a993-9202-42bc-a22f-25243e6b0d5a.svg#e590a993-9202-42bc-a22f-2524
 	padding: 0px !important;
 	margin-top: -12px;
 }
-
+.line{
+  text-decoration: underline;
+  height: 1px;
+  background-color: black;
+}
 #marketing .marketing-content {
 	overflow: hidden;
 }
@@ -511,29 +515,66 @@ body{
   -webkit-transform: scale(1.1, 1); /* Safari */
   transform: scale(1.1, 1);
   display: inline-block;
-  width: 475px;
+  width: 450px;
   font-size: 30px;
   line-height: 113%;
   color: #8052a1;
   margin: 20px 0 0 75px;
 }
+.network-page .join-box a{
+   font-size: 20px !important;
+ }
+.network-page.webinar .line{
+  position: relative;
+  top: -39px;
+  right: 19px;
+}
 .network-page.webinar .event-time{
   float: right;
   background-color: #f2f2f2;
-  padding: 25px;
+  padding: 24px;
   position: relative;
   top: -5px;
   text-align: center;
   font-size: 18px;
   letter-spacing: 0.01em;
+  height: 115px;
 }
 .network-page.webinar .date{
-  font-size: 24px;
+  font-size: 22px;
   letter-spacing: 0.01em;
   width: 75px;
   height: 75px;
+  position: relative;
+  right: 27px;
+  bottom: 24px;
 }
-
+.network-page.webinar .date .year{
+  font-size: 14px;
+  position: relative;
+  right: 15px;
+  bottom: 5px;
+ }
+.network-page.webinar .time-of-day{
+  font-size: 22px;
+  position: relative;
+  top: -37px;
+  right: 19px;
+}
+.network-page.webinar .event-time button{
+  padding: 8px !important;
+  border: 0;
+  font-size: 12px !important;
+  position: relative;
+  top: 15px;
+}
+.network-page.webinar .event-time .blue{
+  background-color: #008ad0 !important;
+  position: relative;
+  color: white;
+  top: -12px;
+  right: 5px;
+}
 #network.network-page.catapult .page-banner{
  background: #008ad0 url('images/network/catapult_banner.jpg') no-repeat center right;
 }
