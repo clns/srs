@@ -4,7 +4,7 @@
  * @subpackage U-Design
  */
 /**
- * Template Name: Webinar   
+ * Template Name: Webinar
  */
 if ( !defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
@@ -132,9 +132,14 @@ get_header();
                       ?>
                   <?php
                   $webinar_date = get_post_meta($post->ID, "webinar_date", true);
+                  $vimeo_video_id = get_post_meta($post->ID, "$vimeo_video_id", true);
                   $todaysDate = time() - (time() % 86400);
                   if ( is_user_logged_in() ) {
-                      if ( strtotime($webinar_date) <= $todaysDate) {echo '<button>Watch Now</button>';}
+                      if (strtotime($webinar_date) <= $todaysDate) {
+                          if (!empty($vimeo_video_id)) {
+                                echo '<button>Watch Now</button>';
+                          }
+                      }
                       else{
                           $webinar_time = get_post_meta($post->ID, "webinar_time", true);
                           if (!empty($webinar_time)) {
