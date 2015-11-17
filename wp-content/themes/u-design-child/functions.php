@@ -104,7 +104,7 @@ function srs_expanding_block( $title, $key, $the_query, $auto_expand = false, $p
 }
 endif; // srs_expanding_block
 
-// Restrict so 'super-editor' can only add 'Contributors'
+// Restrict so 'super-editor' can only add 'Contributors' and 'Subscribers'
 add_filter( 'editable_roles', 'srs_supereditor_filter_roles' );
 function srs_supereditor_filter_roles( $roles )
 {
@@ -114,7 +114,7 @@ function srs_supereditor_filter_roles( $roles )
     $tmp = array_keys( $roles );
     foreach( $tmp as $r )
     {
-      if( 'contributor' == $r ) continue;
+      if( 'contributor' == $r || 'subscriber' == $r ) continue;
       unset( $roles[$r] );
     }
   }
