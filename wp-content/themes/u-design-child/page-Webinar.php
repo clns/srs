@@ -20,162 +20,161 @@ get_header();
 <div id="content-container" class="full-width">
 	<div id="main-content" class="full-width">
 		<div id="network" class="network-page webinar">
-			<div class="page-banner">
-        <div class="banner-text">Monthly Webinars</div>
-      </div>
-      <div class="description-container">
-        <div class="intro-text"><span>Develop yourself and grow your staff</span> through one-hour, live webinars led by veteran trainers 
-        and coaches every month. Receive training beyond Bootcamp to help coach your staff through 
-        obstacles in their personal support raising</div>
-        <div class="bullet-columns"><div class="detail-heading">Monthly Webinar Benefits</div>
-          <ul>
-            <div class="bullet-left">
-              <li>Receive training beyond Bootcamp to help coach your staff</li>
-              <li>Get questions answered in real time</li>
-            </div>
-            <div class="bullet-right">
-              <li>Receive updates and news about new SRS Network benefits</li>
-              <li>Access to archived webinars</li>
-            </div>
-          </ul>
-        </div>
-        <div class="clear"></div>
-      </div>
-      <div class="join-box">
-        SRS Network Members Webinar Access
-        <br>
-        <a href="/supportraisingsolutions.org/login/?redirect_to=%2Fsupportraisingsolutions.org%2Fwebinar">Sign In</a> | <a href="mailto:info@supportraisingsolutions.org">Join</a>
-      </div>
-      <div class="clear"></div>
-      <div class="event-container">
-
- <?php
-         function dateToCal($timestamp) {
-             return date('Ymd\THis\Z', $timestamp);
-         }
-
-        $global_posts_query = new WP_Query(
-            array(
-                'post_type' => 'webinar',
-                'meta_query' => array(
-                    array(
-                        'key' => 'webinar_date',
-                        'compare' => '>=',
-                        'type' => 'DATE',
-                    )
-                ),
-                'meta_key' => 'webinar_date',
-                'orderby' => 'meta_value',
-                'order' => 'DESC',
-                'posts_per_page' => 5
-            )
-        );
-
-
-        if($global_posts_query->have_posts()) :
-          while($global_posts_query->have_posts()) : $global_posts_query->the_post(); ?>
-            <div class="event">
-              <div class="event-border"></div>
-              <div class="leader-bio">
-                <a href="<?php echo get_author_posts_url(get_the_author_meta('ID'));?>"><?php echo get_wp_user_avatar($userID); ?>
-                  <span class="leader-name"><?php the_author(); ?></span></a><br>
-                <?php
-                $jobtitle = get_the_author_meta("job_title");
-                if (!empty($jobtitle)) {
-                  echo $jobtitle.",<br>";
-                } ?>
-                <i>
-                  <?php $organization = get_the_author_meta("organization");
-                  if (!empty($organization)) {
-                    echo $organization;
-                  } ?>
-                </i>
-              </div>
-              <div class="event-header">
-                <?php the_title(); ?>
-              </div>
-              <div class="event-time">
-                <div class="date">
-                  <?php $webinar_date = get_post_meta($post->ID, "webinar_date", true);
-                  if (!empty($webinar_date)) {
-                    $date = new DateTime($webinar_date);
-                    $webinar_date = $date->format('M j');
-                    echo $webinar_date;
-                  }
-                  ?>
-                  <div class="year">
-                    <?php $webinar_date = get_post_meta($post->ID, "webinar_date", true);
-                    if (!empty($webinar_date)) {
-                      $date = new DateTime($webinar_date);
-                      $webinar_date = $date->format('Y');
-                      echo $webinar_date;
-                    }
-                    ?>
-                  </div>
+			 <div class="page-banner">
+                <div class="banner-text">Monthly Webinars</div>
+             </div>
+            <div class="description-container">
+                <div class="intro-text"><span>Develop yourself and grow your staff</span> through one-hour, live webinars led by veteran trainers
+                and coaches every month. Receive training beyond Bootcamp to help coach your staff through
+                obstacles in their personal support raising
                 </div>
-                <div class="line"></div>
-            <?
-            $webinar_date = get_post_meta($post->ID, "webinar_date", true);
-            $todaysDate = time() - (time() % 86400);
-            if ( strtotime($webinar_date) >= $todaysDate) { ?><div class="time-of-day">
-                  <?php $webinar_time = get_post_meta($post->ID, "webinar_time", true);
-                  if (!empty($webinar_time)) {
-                    $time = new DateTime($webinar_time);
-                    $webinar_time = $time->format('g a ');
-                    echo $webinar_time;
-                  }
-                  ?>CT
-                </div><? }?>
-
-                  <?php
-
-                      ?>
-                  <?php
-                  $webinar_date = get_post_meta($post->ID, "webinar_date", true);
-                  $vimeo_video_id = get_post_meta($post->ID, "$vimeo_video_id", true);
-                  $todaysDate = time() - (time() % 86400);
-                  if ( is_user_logged_in() ) {
-                      if (strtotime($webinar_date) <= $todaysDate) {
-                          if (!empty($vimeo_video_id)) {
-                                echo '<button>Watch Now</button>';
-                          }
-                      }
-                      else{
-                          $webinar_time = get_post_meta($post->ID, "webinar_time", true);
-                          if (!empty($webinar_time)) {
-                              $time = new DateTime($webinar_time);
-                              $webinar_time = $time->format(' G:i');
-                          }
-
-
-                          $webinar_date = get_post_meta($post->ID, "webinar_date", true);
-                          if (!empty($webinar_date)) {
-                              $date = new DateTime($webinar_date);
-                              $webinar_date = $date->format('M d, Y');
-                          }
-
-                          $temp = strtotime("+6 hours".$webinar_date." ".$webinar_time);
-                          echo '<button class="blue"><a href="javascript:cal.download(\'Webinar\')" style="color: white;">Add to Cal</a></button>';}
-                  }
-                  ?>
-                  <script>
-                      var cal = ics();
-                      cal.addEvent('Webinar', 'Content', 'Location', '<? echo datetoCal($temp); ?>', '<? echo datetoCal($temp);  ?>');
-                  </script>
-              </div>
+                <div class="bullet-columns"><div class="detail-heading">Monthly Webinar Benefits</div>
+                  <ul>
+                    <div class="bullet-left">
+                      <li>Receive training beyond Bootcamp to help coach your staff</li>
+                      <li>Get questions answered in real time</li>
+                    </div>
+                    <div class="bullet-right">
+                      <li>Receive updates and news about new SRS Network benefits</li>
+                      <li>Access to archived webinars</li>
+                    </div>
+                  </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="join-box">
+                SRS Network Members Webinar Access
+                <br>
+                <a href="/supportraisingsolutions.org/login/?redirect_to=%2Fsupportraisingsolutions.org%2Fwebinar">Sign In</a> | <a href="mailto:info@supportraisingsolutions.org">Join</a>
             </div>
             <div class="clear"></div>
-          <? endwhile;
-        endif;
- ?>
+            <div class="event-container">
 
-      </div>
+                <?php
+                    function dateToCal($timestamp) {
+                        return date('Ymd\THis\Z', $timestamp);
+                    }
+
+                    $global_posts_query = new WP_Query(
+                        array(
+                            'post_type' => 'webinar',
+                            'meta_query' => array(
+                                array(
+                                    'key' => 'webinar_date',
+                                    'compare' => '>=',
+                                    'type' => 'DATE',
+                                )
+                            ),
+                            'meta_key' => 'webinar_date',
+                            'orderby' => 'meta_value',
+                            'order' => 'DESC',
+                            'posts_per_page' => 5
+                        )
+                    );
+
+
+                if($global_posts_query->have_posts()) :
+                    while($global_posts_query->have_posts()) : $global_posts_query->the_post(); ?>
+                        <div class="event">
+                            <div class="event-border"></div>
+                            <div class="leader-bio">
+                                <a href="<?php echo get_author_posts_url(get_the_author_meta('ID'));?>"><?php echo get_wp_user_avatar($userID); ?>
+                                    <span class="leader-name"><?php the_author(); ?></span></a><br>
+                                <?php
+                                $jobtitle = get_the_author_meta("job_title");
+                                if (!empty($jobtitle)) {
+                                    echo $jobtitle.",<br>";
+                                } ?>
+                                <i>
+                                    <?php $organization = get_the_author_meta("organization");
+                                    if (!empty($organization)) {
+                                        echo $organization;
+                                    } ?>
+                                </i>
+                            </div>
+                            <div class="event-header">
+                                <?php the_title(); ?>
+                            </div>
+                            <div class="event-time">
+                                <div class="date">
+                                    <?php $webinar_date = get_post_meta($post->ID, "webinar_date", true);
+                                    if (!empty($webinar_date)) {
+                                        $date = new DateTime($webinar_date);
+                                        $webinar_date = $date->format('M j');
+                                        echo $webinar_date;
+                                    }
+                                    ?>
+                                    <div class="year">
+                                        <?php $webinar_date = get_post_meta($post->ID, "webinar_date", true);
+                                        if (!empty($webinar_date)) {
+                                            $date = new DateTime($webinar_date);
+                                            $webinar_date = $date->format('Y');
+                                            echo $webinar_date;
+                                        }
+                                        ?>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                <?
+                                $webinar_date = get_post_meta($post->ID, "webinar_date", true);
+                                $todaysDate = time() - (time() % 86400);
+                                if ( strtotime($webinar_date) >= $todaysDate) { ?>
+                                    <div class="time-of-day">
+                                    <?php $webinar_time = get_post_meta($post->ID, "webinar_time", true);
+                                    if (!empty($webinar_time)) {
+                                        $time = new DateTime($webinar_time);
+                                        $webinar_time = $time->format('g a ');
+                                        echo $webinar_time;
+                                    }
+                                    ?>CT
+                                    </div><? }?>
+
+                                <?php
+                                $webinar_date = get_post_meta($post->ID, "webinar_date", true);
+                                $vimeo_video_id = get_post_meta($post->ID, "$vimeo_video_id", true);
+                                $todaysDate = time() - (time() % 86400);
+                                if ( is_user_logged_in() ) {
+                                    if (strtotime($webinar_date) <= $todaysDate) {
+                                        if (!empty($vimeo_video_id)) {
+                                            echo '<button>Watch Now</button>';
+                                        }
+                                    }
+                                    else{
+                                        $webinar_time = get_post_meta($post->ID, "webinar_time", true);
+                                        if (!empty($webinar_time)) {
+                                            $time = new DateTime($webinar_time);
+                                            $webinar_time = $time->format(' G:i');
+                                        }
+
+
+                                        $webinar_date = get_post_meta($post->ID, "webinar_date", true);
+                                        if (!empty($webinar_date)) {
+                                            $date = new DateTime($webinar_date);
+                                            $webinar_date = $date->format('M d, Y');
+                                        }
+
+                                        $temp = strtotime("+6 hours".$webinar_date." ".$webinar_time);
+                                        echo '<button class="blue"><a href="javascript:cal.download(\'Webinar\')" style="color: white;">Add to Cal</a></button>';}
+                                }
+                                ?>
+                                <script>
+                                    var cal = ics();
+                                    cal.addEvent('Webinar', 'Content', 'Location', '<? echo datetoCal($temp); ?>', '<? echo datetoCal($temp);  ?>');
+                                </script>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    <? endwhile;
+                endif;
+                ?>
+
+            </div>
         </div>
     </div><!-- end main-content -->
 </div><!-- end content-container -->
-  <div class="clear"></div>
+    <div class="clear"></div>
 
 
 <?php
 
-get_footer();
+get_footer();?>
