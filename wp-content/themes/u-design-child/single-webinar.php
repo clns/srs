@@ -72,7 +72,6 @@ get_header(); ?>
             </a>
         <?php endif; ?>
     </div>
-<!-- random comment -->
     <div class = "leader-bio-wrapper">
         <div class="leader-bio">
                 <?php echo get_wp_user_avatar($userID); ?>
