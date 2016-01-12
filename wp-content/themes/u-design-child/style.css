@@ -2226,3 +2226,170 @@ background: none;
   color: white;
   line-height: 20px;
 }
+
+/*-------------------Styling for Webinar Single Page---------------------*/
+.webinar-video-container{
+  width: 950px;
+  margin: 50px auto;
+}
+
+.webinar-video {
+  width: 500px;
+}
+.webinar-video-container.network-page .page-banner {
+  background: #2e3192 url('images/network/webinar_banner.jpg') no-repeat center right;
+  height: 100px;
+  width: 950px;
+  margin-bottom: 20px;
+}
+
+.webinar-video-container.network-page .banner-text{
+  padding-top: 10px;
+  font-size: 45px;
+  text-align: left;
+  margin-left: 130px;
+  color: white;
+}
+
+#title-wrapper{
+  float: left;
+  display: inline-block;
+  width: 67%;
+  padding-right: 85px;
+}
+
+.date-time-wrapper{
+  height: 70px;
+  width: 100%;
+  float: left;
+  padding-top: 20px;
+  /*padding-top: 10px;*/
+  display: inline-block;
+  /*border: solid red;*/
+  /*padding-right: 85px;*/
+}
+
+#title-wrapper .date-time-wrapper .date{
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-left: solid black;
+  border-right: solid black;
+  border-width: thin;
+  display: inline-block;
+}
+
+#title-wrapper .date-time-wrapper .srs-webinar-note{
+  float: left;
+  padding-left: 10px;
+  padding-right: 5px;
+  display: inline-block;
+}
+
+#title-wrapper .date-time-wrapper .event-time{
+  float: left;
+  padding-left: 5px;
+  display: inline-block;
+}
+
+.webinar-video-container.network-page .section-header{
+  margin: 20px 32px 0px 32px;
+  line-height: 35px;
+}
+#button-wrapper{
+  float: left;
+  margin-top: 20px;
+  width: 20%;
+  display: inline-block;
+}
+
+#button-wrapper button{
+  font-family: 'Myriad SmBd';
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 11px 22px;
+  border: 0;
+  /*background-color: #2e3192;*/
+  background-color: mediumpurple;
+}
+.leader-bio-wrapper{
+  /*padding-top: 50px;*/
+  height: 250px;
+  width: 950px;
+  /*border: solid blue;*/
+  display: inline-block;
+  background-color: ghostwhite;
+}
+
+.leader-bio-wrapper img{
+  float: left;
+  height: 140px;
+  width: 140px;
+  /*display: inline-block;*/
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.leader-bio-wrapper .leader-bio .leader-name{
+  float: left;
+  display:inline-block;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.leader-bio-wrapper .leader-bio .author-name-wrapper{
+  float: left;
+  display: inline-block;
+  padding-left: 10px;
+  font-weight: bold;
+  /*padding-top: 10px;*/
+}
+.leader-bio-wrapper .leader-bio .job-title-wrapper{
+  float: left;
+  display: inline-block;
+  padding-left: 10px;
+  /*padding-top: 10px;*/
+}
+
+.leader-bio-wrapper .leader-bio .organization-title-wrapper{
+  float: left;
+  display: inline-block;
+  padding-left: 10px;
+  /*padding-top: 10px;*/
+}
+
+.leader-bio-wrapper .leader-bio .bio-info-wrapper{
+  float: left;
+  display: inline-block;
+  padding-left: 10px;
+  /*padding-top: 10px;*/
+  width: 700px;
+  /*border: solid red;*/
+  height: 120px;
+}
+
+.leader-bio-wrapper .leader-bio .bio-info-button-wrapper{
+  /*float: bottom;*/
+  float: left;
+  /*display: inline-block;*/
+  padding-left: 20px;
+  width: 160px;
+  /*height: 30px;*/
+  padding-top: 10px;
+  /*border: solid blue;*/
+}
+
+.leader-bio-wrapper .leader-bio .bio-info-button-wrapper button{
+  font-family: 'Myriad SmBd';
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  color: white;
+  text-transform: uppercase;
+  /*border-radius: 3px;*/
+  padding: 2px 5px;
+  border: 0;
+  background-color: #F1632A;
+}
