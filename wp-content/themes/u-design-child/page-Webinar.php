@@ -138,7 +138,7 @@ get_header();
                                     <?php $webinar_time = get_post_meta($post->ID, "webinar_time", true);
                                     if (!empty($webinar_time)) {
                                         $time = new DateTime($webinar_time);
-                                        $webinar_time = $time->format('g a ');
+                                        $webinar_time = $time->format('g:i a ');
                                         echo $webinar_time;
                                     }
                                     ?>CT
