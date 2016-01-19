@@ -7,71 +7,183 @@ get_header(); ?>
         <div class="page-banner">
             <div class="banner-text">Monthly Webinars</div>
         </div>
-
-
-        <?php
-        $customdata = get_post_meta($post->ID, 'vimeo_video_id', true);
-        if( !empty($customdata) ){
-        ?><iframe src="https://player.vimeo.com/video/<?php echo $customdata;?>"
-                  width="950" height="534" frameborder="0" webkitallowfullscreen mozallowfullscreen allow fullscreen></iframe>
-        <?php }?>
-
-<!--        <div id="video-footer-wrap">-->
-<!--            <div class="video-footer-text">-->
-<!--            --><?php
-//            if ( is_user_logged_in() ) {
-//               echo 'As a member of the SRS Network you are allowed to share this video with your staff. Please do not share it outside your ministry. ';
-//               echo '<a href="mailto:?to=&body=%0A%0ACheck%20out%20this%20video%20from%20Support%20Raising%20Solutions%3A%0A '.get_permalink().' &subject='.the_title('','',false).'">Share this Video</a>';
-//            } else {
-//                echo 'EXCLUSIVE VIDEO: Please do not share the link to this teaching video. Your ministry is a part of the SRS Network, who has permission to send this video to their staff. &copy 2015 Support Raising Solutions';
-//            }
-//            ?>
-<!--            </div>-->
-<!--        </div>-->
     </div>
 
-    <div id="title-wrapper">
-        <div class="section-header">
-            <?php the_title(); ?>
-        </div>
-        <div class="date-time-wrapper">
-            <div class="srs-webinar-note"> SRS Webinar</div>
-            <div class="date">
-              <?php $webinar_date = get_post_meta($post->ID, "webinar_date", true);
-                if (!empty($webinar_date)) {
-                 $date = new DateTime($webinar_date);
-                 $webinar_date = $date->format('  M j');
-                  echo $webinar_date;
-                }
-              ?>
-            </div>
-            <div class="event-time">
-              <?php $webinar_time = get_post_meta($post->ID, "webinar_time", true);
-                if (!empty($webinar_time)) {
-                 $time = new DateTime($webinar_time);
-                 $webinar_time = $time->format('g a ');
-                  echo $webinar_time;
-                }
-              ?>CT
-            </div>
-        </div>
-        <div class="intro-text">
             <?php
             # This section generates the blurb under the title
             the_post();
             the_content();
             ?>
+
+
+    <?php
+    $webinar_time = get_post_meta($post->ID, "webinar_time", true);
+    $webinar_date = get_post_meta($post->ID, "webinar_date", true);
+    $webinar_link = get_post_meta($post->ID, "webinar_link", true);
+    $todaysDate = time() - (time() % 86400);
+    $vimeo_video_id = get_post_meta($post->ID, 'vimeo_video_id', true);
+    if (is_user_logged_in() ) {
+
+        if ( strtotime($webinar_date) <= $todaysDate) {
+
+            if( !empty($vimeo_video_id) ){
+                ?><iframe src="https://player.vimeo.com/video/<?php echo $vimeo_video_id;?>"
+                          width="950" height="534" frameborder="0" webkitallowfullscreen mozallowfullscreen allow fullscreen></iframe>
+
+                <div class="title-wrapper">
+                    <div class="section-header">
+                        <span id="author"><?php the_author(); echo ":</span> <span id=\"title\">"; the_title(); ?></span>
+                    </div>
+                    <div class="date-time-wrapper">
+                        <div class="srs-webinar-note"> SRS Webinar</div>
+                        <div class="date">
+                            <?php
+                            if (!empty($webinar_date)) {
+                                $date = new DateTime($webinar_date);
+                                $webinar_date = $date->format('  M j');
+                                echo $webinar_date;
+                            }
+                            ?>
+                        </div>
+                        <div class="event-time">
+                            <?php
+                            if (!empty($webinar_time)) {
+                                $time = new DateTime($webinar_time);
+                                $webinar_time = $time->format('g a ');
+                                echo $webinar_time;
+                            }
+                            ?>
+                        </div>
+                    </div>
+
+                    <div id="button-wrapper">
+                        <?php
+                        if(is_user_logged_in()): ?>
+                            <a href="<?php bloginfo('url'); ?>/webinar/">
+                                <button> BACK TO ARCHIVE</button>
+                            </a>
+                        <?php endif; ?>
+                    </div>
+
+                    <div class="video-description">
+                        <?php $video_description = get_post_meta($post->ID, "video_description", true);
+                        echo $video_description;
+                        ?>
+                    </div>
+
+                </div>
+
+
+                <?php
+            }
+        }
+        else{
+            ?>
+            <div class="join-box" id="single-webinar">
+                    <div class="login-credentials">Login Credentials:</div>
+                    <div class="login-credentials">Dial in Number:<span> (123)-456-7890</span></div>
+                    <div class="login-credentials">Pin:<span> 1234</span></div>
+                    <button><a href="<?php echo  $webinar_link?>" target="_blank" style="color: white; font-size: 15px !important">Join the Webinar</a></button>
+                    <button class="blue"><a href="javascript:cal.download('Webinar')" style="color: white; font-size: 15px !important">Add to Cal</a></button>
+            </div>
+
+            <div class="title-wrapper" id="logged-out">
+                <div class="date-time-wrapper" id="logged-out">
+
+                    <div class="date" style="border-left: none">
+                        Live on
+                        <?php $webinar_date = get_post_meta($post->ID, "webinar_date", true);
+                        if (!empty($webinar_date)) {
+                            $date = new DateTime($webinar_date);
+                            $webinar_date = $date->format('  M j, Y');
+                            echo $webinar_date;
+                        }
+                        ?>
+                    </div>
+
+                    <div class="event-time" id="logged-out">
+                        <?php $webinar_time = get_post_meta($post->ID, "webinar_time", true);
+                        if (!empty($webinar_time)) {
+                            $time = new DateTime($webinar_time);
+                            $webinar_time = $time->format('g a ');
+                            echo $webinar_time;
+                        }
+                        ?>CT
+                    </div>
+                </div>
+
+
+                <div class="section-header" id="logged-out">
+                    <span id="author"><?php the_author(); echo ": </span>"; echo the_title(); ?></span>
+                </div>
+
+                <div class="video-description" id="logged-out">
+                    <?php $video_description = get_post_meta($post->ID, "video_description", true);
+                    echo $video_description;
+                    ?>
+                </div>
+
+            </div>
+            <?php
+        }
+    }
+    else {
+        $permalink = get_permalink($post->ID);
+
+
+
+            echo '<div class="join-box" id="single-webinar">
+                Sign in to Watch Webinar Video
+                <br><br>
+                <a href="/supportraisingsolutions.org/login/?redirect_to=%2Fsupportraisingsolutions.org%2Fwebinar%2F<?php echo $post->post_name;?>">Sign In</a> | <a href="mailto:info@supportraisingsolutions.org">Join</a>
+            </div>';
+
+        ?>
+        <div class="title-wrapper" id="logged-out">
+        <div class="date-time-wrapper" id="logged-out">
+
+            <div class="date" style="border-left: none">
+                Live on
+                <?php $webinar_date = get_post_meta($post->ID, "webinar_date", true);
+                if (!empty($webinar_date)) {
+                    $date = new DateTime($webinar_date);
+                    $webinar_date = $date->format('  M j, Y');
+                    echo $webinar_date;
+                }
+                ?>
+            </div>
+
+            <div class="event-time" id="logged-out">
+                <?php $webinar_time = get_post_meta($post->ID, "webinar_time", true);
+                if (!empty($webinar_time)) {
+                    $time = new DateTime($webinar_time);
+                    $webinar_time = $time->format('g a ');
+                    echo $webinar_time;
+                }
+                ?>CT
+            </div>
         </div>
 
-    </div>
-    <div id="button-wrapper">
-        <?php
-        if(is_user_logged_in()): ?>
-            <a href="<?php bloginfo('url'); ?>/webinar/">
-                <button> BACK TO ARCHIVE</button>
-            </a>
-        <?php endif; ?>
-    </div>
+
+            <div class="section-header" id="logged-out">
+                <span id="author"><?php the_author(); echo ": </span>"; echo the_title(); ?></span>
+            </div>
+
+            <div class="video-description" id="logged-out">
+                <?php $video_description = get_post_meta($post->ID, "video_description", true);
+                echo $video_description;
+                ?>
+            </div>
+
+        </div>
+    <?php
+    }
+    ?>
+
+
+
+
+
     <div class = "leader-bio-wrapper">
         <div class="leader-bio">
                 <?php echo get_wp_user_avatar($userID); ?>
