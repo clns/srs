@@ -570,6 +570,7 @@ body{
   position: relative;
   top: -37px;
   right: 19px;
+  width: 100px;
 }
 .network-page.webinar .event-time button{
   padding: 8px !important;
@@ -577,6 +578,7 @@ body{
   font-size: 12px !important;
   position: relative;
   top: 15px;
+  width: 97px;
 }
 .network-page.webinar .event-time .blue{
   background-color: #008ad0 !important;
@@ -2407,7 +2409,6 @@ background: none;
 }
 
 .leader-bio-wrapper .leader-bio .bio-info-button-wrapper{
-  float: left;
   padding-left: 20px;
   padding-bottom: 10px;
   width: 160px;

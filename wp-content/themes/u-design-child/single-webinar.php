@@ -22,16 +22,17 @@ get_header(); ?>
     $webinar_link = get_post_meta($post->ID, "webinar_link", true);
     $todaysDate = time() - (time() % 86400);
     $vimeo_video_id = get_post_meta($post->ID, 'vimeo_video_id', true);
+
 		if (is_user_logged_in() ) {
 			if ( strtotime($webinar_date) <= $todaysDate and !empty($vimeo_video_id)) {
                 echo '<iframe src="https://player.vimeo.com/video/<?php echo $vimeo_video_id;?>" width="950" height="534" frameborder="0" webkitallowfullscreen mozallowfullscreen allow fullscreen></iframe>';
             }
-            else{ ?>
+            elseif(strtotime($webinar_date) >= $todaysDate){ ?>
 					<div class="join-box" id="single-webinar">
-						<div class="login-credentials">Login Credentials:</div>
-						<div class="login-credentials">Dial in Number:<span> (123)-456-7890</span></div>
+						<div class="login-credentials">Login Credentials</div>
+						<div class="login-credentials">Dial in Number:<span> (123)456-7890</span></div>
 						<div class="login-credentials">Pin:<span> 1234</span></div>
-						<button><a href="<?php echo  $webinar_link?>" target="_blank" style="color: white; font-size: 15px !important">Join the Webinar</a></button>
+						<button><a href="<?php echo  $webinar_link?>" target="_blank" style="color: white; font-size: 13px !important">Join the Webinar</a></button>
 						<button class="blue"><a href="javascript:cal.download('Webinar')" style="color: white; font-size: 15px !important">Add to Cal</a></button>
 					</div>
                 <?php
@@ -41,13 +42,18 @@ get_header(); ?>
 			$permalink = get_permalink($post->ID);
             echo '<div class="join-box" id="single-webinar">';
                 if ( strtotime($webinar_date) <= $todaysDate){
-                    echo 'Sign in to Watch the Webinar Video';
+                    if(empty($vimeo_video_id)){
+                        echo 'Webinar Video Coming Soon';
+                    }
+                    else{
+                        echo 'Sign in to Watch the Webinar Video';
+                    }
                 }
                 else{
                     echo 'Sign in to Join the Webinar';
                 };
             echo '<br><br>
-                <a href="/supportraisingsolutions.org/login/?redirect_to=%2Fsupportraisingsolutions.org%2Fwebinar%2F<?php echo $post->post_name;?>">Sign In</a> | <a href="mailto:info@supportraisingsolutions.org?subject=SRS Network Membership&body=I am interested in in the SRS Monthly Webinars. Please contact me with more information.">Join</a>
+                <a href="/supportraisingsolutions.org/login/?redirect_to=%2Fsupportraisingsolutions.org%2Fwebinar%2F'. $post->post_name . '">Sign In</a> | <a href="mailto:info@supportraisingsolutions.org?subject=SRS Network Membership&body=I am interested in the SRS Monthly Webinars. Please contact me with more information.">Join</a>
             </div>';
         }
 
@@ -71,7 +77,7 @@ get_header(); ?>
                 <?php
                  if (!empty($webinar_date)) {
                      $date = new DateTime($webinar_date);
-                      $webinar_date = $date->format('  M j');
+                      $webinar_date = $date->format('  M j, Y');
                       echo $webinar_date;
                   };
                  ?>
