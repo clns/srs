@@ -554,10 +554,7 @@ body{
   width: 120px;
 }
 .network-page.webinar .year{
-  /*position: relative;*/
   font-size: 14px;
-  /*right: 7px;*/
-  /*bottom: 5px;*/
  }
 .network-page.webinar .event-time button{
   padding: 8px !important;
