@@ -502,7 +502,7 @@ body{
 .network-page.webinar .event .leader-name {
   font-size: 24px;
   letter-spacing: 0.01em;
-  line-height: 166%;
+  line-height: 135%;
   color: #8052a1;
 }
 .network-page.webinar .event .leader-bio {
@@ -519,7 +519,7 @@ body{
   transform: scale(1.1, 1);
   display: inline-block;
   width: 450px;
-  font-size: 30px;
+  font-size: 24px;
   line-height: 113%;
   color: #8052a1;
   margin: 20px 0 0 75px;
@@ -537,55 +537,39 @@ body{
   font-size: 17px;
 }
 .network-page.webinar .line{
-  position: relative;
-  top: -39px;
-  right: 19px;
+  /*position: relative;*/
+  /*top: -39px;*/
+  /*right: 19px;*/
 }
 .network-page.webinar .event-time{
   float: right;
   background-color: #f2f2f2;
-  padding: 24px;
+  padding: 10px;
   position: relative;
   top: -5px;
-  text-align: center;
-  font-size: 18px;
+  text-align: left;
+  font-size: 22px;
   letter-spacing: 0.01em;
-  height: 115px;
-  width: 95px;
+  height: 135px;
+  width: 120px;
 }
-.network-page.webinar .date{
-  letter-spacing: 0.01em;
-  width: 75px;
-  height: 75px;
-  position: relative;
-  right: 27px;
-  bottom: 24px;
-}
-.network-page.webinar .date .year{
-  position: relative;
-  right: 7px;
-  bottom: 5px;
+.network-page.webinar .year{
+  /*position: relative;*/
+  font-size: 14px;
+  /*right: 7px;*/
+  /*bottom: 5px;*/
  }
-.network-page.webinar .time-of-day{
-  position: relative;
-  top: -37px;
-  right: 19px;
-  width: 100px;
-}
 .network-page.webinar .event-time button{
   padding: 8px !important;
   border: 0;
   font-size: 12px !important;
-  position: relative;
-  top: 15px;
-  width: 97px;
+  margin: 10px 0px;
+  position: absolute;
+  bottom: 0;
 }
 .network-page.webinar .event-time .blue{
   background-color: #008ad0 !important;
-  position: relative;
   color: white;
-  top: -12px;
-  right: 5px;
 }
 
 #network.network-page.catapult .page-banner{
@@ -2271,7 +2255,7 @@ background: none;
 }
 .webinar-video-container.network-page .blue{
   background-color: #008ad0 !important;
-  padding: 5px !important;
+  padding: 8px !important;
   color: white;
   margin-top: 10px;
 }
