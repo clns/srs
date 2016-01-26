@@ -35,11 +35,11 @@ get_header();
         </div>
         <div class="clear"></div>
       </div>
-      <div class="join-box">
-        Get 250+ Catapult Videos
-        <div class="status-text">(Coming Soon!)</div>
-        <a href="mailto:info@supportraisingsolutions.org"><button>Contact Us</button></a>
-      </div>
+          <div class="join-box">
+            SRS Network Members Catapult Series Access
+            <br><br>
+            <a href="/supportraisingsolutions.org/catapult-series" style="color: #F1632A;">Sign In</a> | <a href="mailto:info@supportraisingsolutions.org?subject=SRS Network Membership&body=I am interested in the SRS Monthly Webinars. Please contact me with more information." style="color: #F1632A;">Join</a>
+          </div>
       <div class="clear"></div>
       <div class="previews-container">
         <div class="previews-border"></div>
