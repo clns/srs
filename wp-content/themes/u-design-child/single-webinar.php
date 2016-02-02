@@ -45,7 +45,7 @@ get_header(); ?>
 						<div class="login-credentials">Login Credentials</div>
 						<div class="login-credentials">Dial in Number:<span> <?php echo $webinar_phone ?></span></div>
 						<div class="login-credentials">Pin:<span> <?php echo $webinar_pin ?></span></div>
-						<button><a href="<?php echo  $webinar_link?>" target="_blank" style="color: white; font-size: 14px !important">Join the Webinar</a></button>
+                        <a href="<?php echo  $webinar_link?>" target="_blank" style="color: white; font-size: 14px !important"><button>Join the Webinar</button></a>
                         <?php
                         $video_description = get_post_meta($post->ID, "video_description", true);
                         $webinar_date = get_post_meta($post->ID, "webinar_date", true);

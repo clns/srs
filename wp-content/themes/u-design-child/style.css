@@ -334,7 +334,9 @@ body{
 #network a button{
   cursor: pointer;
 }
-
+#network a{
+  cursor: pointer;
+}
 
 #network.network-page .page-banner{
  background: #00a651 url('images/network/member_banner.jpg') no-repeat center right;
@@ -567,6 +569,7 @@ body{
 .network-page.webinar .event-time .blue{
   background-color: #008ad0 !important;
   color: white;
+  cursor: pointer;
 }
 
 #network.network-page.catapult .page-banner{
@@ -2255,6 +2258,7 @@ background: none;
   padding: 8px !important;
   color: white;
   margin-top: 10px;
+  cursor: pointer;
 }
 .title-wrapper{
   float: left;
@@ -2366,19 +2370,22 @@ background: none;
 .leader-bio-wrapper .leader-bio .author-name-wrapper{
   float: left;
   display: inline-block;
-  padding-left: 5px;
+  padding-left: 10px;
   font-weight: bold;
+  font-size: 20px;
 }
 .leader-bio-wrapper .leader-bio .job-title-wrapper{
   float: left;
   display: inline-block;
   padding-left: 5px;
+  font-size: 20px;
 }
 
 .leader-bio-wrapper .leader-bio .organization-title-wrapper{
   float: left;
   display: inline-block;
   padding-left: 5px;
+  font-size: 20px;
 }
 
 .leader-bio-wrapper .leader-bio .bio-info-wrapper{
@@ -2387,6 +2394,7 @@ background: none;
   padding-left: 10px;
   width: 700px;
   height: 120px;
+  font-size: 15px;
 }
 
 .leader-bio-wrapper .leader-bio .bio-info-button-wrapper{
