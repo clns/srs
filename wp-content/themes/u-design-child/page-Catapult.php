@@ -38,7 +38,7 @@ get_header();
           <div class="join-box">
             SRS Network Members Catapult Series Access
             <br><br>
-            <a href="/supportraisingsolutions.org/catapult-series" style="color: #F1632A;"><?php if(is_user_logged_in()){echo 'Watch Now';} else{echo 'Sign In';}?></a> | <a href="mailto:info@supportraisingsolutions.org?subject=SRS Network Membership&body=I am interested in the SRS Catapult Series Videos. Please contact me with more information." style="color: #F1632A;">Join</a>
+            <a href="/catapult-series" style="color: #F1632A;"><?php if(is_user_logged_in()){echo 'Watch Now';} else{echo 'Sign In';}?></a> | <a href="mailto:info@supportraisingsolutions.org?subject=SRS Network Membership&body=I am interested in the SRS Catapult Series Videos. Please contact me with more information." style="color: #F1632A;">Join</a>
           </div>
       <div class="clear"></div>
       <div class="previews-container">
