@@ -29,6 +29,9 @@ get_header();
                         return date('Ymd\THis\Z', $timestamp);
                     }
 
+                    // Begin main posts' loop stuff here
+                    $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+
                     $global_posts_query = new WP_Query(
                         array(
                             'post_type' => 'webinar',
@@ -46,6 +49,7 @@ get_header();
                             'meta_key' => 'webinar_date',
                             'orderby' => 'meta_value',
                             'order' => 'DESC',
+                            'paged' => $paged,
                             'posts_per_page' => 5
                         )
                     );
@@ -79,6 +83,8 @@ get_header();
 
 
             <?php
+
+
                 if($global_posts_query->have_posts()) :
                     while($global_posts_query->have_posts()) : $global_posts_query->the_post(); ?>
                         <div class="event">
@@ -127,7 +133,7 @@ get_header();
                                     ?>
                                 </div>
                                 <div class="line"></div>
-                                <?
+                                <?php
                                 $webinar_date = get_post_meta($post->ID, "webinar_date", true);
                                 $todaysDate = time() - (time() % 86400);
                                 if ( strtotime($webinar_date) >= $todaysDate) { ?>
@@ -139,9 +145,7 @@ get_header();
                                         echo $webinar_time;
                                     }
                                     ?>CT
-                                    </div><? }?>
-
-                                <?php
+                                    </div><?php }
                                 $webinar_date = get_post_meta($post->ID, "webinar_date", true);
                                 $vimeo_video_id = get_post_meta($post->ID, "vimeo_video_id", true);
                                 $todaysDate = time() - (time() % 86400);
@@ -176,9 +180,29 @@ get_header();
                             </div>
                         </div>
                         <div class="clear"></div>
-                    <? endwhile;
-                endif;
-                ?>
+                    <?php endwhile;
+
+                    // Pagination
+                    if(function_exists('wp_pagenavi')) :
+
+                        wp_pagenavi( array( 'query' => $global_posts_query ) );
+                    else : ?>
+                        <div class="navigation">
+                            <div class="alignleft"><?php previous_posts_link() ?></div>
+                            <div class="alignright"><?php next_posts_link() ?></div>
+                        </div>
+                    <?php
+                    endif;
+
+                    // Restore original Post Data
+                    wp_reset_postdata(); ?>
+
+                <?php else : ?>
+                    <h2 class="center"><?php esc_html_e('Not Found', 'udesign'); ?></h2>
+                    <p class="center"><?php esc_html_e("Sorry, but you are looking for something that isn't here.", 'udesign'); ?></p>
+                    <?php		get_search_form();
+                endif; ?>
+
 
             </div>
         </div>
