@@ -1,3 +1,3 @@
-tinyMCE.addI18n("en.slidetabs",{
-	title : "Embed SlideTabs"
+tinyMCE.addI18n("en.slidetabs",{
+	title : "Embed SlideTabs"
 });
