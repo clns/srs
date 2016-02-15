@@ -22,7 +22,7 @@ get_header();
         helping you create a culture of a fully funded ministry. Join today and discover all that membership has to offer!</div>
         <div class="bullet-benefits"><div class="detail-heading">Your Membership Benefits</div>
           <ul>
-            <li>$150 off registration to the <a href="srs-national-conference">National Conference</a></li>
+            <li>$150 off registration to the <a href="leaders-conference/">Support Raising Leader's Conference</a></li>
             <li>Access to monthly <a href="webinar">webinars</a></li>
             <li><a href="audit">SRS Audit Survey</a></li>
             <li>Access to over 250 <a href="catapult">Catapult Series</a> videos</li>
@@ -50,13 +50,13 @@ get_header();
         <div class="benefits-border"></div>
         <div class="section-header">Membership Benefits</div>
         <div class="benefit">
-          <a href="srs-national-conference">
+          <a href="leaders-conference/">
           <img src="<?php bloginfo('template_directory');?>-child/images/network/national_conference_benefit.jpg" alt="">
-          <div class="detail-heading">National Conference</div></a>
+          <div class="detail-heading">Support Raising Leader's Conference</div></a>
           Come and be equipped by workshops and plenary
           sessions on best practices to help recruits overcome
           the fear of support raising, train new staff, coach veterans, and 
-          instill a fully funded culture in your ministry. <a href="srs-national-conference">Read More.</a>
+          instill a fully funded culture in your ministry. <a href="leaders-conference/">Read More.</a>
         </div>
         <div class="benefit middle">
           <a href="catapult">
