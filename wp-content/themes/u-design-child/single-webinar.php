@@ -32,7 +32,7 @@ get_header(); ?>
 
 		if (is_user_logged_in() ) {
 			if ( strtotime($webinar_date) <= $todaysDate and !empty($vimeo_video_id)) {
-                echo '<iframe src="https://player.vimeo.com/video/<?php echo $vimeo_video_id;?>" width="950" height="534" frameborder="0" webkitallowfullscreen mozallowfullscreen allow fullscreen></iframe>';
+                ?> <iframe src="https://player.vimeo.com/video/<?php echo $vimeo_video_id;?>" width="950" height="534" frameborder="0" webkitallowfullscreen mozallowfullscreen allow fullscreen></iframe><?php
             }
             elseif(strtotime($webinar_date) >= $todaysDate){ ?>
                 <?/*This script, ics.deps.min.js version 0.1.3, was developed by Travis Krause and Kyle Hornberg, https://github.com/nwcell/ics.js,
@@ -81,7 +81,7 @@ get_header(); ?>
                     echo 'Sign in to Join the Webinar';
                 };
             echo '<br><br>
-                <a href="/supportraisingsolutions.org/login/?redirect_to=%2Fsupportraisingsolutions.org%2Fwebinar%2F'. $post->post_name . '">Sign In</a> | <a href="mailto:info@supportraisingsolutions.org?subject=SRS Network Membership&body=I am interested in the SRS Monthly Webinars. Please contact me with more information.">Join</a>
+                <a href="/supportraisingsolutions.org/login/?redirect_to= %2Fwebinars%2F'. $post->post_name . '">Sign In</a> | <a href="mailto:info@supportraisingsolutions.org?subject=SRS Network Membership&body=I am interested in the SRS Monthly Webinars. Please contact me with more information.">Join</a>
             </div>';
         }
 
@@ -125,7 +125,7 @@ get_header(); ?>
         $webinar_date = get_post_meta($post->ID, "webinar_date", true);
         if(strtotime($webinar_date) <= $todaysDate and is_user_logged_in()) {?>
             <div id="button-wrapper">
-                <a href="<?php bloginfo('url'); ?>/webinar/">
+                <a href="<?php bloginfo('url'); ?>/webinars/">
                     <button> BACK TO ARCHIVE</button>
                 </a>
             </div>
