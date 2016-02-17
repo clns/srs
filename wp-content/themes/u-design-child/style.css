@@ -265,6 +265,11 @@ body{
   height: 220px;
   text-align: center;
 }
+
+.fac-splash p, .member-splash p {
+	text-align: center;
+}
+
 #network .label{
   font-family: 'Myriad Lt';
   font-size: 30px;
@@ -315,6 +320,12 @@ body{
   color: #72bf44;
   padding-left: 20px;
 }
+#network .benefit .detail-heading{
+  line-height: 100%;
+  padding: 10px 0 10px 20px;
+  min-height: 42px;
+}
+
 #network .fac-container .detail-heading{
   -ms-transform: scale(1.1, 1); /* IE 9 */
   -webkit-transform: scale(1.1, 1); /* Safari */
