@@ -228,6 +228,63 @@ if ( function_exists('register_sidebar') ) {
       'before_title' => '<h3 class="join-box-title">',
       'after_title' => '</h3>',
   ));
+
+  register_sidebar(array(
+      'name' => esc_html__('Facilitator Membership Benefits1 ', 'udesign'),
+      'id' => 'facilitator-membership-benefits1',
+      'description' => esc_html__('A widget area, used as the orange box on the network pages.', 'udesign'),
+      'before_widget' => '<div class="section-header">Membership Benefits</div><div class="benefit">',
+      'after_widget' => '</div>',
+      'before_title' => '<h3 class="benefits1-title">',
+      'after_title' => '</h3>',
+  ));
+  register_sidebar(array(
+      'name' => esc_html__('Facilitator Membership Benefits2 ', 'udesign'),
+      'id' => 'facilitator-membership-benefits2',
+      'description' => esc_html__('A widget area, used as the orange box on the network pages.', 'udesign'),
+      'before_widget' => '<div class="benefit middle">',
+      'after_widget' => '</div>',
+      'before_title' => '<h3 class="benefits2-title">',
+      'after_title' => '</h3>',
+  ));
+  register_sidebar(array(
+      'name' => esc_html__('Facilitator Membership Benefits3 ', 'udesign'),
+      'id' => 'facilitator-membership-benefits3',
+      'description' => esc_html__('A widget area, used as the orange box on the network pages.', 'udesign'),
+      'before_widget' => '<div class="benefit">',
+      'after_widget' => '</div>',
+      'before_title' => '<h3 class="benefits3-title">',
+      'after_title' => '</h3>',
+  ));
+
+  register_sidebar(array(
+      'name' => esc_html__('Network Membership Benefits1 ', 'udesign'),
+      'id' => 'network-membership-benefits1',
+      'description' => esc_html__('A widget area, used as the orange box on the network pages.', 'udesign'),
+      'before_widget' => '<div class="section-header">Membership Benefits</div><div class="benefit">',
+      'after_widget' => '</div>',
+      'before_title' => '<h3 class="benefits1-title">',
+      'after_title' => '</h3>',
+  ));
+  register_sidebar(array(
+      'name' => esc_html__('Network Membership Benefits2 ', 'udesign'),
+      'id' => 'network-membership-benefits2',
+      'description' => esc_html__('A widget area, used as the orange box on the network pages.', 'udesign'),
+      'before_widget' => '<div class="benefit middle">',
+      'after_widget' => '</div>',
+      'before_title' => '<h3 class="benefits2-title">',
+      'after_title' => '</h3>',
+  ));
+  register_sidebar(array(
+      'name' => esc_html__('Network Membership Benefits3 ', 'udesign'),
+      'id' => 'network-membership-benefits3',
+      'description' => esc_html__('A widget area, used as the orange box on the network pages.', 'udesign'),
+      'before_widget' => '<div class="benefit">',
+      'after_widget' => '</div>',
+      'before_title' => '<h3 class="benefits3-title">',
+      'after_title' => '</h3>',
+  ));
+
 }
 
 
