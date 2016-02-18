@@ -359,14 +359,14 @@ body{
   margin-left: 175px;
   color: white;
 }
-.network-page .intro-text{
+.network-page p{
   font-family: 'Myriad It';
   font-size: 15px;
   letter-spacing: 0.015em;
   line-height: 140%;
   margin-bottom: 30px;
 }
-.network-page .intro-text span {
+.network-page p strong {
   font-family: 'Myriad Bd It';
 }
 .network-page .description-container{

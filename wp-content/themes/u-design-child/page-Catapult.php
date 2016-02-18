@@ -17,29 +17,16 @@ get_header();
         <div class="banner-text">Catapult Series</div>
       </div>
       <div class="description-container">
-        <div class="intro-text"><span>Become an agent of change and create a culture of a fully funded ministry</span> through simple 
-        and practical support raising wisdom. Join the Network and get access to an exhaustive library of 
-        over 250 videos rooted in biblical truths. Check out the five sample videos below to get a snapshot 
-        of what's to come!</i></div>
-        <div class="bullet-columns"><div class="detail-heading">Catapult Series Benefits</div>
-          <ul>
-            <div class="bullet-left">
-              <li>Glean from 15 years of support raising wisdom</li>
-              <li>Relevant, understandable content</li>
-            </div>
-            <div class="bullet-right">
-              <li>Quickly and easily find the answers you need through topical categories</li>
-              <li>Access any time from anywhere</li>
-            </div>
-          </ul>
-        </div>
+        <?php
+          // Display content of page
+          the_post();
+          the_content();
+        ?>
         <div class="clear"></div>
       </div>
-          <div class="join-box">
-            SRS Network Members Catapult Series Access
-            <br><br>
-            <a href="/catapult-series" style="color: #F1632A;"><?php if(is_user_logged_in()){echo 'Watch Now';} else{echo 'Sign In';}?></a> | <a href="mailto:info@supportraisingsolutions.org?subject=SRS Network Membership&body=I am interested in the SRS Catapult Series Videos. Please contact me with more information." style="color: #F1632A;">Join</a>
-          </div>
+
+          <?php if(is_active_sidebar('join-box')): { dynamic_sidebar( 'join-box' ); }else : endif;?>
+
       <div class="clear"></div>
       <div class="previews-container">
         <div class="previews-border"></div>
