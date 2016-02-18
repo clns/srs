@@ -13,13 +13,11 @@ get_header(); ?>
                     <div class="banner-text"><?php the_title(); ?></div>
                 </div>
 
-                <div class="intro-text">
                     <?php
                     # This section generates the blurb under the page-banner
                     the_post();
                     the_content();
                     ?>
-                </div>
 
                 <?php
                 foreach( get_terms( 'catapulttopic', array( 'hide_empty' => false, 'parent' => 0 ) ) as $parent_term ) { ?>

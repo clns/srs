@@ -16,10 +16,10 @@ get_header();
 			<div class="page-banner">
         <div class="banner-text">Network Membership</div>
       </div>
-      <div class="description-container">
-        <div class="intro-text"><span>When you become a member of the SRS Network</span>, you will become part of a vibrant community
+      <p class="description-container">
+        <p><strong>When you become a member of the SRS Network</strong>, you will become part of a vibrant community
         all over the world. Members of the SRS Network will have access to exclusive resources and training opportunities,
-        helping you create a culture of a fully funded ministry. Join today and discover all that membership has to offer!</div>
+        helping you create a culture of a fully funded ministry. Join today and discover all that membership has to offer!</p>
         <div class="bullet-benefits"><div class="detail-heading">Your Membership Benefits</div>
           <ul>
             <li>$150 off registration to the <a href="leaders-conference/">Support Raising Leader's Conference</a></li>

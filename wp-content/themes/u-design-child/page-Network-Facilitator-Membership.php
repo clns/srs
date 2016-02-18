@@ -17,10 +17,10 @@ get_header();
         <div class="banner-text">Facilitator Membership</div>
       </div>
       <div class="description-container">
-        <div class="intro-text"><span>Are you ready to take the next step</span> and facilitate your own Bootcamp? With a Facilitator 
+        <p><strong>Are you ready to take the next step</strong> and facilitate your own Bootcamp? With a Facilitator
         Membership, you can equip your staff and help create a culture of a fully funded ministry. As a 
         certified Facilitator, you will have access to exclusive resources and training opportunities, like 
-        Bootcamp in a Box and free registration to the <a href="leaders-conference/">Support Raising Leader's Conference.</a></div>
+        Bootcamp in a Box and free registration to the <a href="leaders-conference/">Support Raising Leader's Conference.</a></p>
         <div class="bullet-benefits"><div class="detail-heading">Your Membership Benefits</div>
           <ul>
             <li><i>Free</i> SRS Bootcamp <a href="facilitatorstraining">Facilitator Training</a></li>
