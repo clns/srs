@@ -209,6 +209,25 @@ if ( function_exists('register_sidebar') ) {
       'after_title' => '</h3>',
   ));
 
+  register_sidebar(array(
+      'name' => esc_html__('Facilitator Membership Join Box', 'udesign'),
+      'id' => 'facilitator-membership-join-box',
+      'description' => esc_html__('A widget area, used as the orange box on the network pages.', 'udesign'),
+      'before_widget' => '<div class="join-box">',
+      'after_widget' => '</div>',
+      'before_title' => '<h3 class="join-box-title">',
+      'after_title' => '</h3>',
+  ));
+
+  register_sidebar(array(
+      'name' => esc_html__('Network Membership Join Box', 'udesign'),
+      'id' => 'network-membership-join-box',
+      'description' => esc_html__('A widget area, used as the orange box on the network pages.', 'udesign'),
+      'before_widget' => '<div class="join-box">',
+      'after_widget' => '</div>',
+      'before_title' => '<h3 class="join-box-title">',
+      'after_title' => '</h3>',
+  ));
 }
 
 
