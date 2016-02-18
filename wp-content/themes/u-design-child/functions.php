@@ -198,6 +198,17 @@ if ( function_exists('register_sidebar') ) {
       'before_title' => '<h3 class="join-box-title">',
       'after_title' => '</h3>',
   ));
+
+  register_sidebar(array(
+      'name' => esc_html__('Webinar Join Box', 'udesign'),
+      'id' => 'webinar-join-box',
+      'description' => esc_html__('A widget area, used as the orange box on the network pages.', 'udesign'),
+      'before_widget' => '<div class="join-box">',
+      'after_widget' => '</div>',
+      'before_title' => '<h3 class="join-box-title">',
+      'after_title' => '</h3>',
+  ));
+
 }
 
 

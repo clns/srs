@@ -70,12 +70,8 @@ get_header();
 
                 <div class="clear"></div>
             </div>
-            <?php if(!is_user_logged_in() ){?>
-            <div class="join-box">
-                SRS Network Members Webinar Access
-                <br><br>
-                <a href="/supportraisingsolutions.org/login/?redirect_to=%2Fsupportraisingsolutions.org%2F<?php echo $post->post_name;?>">Sign In</a> | <a href="mailto:info@supportraisingsolutions.org?subject=SRS Network Membership&body=I am interested in the SRS Monthly Webinars. Please contact me with more information.">Join</a>
-            </div>
+            <?php if(!is_user_logged_in() ){
+                if(is_active_sidebar('webinar-join-box')): { dynamic_sidebar( 'webinar-join-box' ); }else : endif;?>
             <?php }?>
             <div class="clear"></div>
             <div class="event-container">
