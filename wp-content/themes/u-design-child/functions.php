@@ -190,8 +190,8 @@ if ( function_exists('register_sidebar') ) {
   ));
 
   register_sidebar(array(
-      'name' => esc_html__('Join Box', 'udesign'),
-      'id' => 'join-box',
+      'name' => esc_html__('Catapult Join Box', 'udesign'),
+      'id' => 'catapult-join-box',
       'description' => esc_html__('A widget area, used as the orange box on the network pages.', 'udesign'),
       'before_widget' => '<div class="join-box">',
       'after_widget' => '</div>',

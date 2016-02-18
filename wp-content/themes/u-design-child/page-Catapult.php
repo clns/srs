@@ -25,7 +25,7 @@ get_header();
         <div class="clear"></div>
       </div>
 
-          <?php if(is_active_sidebar('join-box')): { dynamic_sidebar( 'join-box' ); }else : endif;?>
+          <?php if(is_active_sidebar('catapult-join-box')): { dynamic_sidebar( 'catapult-join-box' ); }else : endif;?>
 
       <div class="clear"></div>
       <div class="previews-container">
