@@ -42,14 +42,6 @@ get_header(); ?>
             ?>
         </div>
     </div>
-    <div id="button-wrapper">
-        <?php
-        if(is_user_logged_in()): ?>
-            <a href="<?php bloginfo('url'); ?>/catapult-series/">
-                <button> BACK TO ARCHIVE</button>
-            </a>
-        <?php endif; ?>
-    </div>
 
     <?php
         $output .= get_dynamic_column( 'cont-box-3', 'one_third home-cont-box', 'catapult-video-page-column-1' );
