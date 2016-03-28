@@ -626,6 +626,10 @@ body{
   font-size: 18px;
   line-height: 116%;
 }
+.network-page.audit p{
+  font-family: 'Myriad Regular';
+  margin-bottom: 0px;
+ }
 .network-page.audit .benefit div{
   -ms-transform: scale(1.1, 1); /* IE 9 */
   -webkit-transform: scale(1.1, 1); /* Safari */
