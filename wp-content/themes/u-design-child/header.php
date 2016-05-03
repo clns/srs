@@ -118,8 +118,6 @@ if ( $udesign_options['enable_responsive'] ) echo '<meta name="viewport" content
 
 <?php echo $udesign_options['google_analytics']; ?>
 
-<script src="css_browser_selector.js" type="text/javascript"></script>
-
 </head>
 
 <body <?php body_class( $udesign_options['enable_cufon'] ); ?>>
