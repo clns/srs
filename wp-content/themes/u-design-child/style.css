@@ -2193,18 +2193,6 @@ background: none;
   color: white;
 }
 
-#button-wrapper button{
-  font-family: 'Myriad SmBd';
-  font-size: 15px;
-  letter-spacing: 0.05em;
-  color: white;
-  text-transform: uppercase;
-  border-radius: 3px;
-  padding: 11px 22px;
-  border: 0;
-  background-color: #42baf1;
-}
-
 .title-wrapper .video-description{
   float: left;
   display: inline-block;
@@ -2212,7 +2200,6 @@ background: none;
   width: 100%;
   font-size: 15px;
 }
-
 
 .catapult-video-container.network-page .section-header{
   margin: 20px 32px 0px 32px;
@@ -2344,14 +2331,14 @@ background: none;
   font-weight: bold;
 }
 
-#button-wrapper{
+#button-wrapper {
   float: right;
   width: 20%;
   display: inline-block;
   margin-top: 10px;
 }
 
-#button-wrapper button{
+.webinar-video-container.network-page .title-wrapper button{
   font-family: 'Myriad SmBd';
   font-size: 15px;
   letter-spacing: 0.05em;
@@ -2362,6 +2349,19 @@ background: none;
   border: 0;
   background-color: mediumpurple;
 }
+
+#button-wrapper_presentation {
+  float: left;
+  width: 20%;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+#button-wrapper_presentation button{
+  background-color: #eb752e;
+}
+
+
 .leader-bio-wrapper{
   width: 950px;
   display: inline-block;
@@ -2428,4 +2428,13 @@ background: none;
   padding: 2px 5px;
   border: 0;
   background-color: #F1632A;
+}
+
+.leader-pic{
+  float:left;
+}
+
+.leader-info{
+  width: 170px;
+  float:left;
 }

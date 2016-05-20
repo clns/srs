@@ -141,6 +141,17 @@ get_header(); ?>
             <?php $video_description = get_post_meta($post->ID, "video_description", true);
             echo $video_description;
             ?>
+
+            <?php
+            $webinar_presentation = get_post_meta($post->ID, 'webinar_presentation', true);
+            if ($webinar_presentation) { ?>
+                <div id="button-wrapper_presentation">
+                    <a href="<?php echo $webinar_presentation[guid]; ?>">
+                        <button>DOWNLOAD PRESENTATION</button>
+                    </a>
+                </div>
+            <?php } ?>
+
         </div>
     </div>
 

@@ -53,7 +53,7 @@ get_header();
                             'posts_per_page' => 5
                         )
                     );
-?>
+                ?>
 
 <div id="content-container" class="full-width">
 	<div id="main-content" class="full-width">
@@ -86,7 +86,10 @@ get_header();
                         <div class="event">
                             <div class="event-border"></div>
                             <div class="leader-bio">
+                                <div class="leader-pic">
                                 <a href="<?php echo get_author_posts_url(get_the_author_meta('ID'));?>"><?php echo get_wp_user_avatar($userID); ?>
+                                </div>
+                                <div class="leader-info">
                                     <span class="leader-name"><?php the_author(); ?></span></a><br>
                                 <?php
 
@@ -101,6 +104,7 @@ get_header();
                                         echo $organization;
                                     } ?>
                                 </i>
+                                </div>
                             </div>
                             <a href = "<?php echo $permalink ?>">
                             <div class="event-header">
