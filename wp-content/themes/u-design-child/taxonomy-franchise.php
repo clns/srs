@@ -194,12 +194,12 @@ $is_private = get_queried_object()->term_id != 12 ? true : false;
             if (empty($before_coming)) {
               if ( $is_private ) {
                 $before_coming_text = '<li>Register and pay full registration.</li>'
-                                        . '<li>After registering, download and complete the Preparation Packet (<a href="' . home_url() . '/docs/SRSBootcamp-Prep-Checklist-Network.pdf" target="_blank">Preview Checklist</a> | <a href="' . home_url() . '/preppacketnetwork/" target="_blank">Download Prep Packet</a>)</li>'
+                                        . '<li>After registering, download and complete SRS Learn (<a href="' . home_url() . '/docs/SRSBootcamp-Prep-Checklist-Network.pdf" target="_blank">Preview Checklist</a> | <a href="http://learn.supportraisingsolutions.org" target="_blank">Take Me to SRS Learn</a>)</li>'
                                         . '<li>Receive <span style="font-style: italic;">The God Ask</span> and <span style="font-style: italic;">Viewpoints</span>, which will be mailed to you.</li>';
 
               } else {
                 $before_coming_text = '<li>Register and pay full registration (if you complete the Prep, you will receive the rebate after the Bootcamp)'
-                                        . '<li>After registering, download and complete the Preparation Packet (<a href="' . home_url() . '/docs/SRSBootcamp-Prep-Checklist.pdf" target="_blank">preview the Prep Checklist</a>)</li>'
+                                        . '<li>After registering, download and complete SRS Learn (<a href="' . home_url() . '/docs/SRSBootcamp-Prep-Checklist.pdf" target="_blank">Preview Checklist</a> | <a href="http://learn.supportraisingsolutions.org" target="_blank">Take Me to SRS Learn</a>)</li>'
                                         . '<li>Receive <span style="font-style: italic;">The God Ask</span> and <span style="font-style: italic;">Viewpoints</span>, which will be mailed to you.</li>';
               }
             } else {
