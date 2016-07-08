@@ -617,6 +617,9 @@ body{
 .network-page.catapult a{
   color: #00aeef;
 }
+.network-page.catapult .textwidget a {
+  color: #F1632A;
+}
 .network-page.catapult .benefit div{
   -ms-transform: scale(1.1, 1); /* IE 9 */
   -webkit-transform: scale(1.1, 1); /* Safari */
