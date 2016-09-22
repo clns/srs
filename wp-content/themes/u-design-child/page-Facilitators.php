@@ -48,7 +48,7 @@ get_header();
 			<div class="marketing-white-bg" id="slide-2">
 				<div class="marketing-content">
 					<div class="section-header">Completely interactive, discussion-led format</div>
-
+					
 					<?php echo get_new_royalslider(1);?>
 					<!-- <div class="flexslider">
 						<ul class="slides">
