@@ -21,7 +21,8 @@ if ( $udesign_options['enable_responsive'] ) echo '<meta name="viewport" content
 <meta name="show-menu-auto-arrows" content="<?php echo ($udesign_options['show_menu_auto_arrows']) ? 1 : 0; ?>" />
 <meta name="show-menu-drop-shadows" content="<?php echo ($udesign_options['show_menu_drop_shadows']) ? 1 : 0; ?>" />
 <meta property="og:image" content="http://supportraisingsolutions.org/wp-content/uploads/2013/06/SRSFacebookDefault.png" />
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
 <?php if (is_tax()) {
   $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy')); 
   if ($term->term_id != 12) {
