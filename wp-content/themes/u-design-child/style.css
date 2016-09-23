@@ -2441,3 +2441,383 @@ background: none;
   width: 170px;
   float:left;
 }
+
+/*-------------------Make site responsive---------------------*/
+body {
+  min-width: initial;
+}
+.full-width-content {
+  max-width: 950px;
+  margin: 50px auto;
+}
+/*.container_24 {*/
+   /*width: initial;*/
+/*}*/
+/*.marketing-content {*/
+   /*width: 100%;*/
+/*}*/
+/*#new-royalslider-1 {*/
+  /*width: 100% !important;*/
+/*}*/
+/*.rsSBlock {*/
+  /*width: 100% !important;*/
+/*}*/
+
+/*-------------------CLIMB Conference---------------------*/
+
+#climb {
+  line-height: initial;
+}
+/*#climb img {*/
+  /*max-width: initial;*/
+/*}*/
+/* WP adds all sorts of <p> that create weird gaps */
+#climb p {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: inherit;
+}
+#climb p.actual {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+#climb {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+#climb h1, h2, #climb h3, h4, .emphasis {
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.2em;
+  margin-top: 0;
+}
+#climb h1 {
+  font-family:'DIN 1451 W01';
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  color: #807069;
+  font-size: 24px;
+  line-height: 1.5em;
+  /*margin-bottom: 20px;*/
+}
+#climb .h2-wrap {
+  text-align: center;
+}
+#climb h2 {
+  font-family:'DIN 1451 W01';
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: #84ada8;
+  font-size: 30px !important;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #84ada8;
+  padding-bottom: 5px;
+  width: 270px;
+  text-align: left;
+  display: inline-block;
+  background: url("http://supportraisingsolutions.org/wp-content/uploads/2016/02/circle-blue.gif") no-repeat right;
+}
+#climb h3, .emphasis {
+  font-family:'DIN 1451 W01';
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  color: #fbb040;
+  font-size: 24px !important;
+  margin-bottom: 10px;
+}
+#climb .key-title {
+  text-transform: none;
+  letter-spacing: normal;
+  color: #85ada8;
+}
+#climb .pre-sub, h4 {
+  font-family:'Frutiger W01';
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  color: #807069;
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+#climb h4 {
+  font-size: 18px;
+  letter-spacing: 0.125em;
+  margin-bottom: 15px;
+}
+#climb p.actual, #format li, h5 {
+  font-family:'Frutiger W01';
+  font-weight: 400;
+  color: #807069;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-transform: none;
+}
+#climb h5 {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0 0 20px 0;
+  text-align: center;
+  line-height: 1.6em;
+}
+#climb a {
+  color: #fbb040;
+  text-decoration: none;
+  font-weight: 500;
+}
+#climb h1 a, #climb h2 a, #climb h3 a, #climb h5 a, #climb h5 a {
+  color: inherit;
+  border-bottom: 1px #fbb040 solid;
+  margin-bottom: 2px;
+}
+#climb h1 a:hover, #climb h2 a:hover, #climb h3 a:hover, #climb h5 a:hover, #climb h5 a:hover {
+  color: #fbb040;
+}
+#climb .clearfix:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+#climb section {
+  /*width: 850px;*/
+  padding: 20px;
+}
+#intro {
+  margin: 10px 0;
+}
+#climb .topo {
+  background-image: url("http://supportraisingsolutions.org/wp-content/uploads/2016/02/topo2.gif");
+  background-color:#e5ecf4;
+}
+#climb .emphasis {
+  font-size: 18px;
+  color: #84ADA8;
+}
+#climb .format-float, .format-float-last, .speaker, .speaker-last {
+  /*width: 190px;*/
+  /*margin-right:30px;*/
+  /*float: left;*/
+  text-align: center;
+}
+#climb .format-float-last, .speaker-last {
+  margin-right: 0;
+}
+#climb .format-float p.actual, .format-float-last p.actual, .format-float ul li, .format-float-last ul li {
+  text-align: left;
+}
+#climb .box-inner {
+  background-color: white;
+  padding: 45px;
+  width: 270px;
+  margin: auto;
+}
+#climb .topics {
+  padding: 0;
+  width: 950px;
+}
+#climb #topics-1 .box-inner {
+  margin-bottom: 50px;
+}
+#climb #topics-1 .box-inner h2 {
+  margin-bottom: 0;
+}
+#climb .topics h2 {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  background: url("http://supportraisingsolutions.org/wp-content/uploads/2016/02/circle-white-1.gif") no-repeat right;
+  margin: 50px auto 0 auto;
+}
+#climb #topics-1 {
+  background: url("http://supportraisingsolutions.org/wp-content/uploads/2016/02/topics-1-1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#climb .topic-float {
+  float: left;
+  width: 375px;
+  text-align: center;
+  padding: 50px;
+}
+#climb .topics h3, .topics p.actual {
+  color: #fff;
+}
+#climb .topics .pre-sub {
+  color: #000;
+}
+#climb .topics p.actual {
+  font-weight: 500;
+}
+#topics-2 .topic-float {
+  background-size: cover;
+}
+#climb #location {
+  background: url("http://supportraisingsolutions.org/wp-content/uploads/2016/02/postoak.jpg") no-repeat;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+#climb #location h2 {
+  margin-bottom: 10px;
+}
+#climb #lodging {
+  background: url("http://supportraisingsolutions.org/wp-content/uploads/2016/07/hamptoninnwebbetter.jpg") no-repeat;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+#climb #lodging h2 {
+  margin-bottom: 10px;
+}
+#climb .speakers-inner, .table-inner {
+  width: 630px;
+  margin: auto;
+  text-align: center;
+}
+#climb .speaker, speaker-last {
+  margin-bottom: 30px;
+}
+#climb #speakers img {
+  margin-bottom: 15px;
+}
+#climb .bold {
+  font-weight: 600;
+}
+#climb .table-inner table {
+  border-collapse: collapse;
+  width: 100%;
+}
+#climb .table-inner td {
+  border-bottom: 1px solid #c6cacc;
+  padding: 0;
+  font-family:'Frutiger W01';
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #84ADA8;
+  font-size: 14px;
+  text-align: right;
+}
+#climb #registration .table-inner td {
+  padding: 5px 0;
+}
+#climb .table-inner h3 {
+  font-size: 16px;
+  text-align: left;
+  color: #807069;
+  margin:10px 0;
+}
+#climb .sch-day td {
+  border:none;
+}
+#climb .sch-day h4 {
+  margin: 20px 0 10px;
+  font-size: 14px;
+  color: #FBB040;
+}
+#climb .table-inner .emphasis {
+  font-family:'DIN 1451 W01';
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #919496;
+  font-size: 16px;
+  text-align: center;
+  margin: 40px 0 10px;
+}
+#climb .second .h2-wrap h2 {
+  margin-top: 50px;
+  font-size: 22px;
+  background: initial;
+  text-align: center;
+}
+#climb .second p.actual {
+  text-align: left;
+}
+#climb #registration {
+  border-top: 10px solid white;
+}
+#climb .button a {
+  font-family:'DIN 1451 W01';
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  border: 2px solid #FBB040;
+  color: #FBB040;
+  font-size: 24px;
+  background-color: rgba(255,255,255,0.5);
+  display: inline-block;
+}
+#climb .button {
+  overflow: hidden;
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+#climb #intro .button:before,
+#climb #intro .button:after {
+  background-color: #84ADA8;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: 40%;
+  width: 50%;
+}
+#climb #intro .button:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+#climb #intro .button:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+/*-------------------CLIMB Conference -- Handouts---------------------*/
+#climb.handouts #format {
+  text-align: center;
+}
+#climb.handouts .h2-wrap {
+  text-align: center;
+  padding-top: 25px;
+}
+#climb.handouts a {
+  font-size: 21px;
+}
+/*#climb.handouts ul.actual a {*/
+  /*padding-left: 20px;*/
+  /*float: right;*/
+/*}*/
+#climb.handouts li {
+  margin-left: 20px;
+}
+#climb.handouts .table-inner td:first-child {
+  text-align: left;
+}
+#climb.handouts .table-inner, #climb.handouts ul.actual {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+#climb.handouts .table-inner td {
+  border-bottom: none;
+  font-family: 'Frutiger W01';
+  font-weight: 400;
+  color: #807069;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-transform: none;
+  letter-spacing: initial;
+  text-align: right;
+}
+#climb.handouts .table-inner td p {
+  display: list-item;
+  list-style: disc;
+  padding: 0;
+  margin: 0 20px;
+}
+#climb.handouts #format img {
+  margin-bottom: 16px;
+}
+
