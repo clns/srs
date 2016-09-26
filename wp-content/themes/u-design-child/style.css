@@ -2814,6 +2814,9 @@ body {
   letter-spacing: initial;
   text-align: right;
 }
+#climb.handouts .table-inner td p {
+  padding-right: 10px;
+}
 /*#climb.handouts .table-inner td p {*/
   /*display: list-item;*/
   /*list-style: disc;*/
@@ -2824,4 +2827,23 @@ body {
   margin-bottom: 16px;
 }
 
+/* Make a responsive header */
+.page-template-page-FullWidth .container_24 {
+  max-width: 960px;
+  width: 100%;
+}
 
+.page-template-page-FullWidth #social-icons,
+.page-template-page-FullWidth #search,
+.page-template-page-FullWidth #main-menu {
+  display: none;
+}
+
+.page-template-page-FullWidth #top-wrapper {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.page-template-page-FullWidth #logo {
+  padding-left: 20px;
+}

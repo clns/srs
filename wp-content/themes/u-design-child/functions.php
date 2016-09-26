@@ -16,6 +16,15 @@ function my_add_styles() {
 add_action('wp_enqueue_scripts', 'my_add_styles');
 
 
+function add_meta_responsive_viewport() {
+
+  if ( is_page('leaders-conference-2016') ) {
+    echo'<meta name="viewport" content="width=device-width, initial-scale=1.0">';
+  }
+}
+add_action('wp_head', 'add_meta_responsive_viewport');
+
+
 add_filter('new_royalslider_skins', 'new_royalslider_add_custom_skin', 10, 2);
 function new_royalslider_add_custom_skin($skins) {
       $skins['rsFacilitators'] = array(
