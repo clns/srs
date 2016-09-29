@@ -2847,3 +2847,16 @@ body {
 .page-id-3039 #logo {
   padding-left: 20px;
 }
+
+#climb.handouts .climb-header {
+  width: 100%; /* or whatever is required */
+  text-align: center; /* ensures the image is always in the h-middle */
+  overflow: hidden; /* hide the cropped portion */
+}
+
+#climb.handouts .climb-header img {
+  position: relative; /* allows repositioning */
+  left: 115%; /* move the whole width of the image to the right */
+  margin-left: -230%;
+  max-width: none;
+}
