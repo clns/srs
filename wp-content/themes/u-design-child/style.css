@@ -2487,7 +2487,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
-#climb h1, h2, #climb h3, h4, .emphasis {
+#climb h1, #climb h2, #climb h3, #climb h4, #climb .emphasis {
   text-transform: uppercase;
   text-align: center;
   line-height: 1.2em;
@@ -2519,7 +2519,7 @@ body {
   display: inline-block;
   background: url("http://supportraisingsolutions.org/wp-content/uploads/2016/02/circle-blue.gif") no-repeat right;
 }
-#climb h3, .emphasis {
+#climb h3, #climb .emphasis {
   font-family:'DIN 1451 W01';
   font-weight: 500;
   letter-spacing: 0.2em;
@@ -2828,22 +2828,22 @@ body {
 }
 
 /* Make a responsive header */
-.page-template-page-FullWidth .container_24 {
+.page-id-3039 .container_24 {
   max-width: 960px;
   width: 100%;
 }
 
-.page-template-page-FullWidth #social-icons,
-.page-template-page-FullWidth #search,
-.page-template-page-FullWidth #main-menu {
+.page-id-3039 #social-icons,
+.page-id-3039 #search,
+.page-id-3039 #main-menu {
   display: none;
 }
 
-.page-template-page-FullWidth #top-wrapper {
+.page-id-3039 #top-wrapper {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
-.page-template-page-FullWidth #logo {
+.page-id-3039 #logo {
   padding-left: 20px;
 }
