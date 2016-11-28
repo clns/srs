@@ -1247,11 +1247,16 @@ body{
     text-align: center;
 }
 #page-franchise-participant .bootcamp-header {
-	text-align: center;
 	padding-top: 150px;
+}
+#page-franchise-participant .bootcamp-header, #page-franchise-participant .bootcamp-header p {
+    text-align: center;
 }
 #page-franchise-participant .bootcamp-header h1 {
 	font-weight: 700;
+}
+#page-franchise-participant .bootcamp-header .bootcampInfoBlock {
+    margin-bottom: 10px;
 }
 #page-franchise-participant .location-header {
     color: #000;
@@ -1259,7 +1264,7 @@ body{
     font-size: 24px !important;
     font-weight: 300;
     margin-top: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 #page-franchise-participant .button-container {
     width: 160px;

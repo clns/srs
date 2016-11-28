@@ -101,6 +101,7 @@ $is_private = get_queried_object()->term_id != 12 ? true : false;
               ?>
               <div class="bc<?php echo get_the_ID() ?> bootcampInfoBlock" <?php echo $display ?>>
                 <h2 class="location-header"><?php echo $franchise_title ?></h2>
+                <p>(registration closes two weeks prior)</p>
               </div>
             <?php endwhile; wp_reset_postdata(); // end of the loop. ?>
             <?php $first = true;
