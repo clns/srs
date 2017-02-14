@@ -47,11 +47,11 @@ get_header(); ?>
 						<div class="login-credentials">Pin:<span> <?php echo $webinar_pin ?></span></div>
                         <a href="<?php echo  $webinar_link?>" target="_blank" style="color: white; font-size: 14px !important"><button>Join the Webinar</button></a>
                         <?php
-                        $video_description = get_post_meta($post->ID, "video_description", true);
+                        $calendar_description = get_post_meta($post->ID, "calendar_description", true);
                         $webinar_date = get_post_meta($post->ID, "webinar_date", true);
                         $name = 'SRS Webinar: ' . get_the_title();
                         $time2 = strtotime("+6 hours".$webinar_date." ".$webinar_time);
-                        $content =addslashes(get_the_author() . "" . '\n' . $video_description . "" .'\n' . "Join the Webinar: " . $webinar_link);
+                        $content =addslashes(get_the_author() . "" . '\n' . $calendar_description . "" .'\n' . "Join the Webinar: " . $webinar_link);
                         echo '<button class="blue" style="font-size: 14px !important" onclick=\'downloadICS("'.  $name .'", "'. datetoCal($time2) .'", "'. $content .'")\'>Add to Cal</button>';?>
 
 					</div>

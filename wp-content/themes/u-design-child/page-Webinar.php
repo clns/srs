@@ -18,8 +18,9 @@ get_header();
     </script>
 
     <script>
-        var cal = ics();
         function downloadICS(name, time, content){
+            console.log(content);
+            var cal = ics();
             cal.addEvent(name, content, 'Webinar', time, time, time);
             cal.download(name);
         }
@@ -150,7 +151,7 @@ get_header();
                                 $vimeo_video_id = get_post_meta($post->ID, "vimeo_video_id", true);
                                 $todaysDate = time() - (time() % 86400);
                                 $webinar_link = get_post_meta($post->ID, "webinar_link", true);
-                                $video_description = get_post_meta($post->ID, "video_description", true);
+                                $calendar_description = get_post_meta($post->ID, "calendar_description", true);
 
                                 if (strtotime($webinar_date) <= $todaysDate) {
                                     if (!empty($vimeo_video_id)) {
@@ -172,12 +173,13 @@ get_header();
                                     $webinar_date = get_post_meta($post->ID, "webinar_date", true);
                                     $name = 'SRS Webinar: ' . get_the_title();
                                     $time2 = strtotime("+6 hours".$webinar_date." ".$webinar_time);
-                                    $content =addslashes(get_the_author() . "" . '\n' . $video_description . "" .'\n' . "Join the Webinar: " . $webinar_link);
+                                    $content = addslashes(get_the_author() . "" . '\n' . $calendar_description . "" .'\n' . "Join the Webinar: " . $webinar_link);
                                     echo '<button class="blue" onclick=\'downloadICS("'.  $name .'", "'. datetoCal($time2) .'", "'. $content .'")\'>Add to Cal</button>';
                                 }
-
+                                //"'.  $name .'", "'. datetoCal($time2) .'", "'. $content .'"
                                 ?>
                             </div>
+
                         </div>
                         <div class="clear"></div>
                     <?php endwhile;
