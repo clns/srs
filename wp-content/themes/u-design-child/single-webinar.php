@@ -137,22 +137,21 @@ get_header(); ?>
             </div>
         <?php } ?>
 
-        <?php // ?>
-            <div class="video-description">
-                <?php $video_description = get_post_meta($post->ID, "video_description", true);
-                echo $video_description;
-                ?>
+        <div class="video-description">
+            <?php $video_description = get_post_meta($post->ID, "video_description", true);
+            echo $video_description;
+            ?>
 
-                <?php
-                $webinar_presentation = get_post_meta($post->ID, 'webinar_presentation', true);
-                if ($webinar_presentation && is_user_logged_in()) { ?>
-                    <div id="button-wrapper_presentation">
-                        <a href="<?php echo $webinar_presentation[guid]; ?>">
-                            <button>DOWNLOAD PRESENTATION</button>
-                        </a>
-                    </div>
-                <?php } ?>
-            </div>
+            <?php
+            $webinar_presentation = get_post_meta($post->ID, 'webinar_presentation', true);
+            if ($webinar_presentation && is_user_logged_in()) { ?>
+                <div id="button-wrapper_presentation">
+                    <a href="<?php echo $webinar_presentation[guid]; ?>">
+                        <button>DOWNLOAD PRESENTATION</button>
+                    </a>
+                </div>
+            <?php } ?>
+        </div>
     </div>
 
     <div class = "leader-bio-wrapper">

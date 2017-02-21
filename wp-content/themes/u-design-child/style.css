@@ -1215,6 +1215,7 @@ body{
     min-height: 650px;
     margin-top: -12px;
 }
+
 #page-franchise-facilitator {
     margin-top: -12px;
 }
@@ -1246,9 +1247,36 @@ body{
     top: 90px;
     text-align: center;
 }
+.page-template-page-Rebate #page-franchise-participant #select-container {
+    position: initial;
+}
+.page-template-page-Rebate select {
+  width: 70%;
+  height: 30px;
+  font-size: 20px;
+  margin: 0 auto;
+  display: block;
+}
+.page-template-page-Rebate #page-franchise-participant {
+  text-align: center;
+}
+.page-template-page-Rebate h1 {
+  text-align: center;
+}
+.page-template-page-Rebate h2 {
+  font-size: 1.667em !important;
+}
+.page-template-page-Rebate .full-width-content {
+  width: 70%;
+}
+
 #page-franchise-participant .bootcamp-header {
 	padding-top: 150px;
 }
+.page-template-page-Rebate #page-franchise-participant .bootcamp-header {
+  padding-top: 20px;
+}
+
 #page-franchise-participant .bootcamp-header, #page-franchise-participant .bootcamp-header p {
     text-align: center;
 }

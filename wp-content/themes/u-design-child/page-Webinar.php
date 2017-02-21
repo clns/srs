@@ -19,7 +19,6 @@ get_header();
 
     <script>
         function downloadICS(name, time, content){
-            console.log(content);
             var cal = ics();
             cal.addEvent(name, content, 'Webinar', time, time, time);
             cal.download(name);
