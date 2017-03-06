@@ -61,34 +61,31 @@ $the_query = new WP_Query($args);
 
       <?php endif; ?>
       <div class="bootcamp-header">
-        <h1>SRS Bootcamp</h1>
+
         <?php $first = true;
-        if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post();
-          if ( !$first ) {
-            $display = 'style="display: none;"';
-          } else {
-            $display = '';
-            $first = false;
-          }
-          $franchise_title = generate_franchise_title($post);
-          ?>
-          <div class="bc<?php echo get_the_ID() ?> bootcampInfoBlock" <?php echo $display ?>>
-            <h2 class="location-header"><?php echo $franchise_title ?></h2>
-          </div>
-        <?php endwhile; wp_reset_postdata(); // end of the loop. ?>
-        <?php $first = true;
-        if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post();
-          if ( !$first ) {
-            $display = 'style="display: none;"';
-          } else {
-            $display = '';
-            $first = false;
-          }
-          ?>
-          <div class="bc<?php echo get_the_ID() ?> bootcampInfoBlock button-container" <?php echo $display ?>>
-            <p class="button-text"><?php echo '<a href="' . get_post_meta($post->ID, 'rebate_link', true) . '">Request Rebate</a>'; ?></p>
-          </div>
-        <?php endwhile; wp_reset_postdata(); // end of the loop. ?>
+        if ( $the_query->have_posts() ):
+          echo "<h1>SRS Bootcamp</h1>";
+          while ( $the_query->have_posts() ) : $the_query->the_post();
+            if ( !$first ) {
+              $display = 'style="display: none;"';
+            } else {
+              $display = '';
+              $first = false;
+            }
+            $franchise_title = generate_franchise_title($post);
+            ?>
+            <div class="bc<?php echo get_the_ID() ?> bootcampInfoBlock" <?php echo $display ?>>
+              <h2 class="location-header"><?php echo $franchise_title ?></h2>
+            </div>
+            <div class="bc<?php echo get_the_ID() ?> bootcampInfoBlock button-container" <?php echo $display ?>>
+              <p class="button-text"><?php echo '<a href="' . get_post_meta($post->ID, 'rebate_link', true) . '">Request Rebate</a>'; ?></p>
+            </div>
+        <?php
+          endwhile; wp_reset_postdata();
+        else:
+          echo "<h1>No rebates available. Please check back soon.</h1>";
+        endif;
+        ?>
       </div>
 
 
