@@ -238,9 +238,9 @@ get_header();
             	<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Mobile.png" alt="">
 							<h1>800 595 4881</h1>
 						</div>
-						<div class="right-column"><a href="mailto:info@supportraisingsolutions.org">
+						<div class="right-column"><a href="mailto:memberships@supportraisingsolutions.org">
               <img src="<?php bloginfo('template_directory');?>-child/images/marketing/Mail.png" alt="">
-							<h1>info@SupportRaisingSolutions.org</h1></a>
+							<h1>memberships@supportraisingsolutions.org</h1></a>
 						</div>
 					</div>
 					<div class="footer">
