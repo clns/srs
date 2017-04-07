@@ -55,7 +55,7 @@ else : // Continue with normal Loop (Blog category)
 
 <?php 
 
-$src = 'http://supportraisingsolutions.org/wp-content/uploads/2014/01/ArrowBack.png'; //image url
+$src = 'https://supportraisingsolutions.org/wp-content/uploads/2014/01/ArrowBack.png'; //image url
 
 previous_post_link('%link', '<img style="border:none;" src="'. $src .'" /> Previous', TRUE, ''); ?></div>
 
@@ -63,7 +63,7 @@ previous_post_link('%link', '<img style="border:none;" src="'. $src .'" /> Previ
 
 <div class="widgetcolor" style="float:left;"><?php 
 
-$src = 'http://supportraisingsolutions.org/wp-content/uploads/2014/01/ArrowForward.png'; //image url
+$src = 'https://supportraisingsolutions.org/wp-content/uploads/2014/01/ArrowForward.png'; //image url
 
 next_post_link('%link', 'Next <img style="border:none;" src="'. $src .'" />', TRUE, ''); ?></div>
 
@@ -83,7 +83,7 @@ next_post_link('%link', 'Next <img style="border:none;" src="'. $src .'" />', TR
 
 <div style="margin-left:55px;"><h1 class="posttitle"><?php single_post_title(''); ?></h1>
 
-<div class="postmetadata"></div><!-- AddThis Button BEGIN --><div style="margin-left:-70px; margin-top:-80px; position:absolute;"><a class="addthis_button_compact" href="http://www.addthis.com/bookmark.php?v=300&amp;pubid=ra-51b8901a44103141"><img src="http://supportraisingsolutions.org/wp-content/uploads/2013/06/Share.png" width="61" height="18px" alt="Share" style="border:0"/></a><script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51b8901a44103141"></script><script type="text/javascript">var addthis_config = addthis_config||{};addthis_config.services_exclude = 'mailto';</script></div><!-- AddThis Button END -->
+<div class="postmetadata"></div><!-- AddThis Button BEGIN --><div style="margin-left:-70px; margin-top:-80px; position:absolute;"><a class="addthis_button_compact" href="http://www.addthis.com/bookmark.php?v=300&amp;pubid=ra-51b8901a44103141"><img src="https://supportraisingsolutions.org/wp-content/uploads/2013/06/Share.png" width="61" height="18px" alt="Share" style="border:0"/></a><script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51b8901a44103141"></script><script type="text/javascript">var addthis_config = addthis_config||{};addthis_config.services_exclude = 'mailto';</script></div><!-- AddThis Button END -->
 
                                     <span style="font-size:15px;"><span>
 

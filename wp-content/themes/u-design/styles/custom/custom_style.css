@@ -3,7 +3,7 @@ body, #page-content-title .title-description { font-family:'Lato'; }
 body { font-size:13px; }
 h1, h2, h3, h4, h5, h6, #slogan, .single-post-categories { font-family:'Lato'; }
 #top-elements { height:80px; }
-#logo h1 a, #logo .site-name a { background:transparent url( http://supportraisingsolutions.org/wp-content/uploads/2014/07/support-raising-solutions-logo.png ) no-repeat 0 100%; width:207px; height:62px; }       
+#logo h1 a, #logo .site-name a { background:transparent url( https://supportraisingsolutions.org/wp-content/uploads/2014/07/support-raising-solutions-logo.png ) no-repeat 0 100%; width:207px; height:62px; }
 #slogan { 
     top:72px;
     left:290px;

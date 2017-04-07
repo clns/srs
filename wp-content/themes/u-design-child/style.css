@@ -1209,7 +1209,7 @@ body{
 
 /**** Franchise Landing Page Styles ****/
 #page-franchise-participant {
-    background-image: url("http://supportraisingsolutions.org/wp-content/themes/u-design-child/images/franchise/container_background.png");
+    background-image: url("https://supportraisingsolutions.org/wp-content/themes/u-design-child/images/franchise/container_background.png");
     background-repeat: no-repeat;
     background-position: top 205px center;
     overflow: auto;
@@ -1331,7 +1331,7 @@ body{
     cursor: pointer;
 }
 #page-franchise-participant .expanding-icon {
-    background-image: url("http://supportraisingsolutions.org/wp-content/themes/u-design-child/images/franchise/accordion_icons.png");
+    background-image: url("https://supportraisingsolutions.org/wp-content/themes/u-design-child/images/franchise/accordion_icons.png");
     height: 12px;
     width: 13px;
     position: absolute;
@@ -1467,7 +1467,7 @@ h1,h2,h3,h4,h5,h6,#slogan,.single-post-categories {
 }
 
 #logo h1 a, #logo .site-name a {
-	background: transparent url(http://supportraisingsolutions.org/wp-content/uploads/2014/07/support-raising-solutions-logo.png ) no-repeat 0 100%;
+	background: transparent url(https://supportraisingsolutions.org/wp-content/uploads/2014/07/support-raising-solutions-logo.png ) no-repeat 0 100%;
 	width: 325px;
 	height: 91px;
 }
@@ -1630,18 +1630,11 @@ h3.bottom-col-title {
 }
 
 h3.bottom-col-title,#bottom ul.small-thumb li,#bottom .widget_recent_entries li a,#bottom .widget_categories li a,#bottom .widget_pages li a,#bottom .widget_subpages li a,#bottom .widget_archive li a,#bottom .widget_links li a,#bottom .widget_rss li a,#bottom .widget_meta li a,#bottom .loginform li a,#bottom .widget_nav_menu li a {
-	background: url("../style1/images/heading_underline.png") repeat-x
-		scroll 0 100% transparent;
+	background: initial;
 }
 
 #bottom .widget_recent_comments li {
-	background: url("../style1/images/heading_underline.png") repeat-x
-		scroll 0 100% transparent;
-}
-
-#footer-bg {
-	background: url("../common-images/home-page-content-top.png") repeat-x
-		scroll 50% 0 #000000;
+	background: initial;
 }
 
 body {
@@ -1681,7 +1674,7 @@ body {
 }
 
 #search input.search-btn {
-	background: transparent url("http://supportraisingsolutions.org/wp-content/uploads/2014/07/search.png") no-repeat scroll 100% 0;
+	background: transparent url("https://supportraisingsolutions.org/wp-content/uploads/2014/07/search.png") no-repeat scroll 100% 0;
 	height: 19px;
 	margin-top: 0px;
 	width: 24px;
@@ -1979,7 +1972,7 @@ ul.about {
    height: 34px;
    overflow: hidden;
 	background:
-		url(http://supportraisingsolutions.org/wp-content/uploads/2014/01/dropdown.png)
+		url(https://supportraisingsolutions.org/wp-content/uploads/2014/01/dropdown.png)
 		no-repeat 96% #e5e5e5;
 }
 
@@ -1990,7 +1983,7 @@ ul.about {
    color:#ffffff;
    line-height:30px;
 	background:
-		url(http://supportraisingsolutions.org/wp-content/uploads/2014/01/download.png)
+		url(https://supportraisingsolutions.org/wp-content/uploads/2014/01/download.png)
 		no-repeat 96% #585858;
 }
 
@@ -2005,7 +1998,7 @@ ul.about {
    color:#ffffff;
    line-height:30px;
 	background:
-		url(http://supportraisingsolutions.org/wp-content/uploads/2014/01/register.png)
+		url(https://supportraisingsolutions.org/wp-content/uploads/2014/01/register.png)
 		no-repeat 96% #f1632a;
 }
 
@@ -2551,7 +2544,7 @@ body {
   width: 270px;
   text-align: left;
   display: inline-block;
-  background: url("http://supportraisingsolutions.org/wp-content/uploads/2016/02/circle-blue.gif") no-repeat right;
+  background: url("https://supportraisingsolutions.org/wp-content/uploads/2016/02/circle-blue.gif") no-repeat right;
 }
 #climb h3, #climb .emphasis {
   font-family:'DIN 1451 W01';
@@ -2622,7 +2615,7 @@ body {
   margin: 10px 0;
 }
 #climb .topo {
-  background-image: url("http://supportraisingsolutions.org/wp-content/uploads/2016/02/topo2.gif");
+  background-image: url("https://supportraisingsolutions.org/wp-content/uploads/2016/02/topo2.gif");
   background-color:#e5ecf4;
 }
 #climb .emphasis {
@@ -2660,11 +2653,11 @@ body {
 #climb .topics h2 {
   color: #fff;
   border-bottom: 2px solid #fff;
-  background: url("http://supportraisingsolutions.org/wp-content/uploads/2016/02/circle-white-1.gif") no-repeat right;
+  background: url("https://supportraisingsolutions.org/wp-content/uploads/2016/02/circle-white-1.gif") no-repeat right;
   margin: 50px auto 0 auto;
 }
 #climb #topics-1 {
-  background: url("http://supportraisingsolutions.org/wp-content/uploads/2016/02/topics-1-1.jpg") no-repeat;
+  background: url("https://supportraisingsolutions.org/wp-content/uploads/2016/02/topics-1-1.jpg") no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -2687,7 +2680,7 @@ body {
   background-size: cover;
 }
 #climb #location {
-  background: url("http://supportraisingsolutions.org/wp-content/uploads/2016/02/postoak.jpg") no-repeat;
+  background: url("https://supportraisingsolutions.org/wp-content/uploads/2016/02/postoak.jpg") no-repeat;
   text-align: center;
   background-size: cover;
   background-position: center;
@@ -2696,7 +2689,7 @@ body {
   margin-bottom: 10px;
 }
 #climb #lodging {
-  background: url("http://supportraisingsolutions.org/wp-content/uploads/2016/07/hamptoninnwebbetter.jpg") no-repeat;
+  background: url("https://supportraisingsolutions.org/wp-content/uploads/2016/07/hamptoninnwebbetter.jpg") no-repeat;
   text-align: center;
   background-size: cover;
   background-position: center;

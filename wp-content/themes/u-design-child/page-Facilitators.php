@@ -134,7 +134,7 @@ get_header();
 						</div>
 					</div>
 					<div id="download-button">
-						<a href="http://supportraisingsolutions.org/docs/SRS_Particpant-Facilitator-Guide_Preview.pdf">
+						<a href="https://supportraisingsolutions.org/docs/SRS_Particpant-Facilitator-Guide_Preview.pdf">
 							<button>Download Examples</button>
 						</a>
 					</div>
@@ -244,7 +244,7 @@ get_header();
 						</div>
 					</div>
 					<div class="footer">
-            <a href="http://supportraisingsolutions.org"><div class="logo">
+            <a href="https://supportraisingsolutions.org"><div class="logo">
               <img src="<?php bloginfo('template_directory');?>-child/images/marketing/SRS_logo.png" alt="">
               <div class="logo-text">
                 Support Raising<br>
