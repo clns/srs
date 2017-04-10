@@ -1379,10 +1379,10 @@ body{
   margin: auto;
 }
 .catapult .expanding-icon-plus {
-  background: url(http://learn.supportraisingsolutions.org/assets/chevron/chevron_inactive.jpg) 50% 50% no-repeat rgb(222, 222, 222);
+  background: url('images/chevron_inactive.jpg') 50% 50% no-repeat rgb(222, 222, 222);
 }
 .catapult .expanding-icon-minus {
-  background: url(http://learn.supportraisingsolutions.org/assets/chevron/blue_chevron_active.jpg) 50% 50% no-repeat rgb(0, 174, 239);
+  background: url('images/blue_chevron_active.jpg') 50% 50% no-repeat rgb(0, 174, 239);
 }
 .catapult .expanding-content {
   border-right-width: 50px;
