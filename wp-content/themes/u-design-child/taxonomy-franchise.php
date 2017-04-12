@@ -89,7 +89,8 @@ $is_private = get_queried_object()->term_id != 12 ? true : false;
           <?php endif; ?>
           <div class="bootcamp-header">
             <h1>SRS Bootcamp</h1>
-            <?php $first = true;
+            <?php
+            $first = true;
             if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post();
               if ( !$first ) {
                 $display = 'style="display: none;"';
@@ -100,6 +101,7 @@ $is_private = get_queried_object()->term_id != 12 ? true : false;
               $franchise_title = generate_franchise_title($post);
               ?>
               <div class="bc<?php echo get_the_ID() ?> bootcampInfoBlock" <?php echo $display ?>>
+                <h2><?php echo get_post_meta(get_the_ID(), 'location_name', true) ?></h2>
                 <h2 class="location-header"><?php echo $franchise_title ?></h2>
                 <p>(registration closes two weeks prior)</p>
               </div>
