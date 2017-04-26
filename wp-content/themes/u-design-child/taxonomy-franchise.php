@@ -35,8 +35,25 @@ $is_private = get_queried_object()->term_id != 12 ? true : false;
     <div id="franchise-banner">
       <div class="container_24">
         <div class="grid_24 banner-container">
-          <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-          <span class="image-helper"></span><img src="<?php echo $image[0]; ?>">
+
+          <?php
+          $first = true;
+          if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post();
+            if ( !$first ) {
+              $display = 'style="display: none;"';
+            } else {
+              $display = '';
+              $first = false;
+            }
+            $franchise_title = generate_franchise_title($post);
+            $suborg_title = get_post_meta(get_the_ID(), 'ministry_suborg', true);
+            ?>
+            <div class="bc<?php echo get_the_ID() ?> bootcampInfoBlock" <?php echo $display ?>>
+              <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+              <span class="image-helper"></span><img src="<?php echo $image[0]; ?>">
+            </div>
+          <?php endwhile; wp_reset_postdata(); // end of the loop. ?>
+
         </div>
       </div>
     </div>
@@ -81,8 +98,11 @@ $is_private = get_queried_object()->term_id != 12 ? true : false;
               <select id="select-bootcamp" style="display: block; margin: 0 auto;" onChange="changeBootcampDisplay(this.value)">
                 <?php if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post();
                     $franchise_title = generate_franchise_title($post);
+                    $suborg_title = get_post_meta(get_the_ID(), 'ministry_suborg', true);
+                    if (!empty($suborg_title))
+                      $suborg_title = $suborg_title . " - ";
                   ?>
-                  <option value="bc<?php echo get_the_ID()?>"><?php echo $franchise_title ?></option>
+                  <option value="bc<?php echo get_the_ID()?>"><?php echo $suborg_title . $franchise_title ?></option>
                 <?php endwhile; wp_reset_postdata(); // end of the loop. ?>
               </select>
             </div>
@@ -99,8 +119,12 @@ $is_private = get_queried_object()->term_id != 12 ? true : false;
                 $first = false;
               }
               $franchise_title = generate_franchise_title($post);
+              $suborg_title = get_post_meta(get_the_ID(), 'ministry_suborg', true);
               ?>
               <div class="bc<?php echo get_the_ID() ?> bootcampInfoBlock" <?php echo $display ?>>
+                <?php if (!empty($suborg_title)) : ?>
+                  <h1><?php echo $suborg_title ?></h1>
+                <?php endif; ?>
                 <h2><?php echo get_post_meta(get_the_ID(), 'location_name', true) ?></h2>
                 <h2 class="location-header"><?php echo $franchise_title ?></h2>
                 <p>(registration closes two weeks prior)</p>

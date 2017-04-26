@@ -1239,6 +1239,9 @@ body{
     max-height: 100px;
     max-width: 250px;
 }
+#page-franchise-participant .banner-container .bootcampInfoBlock {
+  height: 100%;
+}
 #page-franchise-participant #select-container {
     position: absolute;
     margin-left: auto;
@@ -1287,6 +1290,13 @@ body{
 #page-franchise-participant .bootcamp-header .bootcampInfoBlock {
     margin-bottom: 10px;
 }
+#page-franchise-participant #select-container h2 {
+  margin-top: 0;
+}
+#page-franchise-participant .bootcamp-header h1 {
+  margin: 0;
+}
+
 #page-franchise-participant .location-header {
     color: #000;
     text-transform: none;
