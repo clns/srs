@@ -9,9 +9,7 @@ get_header(); ?>
     <div id="content-container" class="full-width">
         <div id="main-content" class="full-width">
             <div id="network" class="network-page catapult">
-                <div class="page-banner">
-                    <div class="banner-text"><?php the_title(); ?></div>
-                </div>
+                <div class="network-banner-text">Catapult Series</div>
 
                     <?php
                     # This section generates the blurb under the page-banner

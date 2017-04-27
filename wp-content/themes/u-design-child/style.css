@@ -208,7 +208,17 @@ body{
   height: 200px;
   margin-bottom: 30px;
 }
-#network .banner-text{
+.network-banner-text{
+    font-size: 40px;
+  font-family: 'Myriad Lt';
+ -ms-transform: scale(1, 1); /* IE 9 */
+  -webkit-transform: scale(1, 1); /* Safari */
+  transform: scale(1, 1);
+  margin-top: 0px;
+  padding-top: 0px;
+    text-align:left;
+}
+#network.network-page .banner-text{
   font-family: 'Myriad Lt';
  -ms-transform: scale(1.1, 1); /* IE 9 */
   -webkit-transform: scale(1.1, 1); /* Safari */
@@ -414,15 +424,28 @@ body{
   margin-left: 20px;
 }
 .network-page .benefits-container{
-  border-top: 2px solid #72bf44;
-  border-bottom: 2px solid #72bf44;
+  border-top: 2px solid #42baf1;
+  border-bottom: 2px solid #42baf1;
   margin-top: 50px;
   padding-bottom: 20px;
 }
 .network-page .benefits-border{
-  background-color: #72bf44;
+  background-color: #42baf1;
   height: 5px;
-  width: 300px;
+}
+.network-page .benefits-border{
+    background-color: #42baf1;
+    height: 5px;
+}
+.network-page.net-membership .benefits-container{
+    border-top: 2px solid #72bf44;
+    border-bottom: 2px solid #72bf44;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+.network-page.net-membership .benefits-border{
+    background-color: #72bf44;
+    height: 5px;
 }
 .network-page .section-header{
   font-family: 'Myriad Lt';
@@ -485,6 +508,12 @@ body{
 }
 .network-page.fac-membership .benefits-border{
   background-color: #00aeef;
+}
+.contact-info{
+  font-size: 15px;
+  line-height: 15px;
+  padding-top: 15px;
+  text-align: center;
 }
 
 #network.network-page.webinar .page-banner{

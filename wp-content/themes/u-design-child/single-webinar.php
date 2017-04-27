@@ -3,9 +3,24 @@
 get_header(); ?>
 <div class="webinar-video-container network-page">
     <div class="webinar-video" >
+        <div class="network-banner-text">
+                <?php
 
-        <div class="page-banner">
-            <div class="banner-text">Monthly Webinars</div>
+                $webinar_date = get_post_meta($post->ID, "webinar_date", true);
+                if (!empty($webinar_date)) {
+                    $date = new DateTime($webinar_date);
+                    $webinar_date = $date->format('F');
+                    echo $webinar_date;
+                }
+                ?>
+                <?php $webinar_date = get_post_meta($post->ID, "webinar_date", true);
+                if (!empty($webinar_date)) {
+                    $date = new DateTime($webinar_date);
+                    $webinar_date = $date->format('Y');
+                    echo $webinar_date;
+                }
+                ?>
+                Webinar
         </div>
     </div>
 

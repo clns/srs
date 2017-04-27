@@ -12,7 +12,7 @@ get_header();
 ?>
 <div id="content-container" class="full-width">
 	<div id="main-content" class="full-width">
-		<div id="network" class="network-page">
+		<div id="network" class="network-page net-membership">
 			<div class="page-banner">
         <div class="banner-text">Network Membership</div>
       </div>

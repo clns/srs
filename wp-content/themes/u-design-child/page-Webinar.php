@@ -58,9 +58,7 @@ get_header();
 <div id="content-container" class="full-width">
 	<div id="main-content" class="full-width">
 		<div id="network" class="network-page webinar">
-			 <div class="page-banner">
-                <div class="banner-text">Monthly Webinars</div>
-             </div>
+            <div class="network-banner-text">Monthly Webinars</div>
             <div class="description-container">
                 <?php
                 // Display content of page
