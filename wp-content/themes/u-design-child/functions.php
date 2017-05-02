@@ -78,7 +78,7 @@ if ( ! function_exists( 'srs_expanding_block' ) ) :
 /**
  * Display expanding accordian block
 */
-function srs_expanding_block( $title, $key, $the_query, $auto_expand = false, $pre = "", $post = "" ) {
+function srs_expanding_block( $title, $key, $the_query, $auto_expand = false, $pre = "", $post = "", $default_text = "" ) {
 
   if ($auto_expand) {
     $expand_class = "expanding-icon-minus";
@@ -103,7 +103,12 @@ function srs_expanding_block( $title, $key, $the_query, $auto_expand = false, $p
         <?php $postmeta = get_post_meta(get_the_ID(), $key, true);
         if (!empty($postmeta)) {
           echo $pre . $postmeta . $post;
-        } ?>
+        } else {
+          if (!empty($default_text)) {
+            echo $pre . $default_text . $post;
+          }
+        }
+        ?>
 
       </div>
     <?php endwhile; wp_reset_postdata(); // end of the loop. ?>
