@@ -123,7 +123,7 @@ get_header();
 					<div class="three-columns group">
 						<div>
 							<h1>Participants Receive</h1>
-							<p>Copies of both <i>The God Ask</i> and <i>Viewpoints</i>, along with the Bootcamp prep packet and workbook</p>
+							<p>A copy of <i>The God Ask</i>, along with the Bootcamp prep packet and workbook</p>
 						</div>
 						<div>
 							<img src="<?php bloginfo('template_directory');?>-child/images/marketing/Amp.jpg" alt="">
