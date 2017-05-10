@@ -37,13 +37,11 @@ $is_private = get_queried_object()->term_id != 12 ? true : false;
         <div class="grid_24 banner-container">
 
           <?php
-          $first = true;
           if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post();
-            if ( !$first ) {
+            if ($the_query->post_count > 1) {
               $display = 'style="display: none;"';
             } else {
               $display = '';
-              $first = false;
             }
             $franchise_title = generate_franchise_title($post);
             $suborg_title = get_post_meta(get_the_ID(), 'ministry_suborg', true);
@@ -96,6 +94,9 @@ $is_private = get_queried_object()->term_id != 12 ? true : false;
             <div id="select-container">
               <h2>Select your bootcamp.</h2>
               <select id="select-bootcamp" style="display: block; margin: 0 auto;" onChange="changeBootcampDisplay(this.value)">
+
+                <option disabled selected value> -- select an option -- </option>
+
                 <?php if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post();
                     $franchise_title = generate_franchise_title($post);
                     $suborg_title = get_post_meta(get_the_ID(), 'ministry_suborg', true);
@@ -108,20 +109,18 @@ $is_private = get_queried_object()->term_id != 12 ? true : false;
             </div>
           <?php endif; ?>
           <div class="bootcamp-header">
-            <h1>SRS Bootcamp</h1>
             <?php
-            $first = true;
             if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post();
-              if ( !$first ) {
+              if ($the_query->post_count > 1) {
                 $display = 'style="display: none;"';
               } else {
                 $display = '';
-                $first = false;
               }
               $franchise_title = generate_franchise_title($post);
               $suborg_title = get_post_meta(get_the_ID(), 'ministry_suborg', true);
               ?>
               <div class="bc<?php echo get_the_ID() ?> bootcampInfoBlock" <?php echo $display ?>>
+                <h1>SRS Bootcamp</h1>
                 <?php if (!empty($suborg_title)) : ?>
                   <h1><?php echo $suborg_title ?></h1>
                 <?php endif; ?>
@@ -130,13 +129,12 @@ $is_private = get_queried_object()->term_id != 12 ? true : false;
                 <p>(registration closes two weeks prior)</p>
               </div>
             <?php endwhile; wp_reset_postdata(); // end of the loop. ?>
-            <?php $first = true;
+            <?php
             if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post();
-              if ( !$first ) {
+              if ($the_query->post_count > 1) {
                 $display = 'style="display: none;"';
               } else {
                 $display = '';
-                $first = false;
               }
               $bootcamp_status = get_post_meta($post->ID, 'bootcamp_status', true);
               if ( $bootcamp_status == 'Closed') {
@@ -170,16 +168,16 @@ $is_private = get_queried_object()->term_id != 12 ? true : false;
           <!-- ### End Cost Expanding Block ### -->
 
           <!-- ### Location Expanding Block ### -->
-          <h3 class="expanding-heading">Location <span class="expanding-icon expanding-icon-plus"></span></h3>
-          <div class="expanding-content">
-            <?php $first = true;
-            if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post();
-              if ( !$first ) {
-                $display = 'style="display: none;"';
-              } else {
-                $display = '';
-                $first = false;
-              } ?>
+          <?php
+          if ($the_query->post_count > 1) {
+          $display = 'style="display: none;"';
+          } else {
+          $display = '';
+          } ?>
+          <h3 class="expanding-heading" <?php echo $display ?>>Location <span class="expanding-icon expanding-icon-plus"></span></h3>
+          <div class="expanding-content" <?php echo $display ?>>
+            <?php
+            if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
               <div class="bc<?php echo get_the_ID() ?> bootcampInfoBlock" <?php echo $display ?>>
                 <?php
                 echo '<p>' .

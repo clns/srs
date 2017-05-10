@@ -87,18 +87,16 @@ function srs_expanding_block( $title, $key, $the_query, $auto_expand = false, $p
     $expand_class = "expanding-icon-plus";
     $expand_content_class = "";
   }
-  ?>
 
-  <h3 class="expanding-heading"><?php echo $title; ?><span class="expanding-icon <?php echo $expand_class; ?>"></span></h3>
-  <div class="expanding-content <?php echo $expand_content_class; ?>">
-    <?php $first = true;
-    if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post();
-      if ( !$first ) {
-        $display = 'style="display: none;"';
-      } else {
-        $display = '';
-        $first = false;
-      } ?>
+  if ($the_query->post_count > 1) {
+    $display = 'style="display: none;"';
+  } else {
+    $display = '';
+  } ?>
+  <h3 class="expanding-heading" <?php echo $display ?>><?php echo $title; ?><span class="expanding-icon <?php echo $expand_class; ?>"></span></h3>
+  <div class="expanding-content <?php echo $expand_content_class; ?>" <?php echo $display ?>>
+    <?php
+    if ( $the_query->have_posts() ) while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
       <div class="bc<?php echo get_the_ID() ?> bootcampInfoBlock" <?php echo $display ?>>
         <?php $postmeta = get_post_meta(get_the_ID(), $key, true);
         if (!empty($postmeta)) {
