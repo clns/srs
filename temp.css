@@ -1,0 +1,71 @@
+/*FONTS*/
+@font-face{
+	font-family:"Myriad Regular";
+	src:url("Fonts/76fda6fb-8617-4e88-b290-945c47127ceb.eot?#iefix");
+	src:url("Fonts/76fda6fb-8617-4e88-b290-945c47127ceb.eot?#iefix") format("eot"),
+	url("Fonts/31f16622-b72f-4fa0-9e3b-cb48f7d62990.woff2") format("woff2"),
+	url("Fonts/01932eb5-2a4e-4bd4-b8a8-8e04f69b2d66.woff") format("woff"),
+	url("Fonts/b1811139-1d49-42a2-8353-e29ca087433c.ttf") format("truetype"),
+	url("Fonts/77a8ed10-0737-4849-9972-26d6e7585df5.svg#77a8ed10-0737-4849-9972-26d6e7585df5") format("svg");
+}
+@font-face{
+	font-family:"Myriad Lt";
+	src:url("Fonts/b3e9f984-f8ca-4650-90c3-d6f0aca0a27d.eot?#iefix");
+	src:url("Fonts/b3e9f984-f8ca-4650-90c3-d6f0aca0a27d.eot?#iefix") format("eot"),
+	url("Fonts/e7e30ff2-3a95-49b0-bbf9-024f40ead426.woff2") format("woff2"),
+	url("Fonts/b984f4e8-e37d-4502-bead-ffd991e64d1f.woff") format("woff"),
+	url("Fonts/82d18baa-8811-4aa8-9338-9bafa08350d0.ttf") format("truetype"),
+	url("Fonts/20e14bb9-6aec-47a9-8ef8-5613bf1d6eae.svg#20e14bb9-6aec-47a9-8ef8-5613bf1d6eae") format("svg");
+}
+@font-face{
+	font-family:"Myriad It";
+	src:url("Fonts/b7dea71a-f8e7-42e0-b03b-ae1b0b6eb0cd.eot?#iefix");
+	src:url("Fonts/b7dea71a-f8e7-42e0-b03b-ae1b0b6eb0cd.eot?#iefix") format("eot"),
+	url("Fonts/a56f9fd5-b438-4696-ae62-d273eb2e4c1b.woff2") format("woff2"),
+	url("Fonts/7becdf28-cd45-4f8a-bcab-d8c861a8ebc5.woff") format("woff"),
+	url("Fonts/b90a1a2e-a700-4528-aa00-535c93ecf8a9.ttf") format("truetype"),
+	url("Fonts/85c745b1-d826-4e09-988f-82cd152fb0db.svg#85c745b1-d826-4e09-988f-82cd152fb0db") format("svg");
+}
+@font-face{
+	font-family:"Myriad SmBd";
+	src:url("Fonts/f71415c0-f68d-42cd-a948-05af81548ea5.eot?#iefix");
+	src:url("Fonts/f71415c0-f68d-42cd-a948-05af81548ea5.eot?#iefix") format("eot"),
+	url("Fonts/0b6110f9-6072-46b9-98af-7d09f7c895b8.woff2") format("woff2"),
+	url("Fonts/c22866d7-ca67-4170-a113-cae280eea669.woff") format("woff"),
+	url("Fonts/19ce9ea9-076e-4dcd-91a1-454f4830f120.ttf") format("truetype"),
+	url("Fonts/18915124-98e4-4245-9e10-b921e09a6704.svg#18915124-98e4-4245-9e10-b921e09a6704") format("svg");
+}
+@font-face{
+	font-family:"Myriad Bd It";
+	src:url("Fonts/67452424-3136-49b1-827d-49c5dcde5779.eot?#iefix");
+	src:url("Fonts/67452424-3136-49b1-827d-49c5dcde5779.eot?#iefix") format("eot"),
+	url("Fonts/fd5daa3f-a61a-4aed-93cd-54bc94bb59b6.woff2") format("woff2"),
+	url("Fonts/088bed5d-3869-422a-8876-df9a6992b434.woff") format("woff"),
+	url("Fonts/b0e5af12-5659-4451-b843-6fade25c4e53.ttf") format("truetype"),
+	url("Fonts/e590a993-9202-42bc-a22f-25243e6b0d5a.svg#e590a993-9202-42bc-a22f-25243e6b0d5a") format("svg");
+}
+
+/*HEADER COPY*/
+/*JUST AN IMAGE SINCE THE HEADER IS ALREADY CREATED ON THE CURRENT WEBSITE*/
+#top-wrapper {
+	background: #fff;
+	text-align: center;
+	-webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.23);
+	-moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.23);
+	box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.23);
+	position: relative;
+	z-index: 1;
+}
+#top-wrapper img {
+	width: 100%;
+	max-width: 960px;
+}
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
