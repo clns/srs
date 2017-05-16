@@ -239,12 +239,17 @@ body{
   vertical-align: top;
 }
 #network .page-subtitle{
+  margin: 25px auto;
+  text-align: center;
+}
+#network .page-subtitle h1 {
   font-family: 'Myriad Lt';
   font-size: 36px;
   -ms-transform: scale(1.1, 1); /* IE 9 */
   -webkit-transform: scale(1.1, 1); /* Safari */
   transform: scale(1.1, 1);
-  margin: 25px auto;
+}
+#network .page-subtitle p {
   text-align: center;
 }
 #network .page-container{
@@ -379,21 +384,21 @@ body{
 .network-page p strong {
   font-family: 'Myriad Bd It';
 }
-.network-page .description-container{
+.network-page .description-container {
   float: left;
   width: 600px;
 }
-.network-page .bullet-benefits{
+.network-page .bullet-benefits {
   border-right: 1px solid gray;
   float: left;
   padding-right: 20px;
   width: 300px;
 }
-.network-page .bullet-join-req{
+.network-page .bullet-join-req {
   float: right;
   width: 260px;
 }
-.network-page .join-box{
+.network-page .join-box {
   font-family: 'Myriad Lt';
   border: 2px solid #f37021;
   padding: 25px;
@@ -404,10 +409,13 @@ body{
   text-align: center;
   width: 250px;
 }
-.network-page .join-box#single-webinar{
+.network-page .join-box p {
+  text-align: center;
+}
+.network-page .join-box#single-webinar {
   margin-top: 20px;
 }
-.network-page .join-text{
+.network-page .join-text {
   -ms-transform: scale(1.1, 1); /* IE 9 */
   -webkit-transform: scale(1.1, 1); /* Safari */
   transform: scale(1.1, 1);
@@ -554,7 +562,7 @@ body{
   font-size: 15px;
   letter-spacing: 0.01em;
 }
-.network-page.webinar .event-header{
+.network-page.webinar .event-header {
   font-family: 'Myriad Lt';
   -ms-transform: scale(1.1, 1); /* IE 9 */
   -webkit-transform: scale(1.1, 1); /* Safari */
@@ -566,7 +574,7 @@ body{
   color: #8052a1;
   margin: 20px 0 0 45px;
 }
-.network-page .join-box a{
+.network-page.catapult .join-box a, .network-page.webinar .join-box a {
    font-size: 20px !important;
    padding: 10px;
  }
@@ -1494,7 +1502,7 @@ body {
 }
 
 body {
-	font-size: 13px;
+	font-size: 15px;
 }
 
 h1,h2,h3,h4,h5,h6,#slogan,.single-post-categories {
