@@ -424,7 +424,7 @@ body{
   width: 65%;
   margin: 10 auto;
 }
-#network.network-page .join-box button{
+#network.network-page button{
   padding: 10px 45px;
   margin-top: 20px;
 }

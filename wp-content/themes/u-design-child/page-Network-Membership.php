@@ -16,15 +16,13 @@ get_header();
 			<div class="page-banner">
         <div class="banner-text">Network Membership</div>
       </div>
-      <div class="description-container">
-        <?php
-          the_post();
-          the_content();
-        ?>
 
-        <div class="clear"></div>
-      </div>
-          <?php if(is_active_sidebar('network-membership-join-box')): { dynamic_sidebar( 'network-membership-join-box' ); }else : endif;?>
+      <?php
+        the_post();
+        the_content();
+      ?>
+
+      <?php if(is_active_sidebar('network-membership-join-box')): { dynamic_sidebar( 'network-membership-join-box' ); }else : endif;?>
 
       <div class="clear"></div>
 
