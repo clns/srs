@@ -1582,7 +1582,7 @@ h1,h2,h3,h4,h5,h6 {
 
 #bottom h1,h2,h3,h4,h5,h6 {
 	color: #acacac;
-	font-size: 14px !important;
+	font-size: 14px;
 	font-weight: bold;
 	text-transform: uppercase;
 }
