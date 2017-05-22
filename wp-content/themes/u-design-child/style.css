@@ -1886,12 +1886,17 @@ background: none;
 }
 
 .overviewwrapper h2 {
-	 display: inline-block;
-        }
+  display: inline-block;
+  font-size: 16px;
+}
 
 .overviewwrapper span{
     vertical-align:top;
     display:inline-block;
+}
+
+.st_view_inner h4 {
+  line-height: 0.8em;
 }
 
 .box {
