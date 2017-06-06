@@ -13,7 +13,7 @@ get_header();
 $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 
 $args = array(
-    'post_type' => array('conference', 'bootcamp', 'webinar'),
+    'post_type' => array('conference', 'bootcamp', 'webinar', 'training'),
     'orderby' => 'meta_value',
     'order' => 'ASC',
     'posts_per_page' => 5,
@@ -28,7 +28,7 @@ $args = array(
             ),
             array(
                 'relation' => 'OR',
-                array(
+                array( // this also applies to training
                     'key' => 'conferences_status',
                     'value' => array('Open', 'Closed'),
                     'compare' => 'IN',
@@ -49,7 +49,7 @@ $args = array(
     ),
     'tax_query' => array(
         'relation' => 'OR',
-        array( // Apply "srs" franchise taxonomy condition (applies to bootcamp and conference)
+        array( // Apply "srs" franchise taxonomy condition (applies to bootcamp, conference and training)
             'taxonomy' => 'franchise',
             'field'    => 'slug',
             'terms' => array('srs', '', null),
