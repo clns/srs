@@ -12,12 +12,47 @@ get_header();
 
 $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 
+// Get bootcamps, conferences and trainings that do not have the 'srs' franchise assigned,
+// also use the meta_query to keep to a minimum the number of returned records
+$exclude_post_ids = array();
+$excludes = new WP_Query(array(
+    'post_type' => array('bootcamp', 'conference', 'training'),
+    'meta_query' => array(
+        array(
+            'relation' => 'OR',
+            array( // this also applies to training
+                'key' => 'conferences_status',
+                'value' => array('Open', 'Closed'),
+                'compare' => 'IN',
+            ),
+            array(
+                'key' => 'bootcamp_status',
+                'value' => array('Open', 'Closed'),
+                'compare' => 'IN',
+            ),
+        ),
+    ),
+    'tax_query' => array(
+        array(
+            'taxonomy' => 'franchise',
+            'field'    => 'slug',
+            'terms' => 'srs',
+            'operator' => 'NOT EXISTS'
+        ),
+    ),
+));
+if($excludes->have_posts()) {
+    $exclude_post_ids = wp_list_pluck( $excludes->posts, 'ID' );
+}
+wp_reset_postdata();
+
 $args = array(
     'post_type' => array('conference', 'bootcamp', 'webinar', 'training'),
     'orderby' => 'meta_value',
     'order' => 'ASC',
     'posts_per_page' => 5,
     'paged' => $paged,
+    'post__not_in' => $exclude_post_ids,
     'meta_query' => array(
         array(
             'relation' => 'AND',
@@ -52,7 +87,7 @@ $args = array(
         array( // Apply "srs" franchise taxonomy condition (applies to bootcamp, conference and training)
             'taxonomy' => 'franchise',
             'field'    => 'slug',
-            'terms' => array('srs', '', null),
+            'terms' => array('srs'),
         ),
         array( // This condition is needed in case it's a webinar, which doesn't have a franchise
             'taxonomy' => 'franchise',
