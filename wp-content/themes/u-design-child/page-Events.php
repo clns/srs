@@ -151,14 +151,6 @@ $the_query = new WP_Query($args);
                             <div class="link">
                                 <?php $learn_more_url = get_permalink();
                                 if ("bootcamp" == get_post_type()) {
-
-                                    $terms = get_the_terms(get_the_ID(), 'franchise');
-                                    if ( $terms && !is_wp_error( $terms ) ) {
-                                        foreach ( $terms as $term ) {
-                                            $learn_more_url = get_term_link( $term->slug, 'franchise') . "?bootcampID=bc" . get_the_ID();
-                                        }
-                                    }
-                                    
                                     $learn_more_url = get_term_link('srs', 'franchise') . "?bootcampID=bc" . get_the_ID();
                                 } ?>
                                 <a href="<?php echo $learn_more_url; ?>"><?php _e('Learn More...', 'u-design') ?></a>
