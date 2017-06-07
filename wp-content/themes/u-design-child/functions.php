@@ -315,5 +315,7 @@ if ( function_exists('register_sidebar') ) {
 
 }
 
+/* Custom widgets... */
+include ('widgets/upcomingEvents-widget.php');
 
 ?>
