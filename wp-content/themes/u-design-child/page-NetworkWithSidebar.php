@@ -46,7 +46,7 @@ $blog_posts = new WP_Query(array(
             <!-- NETWORK NEWS -->
             <div class="content-group border-bottom">
                 <div class="title">
-                    <h2><?php _e('Network News', 'u-design') ?></h2><span></span><a href="/network-news"><?php _e('Archive', 'u-design') ?></a>
+                    <h2><?php _e('Network News', 'u-design') ?></h2><span></span><a href="/network-member-news"><?php _e('Archive', 'u-design') ?></a>
                 </div>
                 <?php if ( $network_news->have_posts() ) while ( $network_news->have_posts() ) : $network_news->the_post(); ?>
                 <div class="network-news-summary">
