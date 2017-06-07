@@ -304,6 +304,14 @@ if ( function_exists('register_sidebar') ) {
         'before_title' => '<h3 class="widgettitle">',
         'after_title' => '</h3>',
     ));
+    register_sidebar(array(
+        'name' => 'NetworkSidebar',
+        'description' => esc_html__('A widget area, used as a sidebar for the NetworkWithSidebar template.', 'udesign'),
+        'before_widget' => '<div id="%1$s" class="widget %2$s substitute_widget_class">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widgettitle">',
+        'after_title' => '</h3>',
+    ));
 
 }
 
