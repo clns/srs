@@ -3142,8 +3142,14 @@ body {
   margin-top: 50px;
 }
 .page-content .event-group h4 {
-  font-size: 22px;
+  font-size: 22px !important;
   color: #00afec;
+  font-family: 'Myriad Regular';
+  text-transform: none;
+  font-weight: normal;
+  letter-spacing: normal;
+  padding: 0;
+  margin: 0;
 }
 .page-content .event-group h4 a {
   color: #00afec;
@@ -3163,7 +3169,11 @@ body {
 }
 .page-content .event-group .event h6,
 .page-content .event-group .translation h6 {
-  font-size: 19px;
+  font-size: 19px !important;
+  font-weight: normal;
+  text-transform: none;
+  padding: 0;
+  margin: 0;
 }
 .page-content .event-group .event h6 a {
   color: #231f20;
@@ -3175,6 +3185,9 @@ body {
 }
 .page-content .event-group .event p {
   font-size: 18px;
+  line-height: normal;
+  padding: 0;
+  margin: 0;
   margin-top: 6px;
 }
 
@@ -3198,10 +3211,14 @@ body {
 }
 .content-group .title > h2 {
   display: inline-block;
-  font-size: 30px;
+  font-size: 30px !important;
   line-height: 34px;
   color: #555555;
   vertical-align: middle;
+  text-transform: none;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
 }
 .content-group .title > span {
   display: inline-block;
@@ -3271,16 +3288,20 @@ body {
 }
 .network-news-summary .body h5 {
   color: #00afec;
-  font-size: 24px;
+  font-size: 24px !important;
   line-height: 30px;
+  padding: 0;
   margin-bottom: 15px;
   margin-top: -3px;
+  font-family: 'Myriad Regular';
 }
 .network-news-summary .body p {
   font-family: "Myriad Regular", sans-serif;
   font-size: 16px;
   line-height: 18px;
-  margin-bottom: 15px;
+  text-align: inherit;
+  padding: 0;
+  margin: 0 0 15px 0;
 }
 .network-news-summary .body a {
   font-family: "Myriad Regular", sans-serif;
@@ -3336,8 +3357,11 @@ body {
 }
 .monthly-webinar-summary h5 {
   color: #8052a1;
-  font-size: 20px;
+  font-size: 20px !important;
+  margin-top: 0;
   margin-bottom: 15px;
+  font-family: 'Myriad Regular';
+  padding: 0;
 }
 .monthly-webinar-summary h5 a {
   text-decoration: none;
@@ -3345,13 +3369,20 @@ body {
 }
 .monthly-webinar-summary h6 {
   font-family: "Myriad Regular", sans-serif;
-  font-size: 16px;
+  font-size: 16px !important;
   text-transform: uppercase;
+  margin-top: 0;
   margin-bottom: 10px;
+  color: inherit;
+  padding: 0;
 }
 .monthly-webinar-summary p {
   font-family: "Myriad Regular", sans-serif;
   font-size: 16px;
+  line-height: normal;
+  text-align: inherit;
+  padding: 0;
+  margin: 0;
 }
 
 @media screen and (max-width: 1024px) {
@@ -3426,12 +3457,17 @@ body {
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+  text-align: inherit;
   margin-bottom: 6px;
+  padding: 0;
 }
 .catapult-video-summary h5 {
   color: #00afec;
-  font-size: 20px;
+  font-family: "Myriad Regular", sans-serif;
+  font-size: 20px !important;
   line-height: 20px;
+  padding: 0;
+  margin: 0;
 }
 .catapult-video-summary h5 > a {
   text-decoration: none;
@@ -3500,8 +3536,11 @@ body {
   flex-basis: 0%;
 }
 .srs-blog-summary .body h5 {
-  font-size: 24px;
+  font-family: 'Myriad Regular';
+  font-size: 24px !important;
+  color: inherit;
   line-height: 30px;
+  padding: 0;
   margin-bottom: 15px;
   margin-top: -3px;
 }
@@ -3509,6 +3548,8 @@ body {
   font-family: "Myriad Regular", sans-serif;
   font-size: 16px;
   line-height: 18px;
+  text-align: inherit;
+  padding: 0;
   margin-bottom: 15px;
 }
 .srs-blog-summary .body a {
@@ -3667,9 +3708,13 @@ body {
   border-bottom: solid 1px #231f20;
 }
 .network-news-grid .row h2 {
-  font-size: 26px;
+  font-size: 26px !important;
+  font-weight: normal;
   line-height: 30px;
   color: #00afec;
+  text-transform: none;
+  padding: 0;
+  margin: 0;
 }
 .network-news-grid .row h2 > a {
   color: #00afec;
@@ -3687,6 +3732,7 @@ body {
   font-size: 16px;
   line-height: 18px;
   padding: 20px 0;
+  margin: 0;
 }
 .network-news-grid .row > a {
   color: #00afec;
@@ -3736,17 +3782,27 @@ body {
 }
 .global-team-grid .row h2 {
   color: #00afec;
-  font-size: 26px;
+  font-size: 26px !important;
   line-height: 30px;
+  font-weight: normal;
+  text-transform: none;
+  padding: 0;
+  margin: 0;
 }
 .global-team-grid .row h6 {
+  color: inherit;
   font-family: "Myriad SmBd", sans-serif;
+  font-size: 14px !important;
+  padding: 0;
   padding-top: 10px;
-  font-size: 14px;
+  margin: 0;
+  text-transform: none;
 }
 .global-team-grid .row p {
   font-size: 16px;
   line-height: 18px;
+  margin: 0;
+  padding: 0;
   padding-top: 5px;
 }
 
