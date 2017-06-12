@@ -142,6 +142,10 @@ if ( $udesign_options['enable_responsive'] ) echo '<meta name="viewport" content
 	<!-- end top-wrapper -->
 	<div class="clear"></div>
 
+<?php if(is_page(array('member-dashboard'))) {
+    network_dashboard_menu();
+} ?>
+
 <?php	if( is_front_page() ) : ?>
 
 <?php

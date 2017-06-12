@@ -7,6 +7,7 @@ function my_add_scripts() {
     wp_enqueue_script('bootcamp-selection', get_bloginfo('template_directory').'-child/scripts/bootcamp-selection.js', array('jquery'));
     wp_enqueue_script('get-url-parameters', get_bloginfo('template_directory').'-child/scripts/get-url-parameters.js', array('jquery'));
     wp_enqueue_script('accordion-init_js', get_bloginfo('template_directory').'-child/scripts/accordion-init.js', array('jquery', 'jquery-ui-accordion'));
+    wp_enqueue_script('network-dashboard-menu.js', get_bloginfo('template_directory').'-child/scripts/network-dashboard-menu.js', array('jquery'));
 }
 add_action('wp_enqueue_scripts', 'my_add_scripts');
 
@@ -333,5 +334,57 @@ if ( function_exists('register_sidebar') ) {
 
 /* Custom widgets... */
 include ('widgets/upcomingEvents-widget.php');
+
+/* Custom menus ... */
+function register_custom_menus()
+{
+    register_nav_menus(
+        array(
+            'network-dashboard' => __('Network Dashboard'),
+        )
+    );
+}
+add_action('init', 'register_custom_menus');
+
+function network_dashboard_menu()
+{
+    $theme_locations = get_nav_menu_locations();
+    $network_menu_obj = get_term($theme_locations['network-dashboard'], 'nav_menu');
+
+    if ($network_menu_obj && !is_wp_error($network_menu_obj)): ?>
+        <div class="top-nav-bar">
+            <div class="top-nav-bar-content">
+                <div class="top-nav-bar-toggle"></div>
+                <?php
+                $menu_items = wp_get_nav_menu_items($network_menu_obj);
+
+                if (!empty($menu_items)) {
+                    echo '<div class="top-nav-bar-flyout">';
+
+                    $first = true;
+                    foreach ($menu_items as $menu_item) {
+                        if ("0" == $menu_item->menu_item_parent) {
+                            if (!$first) {
+                                echo "</ul></div>";
+                            }
+                            echo '<div class="flyout-column">';
+                            echo "<h3>{$menu_item->title}</h3>";
+                            echo '<ul>';
+                        } else {
+                            echo "<li><a href='{$menu_item->url}'>{$menu_item->title}</a></li>";
+                        }
+                        $first = false;
+                    }
+                    echo "</ul></div>";
+
+                    echo '</div>';
+                }
+
+                echo "<h1>{$network_menu_obj->name}</h1>";
+                ?>
+            </div>
+        </div>
+    <?php endif;
+}
 
 ?>
